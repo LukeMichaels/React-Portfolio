@@ -87,6 +87,7 @@ button {
   position: relative;
   margin: 0 auto;
   background-color: $green;
+  overflow: visible !important;
 }
 
 .page-header {

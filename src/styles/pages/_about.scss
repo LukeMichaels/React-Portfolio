@@ -1,1 +1,143 @@
+// src/styles/pages/_about.scss
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.about {
+  width: 100%;
+  padding: 40px 20px;
+
+  h1 {
+    margin: 40px 0 5px;
+
+    @include respond-to("b-670") {
+      margin: 0 auto 5px;
+    }
+  }
+
+  .about-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include respond-to("b-670") {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .about-left {
+      order: 1;
+      width: 25%;
+
+      @include respond-to("b-670") {
+        order: 2;
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+
+        @include respond-to("b-670") {
+          max-width: 350px;
+          //margin: 0 auto;
+          display: block;
+        }
+      }
+
+      .about-buttons {
+        width: 100%;
+        max-width: 450px;
+        margin: 25px 0;
+        @include respond-to("b-670") {
+          max-width: 350px;
+          //margin: 0 auto;
+          display: block;
+        }
+
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 15px 0 10px;
+          margin-bottom: 15px;
+          background-color: $purple-2;
+          text-transform: uppercase;
+          font-size: 1rem;
+          line-height: 1.25rem;
+
+          &:hover {
+            background-color: $pink;
+          }
+
+          &:active {
+            border: 2px solid $blue;
+          }
+        }
+
+        .about-icon {
+          width: 25%;
+          color: $white;
+          text-align: center;
+        }
+
+        .about-link-title {
+          padding-left: 2%;
+          width: 73%;
+          color: $white;
+          text-align: left;
+        }
+
+      } // .about-buttons
+
+    } // .about-left
+
+    .about-right {
+      order: 2;
+      width: 75%;
+
+      @include respond-to("b-670") {
+        order: 1;
+        width: 100%;
+      }
+
+      .about-group {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 0 30px 0;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+
+      p {
+        margin-bottom: 10px;
+      }
+
+      .about-title {
+        margin: 0 0 5px;
+        text-transform: uppercase;
+        font-size: 1.2em;
+        color: $purple-2;
+      }
+
+      .about-heading {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.2em;
+        color: $pink;
+      }
+
+      .about-detail {
+        margin: 0 0 10px 0;
+        font-size: 1em;
+        line-height: 1.2em;
+        color: $blue;
+      }
+
+    } // .about-right
+
+  } // .about-columns
+
+} // ..about

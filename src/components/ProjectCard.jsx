@@ -21,9 +21,9 @@ export default function ProjectCard({ project, onClick }) {
           <span className="project-badge">{project.category}</span>
         </div>
         <p className="project-summary">{project.summary}</p>
-        <p className="project-meta">
+        {/* <p className="project-meta">
           <span>{project.role}</span>
-        </p>
+        </p> */}
       </div>{/* project-card-body */}
     </button>
   );

@@ -1,1 +1,204 @@
+// src/styles/pages/_contact.scss
 @use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.contact {
+  width: 100%;
+  padding: 40px 20px;
+
+  h1 {
+    margin: 40px 0 10px;
+
+    @include respond-to("b-780") {
+      margin: 0 0 10px;
+    }
+  }
+
+  .contact-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include respond-to("b-780") {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .contact-left {
+    width: 40%;
+    max-width: 480px;
+
+    @include respond-to("b-780") {
+      width: 100%;
+      max-width: 560px;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .contact-details {
+      margin: 30px 0 20px;
+
+      .contact-detail-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        line-height: 1.4;
+
+        .contact-detail-icon {
+          min-width: 20px;
+        }
+
+        a {
+          color: $purple;
+          text-decoration: none;
+
+          &:hover {
+            color: $pink;
+            text-decoration: underline;
+          }
+
+          &:focus, &:active {
+            border: 2px solid $purple;
+          }
+        }
+
+      } // .contact-detail-row
+
+    } // .contact-details
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 14px;
+        color: $white;
+        background-color: $purple;
+        border: 2px solid $purple;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+
+        &:hover {
+          background-color: $pink;
+        }
+
+        &:focus, &:active {
+          border: 2px solid $pink;
+        }
+
+        svg {
+          font-size: 1rem;
+        }
+
+        span {
+          padding-top: 2px;
+        }
+
+      } // a
+
+    } // .contact-links
+
+  } // .contact-left
+
+  .contact-right {
+    width: 60%;
+    max-width: 560px;
+
+    @include respond-to("b-780") {
+      width: 100%;
+      order: 2;
+    }
+
+    .contact-form {
+      width: 100%;
+    }
+
+    .contact-form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      label {
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 6px;
+        color: $purple;
+      }
+
+      input,
+      textarea {
+        padding: 10px 12px;
+        border-radius: 0;
+        border: 2px solid $pink;
+        background-color: $white;
+        color: $pink;
+        font-size: 1rem;
+        font-family: inherit;
+        box-sizing: border-box;
+
+        &:focus-visible {
+          outline: 2px solid $purple;
+          outline-offset: 2px;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 140px;
+      }
+
+    } // .contact-form-group
+
+    .contact-error {
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: $pink;
+    }
+
+    .contact-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .contact-submit {
+      padding: 14px 24px 12px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.95rem;
+      cursor: pointer;
+      background-color: $purple;
+      color: $white;
+
+      &:hover {
+        background-color: $pink;
+      }
+
+      &:focus-visible {
+        outline: 2px solid $blue;
+        outline-offset: 2px;
+      }
+    }
+
+    .contact-status {
+      font-size: 0.85rem;
+      color: $blue;
+    }
+
+  } // .contact-right
+
+} // .contact

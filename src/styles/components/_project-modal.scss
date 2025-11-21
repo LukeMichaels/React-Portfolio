@@ -7,24 +7,30 @@
   inset: 0;
   background: $white;
   display: flex;
-  align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
 .modal-dialog {
+  width: min(90vw, 1080px);
+  max-width: 1080px;
+  max-height: 100vh;
+  overflow: auto;
+  //padding: 1.5rem;
+  padding: 20px 0;
   background: $white;
   color: $pink;
-  max-width: 1080px;
-  width: min(90vw, 1080px);
-  max-height: 90vh;
-  overflow: auto;
-  padding: 1.5rem;
 
   .modal-header {
-    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 0 20px;
 
-    .escape-message {}
+    .escape-message {
+      text-align: right;
+      font-size: 0.8rem;
+    }
 
     .modal-nav {
       display: flex;
@@ -45,9 +51,8 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        //padding: 0.15rem 0.75rem 0.15rem;
-        font-size: 1.15rem;
         padding: 0.7rem 0.75rem 0.65rem;
+        font-size: 1.15rem;
         span {
           padding-top: 2px;
         }
@@ -67,6 +72,7 @@
   }
 
   .project-modal-images {
+    width: 59.36%;
     @include respond-to('b-700') {
       order: 2;
       width: 100%;
@@ -87,7 +93,7 @@
   } // .project-modal-images
   
   .project-modal-information {
-    max-width: 500px;
+    width: 39.04%;
     @include respond-to('b-700') {
       order: 1;
       width: 100%;
@@ -142,9 +148,12 @@
     .project-modal-highlights {
       color: $teal;
       h3 {
+        margin: 15px 0 5px;
         color: $purple;
       }
-      ul {}
+      ul {
+        padding-left: 20px;
+      }
       li {}
     } // .project-modal-highlights
 

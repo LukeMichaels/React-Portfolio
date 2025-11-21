@@ -8,16 +8,13 @@ export default function Hero() {
     const img = imgRef.current;
     if (!img) return;
 
-    // FIND THE REAL SCROLL CONTAINER
     let scrollContainer = document.querySelector(".site-main");
 
-    // Check if .site-main is actually scrollable
     const isScrollable =
       scrollContainer &&
       scrollContainer.scrollHeight > scrollContainer.clientHeight;
 
     if (!isScrollable) {
-      // fall back to the real page scroll element
       scrollContainer = window;
     }
 
@@ -79,7 +76,7 @@ export default function Hero() {
       <img
         ref={imgRef}
         className="parallax-img"
-        src="/images/header.webp"
+        src="/images/ui/header.webp"
         alt=""
         aria-hidden="true"
       />

@@ -29,22 +29,22 @@
     text-align: left;
 
     .project-card-header {
+      margin-bottom: 5px;
+
       h3 {
         color: $pink;
       }
-      .project-badge {
-        
-      }
+      .project-badge {}
     } // .project-card-header
-  
+
     .project-summary {
       color: $teal;
     }
-  
+
     .project-meta {
       span {}
     }
-  
+
     a {
       color: $pink;
       text-decoration: underline;

@@ -2,7 +2,7 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
 
-.site-header {
+header {
   width: 100%;
   position: relative;
   margin: 0 auto;
@@ -15,8 +15,6 @@
     margin: 0 auto;
     background-color: $teal;
     z-index: 10;
-
-    // start hidden above the viewport
     transform: translateY(-100%);
     opacity: 0;
     transition:
@@ -24,7 +22,6 @@
       opacity 0.35s ease-out;
     will-change: transform, opacity;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
-
     &--visible {
       transform: translateY(0);
       opacity: 1;
@@ -55,7 +52,8 @@
         font-size: 1rem;
         letter-spacing: 0.08em;
       }
-    }
+
+    } // .site-logo
 
     nav {
       margin: auto 20px auto auto;
@@ -74,7 +72,6 @@
           text-transform: uppercase;
           font-size: 1rem;
           text-decoration: none;
-
           @include respond-to(b-375) {
             font-size: 0.8rem;
           }
@@ -84,14 +81,17 @@
           @include respond-to(b-305) {
             font-size: 0.6rem;
           }
-
           &.is-active {
             text-decoration: underline;
             color: $black;
             pointer-events: none;
           }
         }
-      }
-    }
-  }
-}
+
+      } // .site-nav
+
+    } // nav
+
+  } // .site-header-inner
+
+} // header

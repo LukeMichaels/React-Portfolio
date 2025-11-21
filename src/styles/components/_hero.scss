@@ -10,12 +10,9 @@
   height: 218px;
   overflow: hidden;
 
-  @include respond-to("b-900") {
-    height: 210px;
-  }
-
   @include respond-to("b-890") {
-    background-image: url("/images/header.webp");
+    height: 210px;
+    background-image: url("/images/ui/header.webp");
     background-size: cover;
     background-position: center;
   }

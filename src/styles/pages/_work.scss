@@ -2,7 +2,7 @@
 @use "../utils/variables" as *;
 @use "../utils/mixins" as *;
 
-.page-work {
+.work {
   max-width: 72rem;
   margin: 0 auto;
   padding: 40px 20px;
@@ -18,10 +18,12 @@
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
+
     span {
       padding-top: 2px;
     }
-  }
+
+  } // .chip
   
   .chip-icon {
     font-size: 0.9rem;
@@ -38,46 +40,12 @@
 
   } // .chip-active
 
-
-  .chip {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   align-items: center;
-  //   width: 100%;
-  //   max-width: 450px;
-  //   padding: 15px 0 10px;
-  //   margin: 15px auto;
-  //   background-color: $purple-2;
-  //   text-transform: uppercase;
-  //   font-size: 1rem;
-  //   line-height: 1.25rem;
-  //   &:hover {
-  //     background-color: $pink-2;
-  //   }
-  //   &:active {
-  //     border: 2px solid $blue;
-  //   }
-
-  //   .filter-icon {
-  //     width: 25%;
-  //     color: $white;
-  //     text-align: center;
-  //   }
-
-  //   .filter-title {
-  //     padding-left: 2%;
-  //     width: 73%;
-  //     color: $white;
-  //     text-align: left;
-  //   }
-
-  } // .chip
-  
 } // .work-filters
 
 .projects-grid {
   column-count: 2;
   column-gap: $space-4;
+
   @include respond-to("b-850") {
     column-count: 1;
   }

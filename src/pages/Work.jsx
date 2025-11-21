@@ -21,7 +21,6 @@ const ICONS = {
   "Graphic Design": faPalette,
 };
 
-
 const FILTER_OPTIONS = ["All", ...PROJECT_CATEGORIES];
 
 export default function Work() {
@@ -34,7 +33,7 @@ export default function Work() {
       : projects.filter((project) => project.category === activeFilter);
 
   return (
-    <section className="page page-work">
+    <section className="work">
       <header className="page-header">
         <h1>Selected Work</h1>
         <p className="lead">
