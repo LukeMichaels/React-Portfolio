@@ -13,7 +13,6 @@ import {
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
 
-// map your filter names → icons  
 const ICONS = {
   All: faList,
   "Web Development": faLaptopCode,
@@ -43,17 +42,17 @@ export default function Work() {
 
       <div className="work-filters" aria-label="Filter projects by category">
         {FILTER_OPTIONS.map((filter) => (
-        <button
-          key={filter}
-          type="button"
-          className={filter === activeFilter ? "chip chip-active" : "chip"}
-          onClick={() => setActiveFilter(filter)}
-        >
-          {ICONS[filter] && (
-            <FontAwesomeIcon icon={ICONS[filter]} className="chip-icon" />
-          )}
-          <span>{filter}</span>
-        </button>
+          <button
+            key={filter}
+            type="button"
+            className={filter === activeFilter ? "chip chip-active" : "chip"}
+            onClick={() => setActiveFilter(filter)}
+          >
+            {ICONS[filter] && (
+              <FontAwesomeIcon icon={ICONS[filter]} className="chip-icon" />
+            )}
+            <span>{filter}</span>
+          </button>
         ))}
       </div>
 

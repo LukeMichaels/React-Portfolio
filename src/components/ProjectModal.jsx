@@ -7,20 +7,18 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 
-
 export default function ProjectModal({
   project,
   projects = [],
   onClose,
   onSelectProject,
 }) {
-  // Hooks must always be called in the same order, every render
+
   const dialogRef = useRef(null);
   const previouslyFocusedRef = useRef(null);
 
   const hasProject = !!project;
 
-  // Safe index logic even when project is null
   const currentIndex = hasProject
     ? projects.findIndex((p) => p.id === project.id)
     : -1;
@@ -31,19 +29,16 @@ export default function ProjectModal({
   useEffect(() => {
     if (!hasProject) return;
 
-    // Save the element that had focus before the modal opened
     previouslyFocusedRef.current =
       document.activeElement instanceof HTMLElement
         ? document.activeElement
         : null;
 
-    // Move focus into the dialog
     const dialogEl = dialogRef.current;
     if (dialogEl) {
       dialogEl.focus();
     }
 
-    // Restore focus when modal closes / project changes to null
     return () => {
       if (
         previouslyFocusedRef.current &&
@@ -91,7 +86,6 @@ export default function ProjectModal({
     }
   }
 
-  // Only now do we conditionally render nothing
   if (!project) return null;
 
   return (
@@ -142,7 +136,7 @@ export default function ProjectModal({
             </button>
           </div>{/* modal-nav */}
         </header>
-
+  
         <div className="project-modal-body">
           {project.images && project.images.length > 0 && (
             <div className="project-modal-images">

@@ -33,6 +33,7 @@
 
     @include respond-to("b-890") {
       display: none;
+      transform: none;
     }
   }
 

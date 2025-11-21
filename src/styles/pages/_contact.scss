@@ -55,6 +55,7 @@
 
         a {
           color: $purple;
+          border: 2px solid $green;
           text-decoration: none;
 
           &:hover {
@@ -91,10 +92,12 @@
 
         &:hover {
           background-color: $pink;
+          border-color: $pink;
         }
 
-        &:focus, &:active {
-          border: 2px solid $pink;
+        &:focus {
+          outline: 2px solid $purple;
+          outline-offset: 2px;
         }
 
         svg {
@@ -175,6 +178,9 @@
     }
 
     .contact-submit {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       padding: 14px 24px 12px;
       border: none;
       text-transform: uppercase;
@@ -192,7 +198,15 @@
         outline: 2px solid $blue;
         outline-offset: 2px;
       }
-    }
+      span {
+        padding-top: 2px;
+      }
+
+      .contact-submit-icon {
+        font-size: 1rem;
+      }
+
+    } // .contact-submit
 
     .contact-status {
       font-size: 0.85rem;

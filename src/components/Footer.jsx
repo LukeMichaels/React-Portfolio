@@ -31,21 +31,27 @@ export default function Footer() {
         return;
       }
 
-      const scrollY = getScrollY();
       const maxScroll = getMaxScroll();
+      const scrollY = getScrollY();
+
+      if (maxScroll <= 0) {
+        img.style.transform = "translate3d(-50%, 0, 0)";
+        return;
+      }
 
       let progress = scrollY / maxScroll;
       progress = Math.min(Math.max(progress, 0), 1);
 
       const startAt = 0.55;
-      let offset = 100;
+      const BASE_OFFSET = -40;
+      let offset = BASE_OFFSET;
 
       if (progress > startAt) {
-        const seg = (progress - startAt) / (1 - startAt); 
-        offset = 100 - seg * 100;
+        const seg = (progress - startAt) / (1 - startAt); // 0..1
+        offset = BASE_OFFSET * (1 - seg);
       }
 
-      img.style.bottom = `-${offset}%`;
+      img.style.transform = `translate3d(-50%, ${offset}px, 0)`;
     };
 
     const onScroll = () => {

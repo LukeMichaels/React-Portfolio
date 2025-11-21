@@ -7,7 +7,7 @@ footer {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  height: 220px;
+  height: 218px;
   overflow: hidden;
   background-color: $teal;
 
@@ -25,10 +25,10 @@ footer {
   .footer-parallax-img {
     position: absolute;
     left: 50%;
-    top: -100%;
+    top: 0;
     height: 100%;
     width: auto;
-    transform: translate3d(-50%, 100%, 0);
+    transform: translate3d(-50%, 0, 0);
     will-change: transform;
     pointer-events: none;
 
@@ -37,7 +37,6 @@ footer {
       transform: none;
     }
   }
-
 } // footer
 
 .copyright {

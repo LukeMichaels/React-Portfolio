@@ -7,7 +7,6 @@ export const PROJECT_CATEGORIES = [
 
 export const projects = [
   // ===================== WEB DEVELOPMENT =====================
-
   {
     id: "henrietta-finds-a-nest",
     title: "Henrietta Finds A Nest",
@@ -227,7 +226,6 @@ export const projects = [
   },
 
   // ===================== BRAND / CLIENT =====================
-
   {
     id: "rogue-design-composition",
     title: "Rogue Ales Design Composition",
@@ -384,7 +382,6 @@ export const projects = [
   },
 
   // ===================== GRAPHIC DESIGN / POSTERS / ALBUMS =====================
-
   {
     id: "explosions-in-the-sky",
     title: "Explosions In The Sky at The Granada",

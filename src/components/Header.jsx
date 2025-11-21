@@ -1,22 +1,43 @@
 // src/components/Header.jsx
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEye,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const [showBar, setShowBar] = useState(false);
 
-  // show nav after ~10px scroll
   useEffect(() => {
-    function handleScroll() {
-      setShowBar(window.scrollY > 10);
+    const SCROLL_THRESHOLD = 10;
+    const SHORT_PAGE_EPS = 5;
+
+    function updateBarVisibility() {
+      const doc = document.documentElement;
+      const maxScroll = doc.scrollHeight - window.innerHeight;
+      const isShortPage = maxScroll <= SHORT_PAGE_EPS;
+
+      if (isShortPage) {
+        setShowBar(true);
+      } else {
+        setShowBar(window.scrollY > SCROLL_THRESHOLD);
+      }
     }
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+    updateBarVisibility();
+
+    window.addEventListener("scroll", updateBarVisibility, { passive: true });
+    window.addEventListener("resize", updateBarVisibility);
+
+    return () => {
+      window.removeEventListener("scroll", updateBarVisibility);
+      window.removeEventListener("resize", updateBarVisibility);
+    };
   }, []);
 
   return (
-    <header className="site-header" aria-label="Primary site header">
+    <header aria-label="Primary site header">
       <div
         className={
           showBar
@@ -26,6 +47,9 @@ export default function Header() {
       >
         <div className="site-header-inner">
           <NavLink to="/" className="site-logo">
+            <div className="logo-icon">
+              <FontAwesomeIcon icon={faEye} aria-hidden="true" />
+            </div>
             <span className="site-logo-mark">LM</span>
             <span className="site-logo-text">Luke Michaels</span>
           </NavLink>

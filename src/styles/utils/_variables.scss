@@ -2,15 +2,6 @@
 @use "sass:map";
 @use "sass:meta";
 
-/* Base neutrals */
-$color-bg: #ffffff;
-$color-bg-elevated: #faf9fc;
-$color-text: #1a1b1e;
-$color-text-strong: #0f0f11;
-$color-border-subtle: #d2d2d7;
-$color-text-muted: #9ca3af; // secondary text
-$color-text-soft: #6b7280; // captions, meta
-
 $black: #121212;
 $blue: #123A7A;
 $green: #BFDA71;
@@ -20,73 +11,7 @@ $purple: #571751;
 $purple-2: #5A1F74;
 $teal: #00A2A6;
 $white: #FFFFFF;
-
-$color-blue: #7dd3fc;
-$color-pink: #f9a8d4;
-$color-green: #6ee7b7;
-$color-purple: #a5b4fc;
-$pastel-blue:   #cfe8ff;
-$pastel-pink:   #ffd6e8;
-$pastel-green:  #d9f6e1;
-$pastel-purple: #e4d4ff;
-
-$accent-primary:   $color-blue;
-$accent-secondary: $color-pink;
-$accent-success:   $color-green;
-$accent-highlight: $color-purple;
-
-/* Base neutrals */
-$color-bg: #ffffff;
-$color-bg-elevated: #faf9fc;
-$color-text: #1a1b1e;
-$color-text-strong: #0f0f11;
-$color-border-subtle: #d2d2d7;
-
-/* Pastel primaries */
-$pastel-blue:   #cfe8ff;
-$pastel-pink:   #ffd6e8;
-$pastel-green:  #d9f6e1;
-$pastel-purple: #e4d4ff;
-
-/* Accents (for links, buttons, focus) */
-$accent-primary: $pastel-blue;
-$accent-secondary: $pastel-pink;
-
-$colors: (
-  "bg": $color-bg,
-  "bg-elevated": $color-bg-elevated,
-  "border-subtle": $color-border-subtle,
-  "text": $color-text,
-  "text-muted": $color-text-muted,
-  "text-soft": $color-text-soft,
-  "blue": $color-blue,
-  "pink": $color-pink,
-  "green": $color-green,
-  "purple": $color-purple,
-  "accent-primary": $accent-primary,
-  "accent-secondary": $accent-secondary,
-  "accent-success": $accent-success,
-  "accent-highlight": $accent-highlight,
-);
-
-:root {
-  --color-bg:             #{$color-bg};
-  --color-bg-elevated:    #{$color-bg-elevated};
-  --color-border-subtle:  #{$color-border-subtle};
-  --color-text:           #{$color-text};
-  --color-text-muted:     #{$color-text-muted};
-  --color-text-soft:      #{$color-text-soft};
-
-  --color-blue:           #{$color-blue};
-  --color-pink:           #{$color-pink};
-  --color-green:          #{$color-green};
-  --color-purple:         #{$color-purple};
-
-  --accent-primary: #{$accent-primary};
-  --accent-secondary: #{$accent-secondary};
-  --accent-success: #{$accent-success};
-  --accent-highlight: #{$accent-highlight};
-}
+$pastel-blue: #cfe8ff;
 
 // typography
 $font-regular: 'cabinregular';
@@ -115,4 +40,5 @@ $breakpoints: (
   'b-780': (max-width: 780px),
   'b-700': (max-width: 700px),
   'b-670': (max-width: 670px),
+  'b-400': (max-width: 400px),
 );

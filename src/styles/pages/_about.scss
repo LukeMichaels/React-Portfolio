@@ -38,57 +38,51 @@
 
         @include respond-to("b-670") {
           max-width: 350px;
-          //margin: 0 auto;
           display: block;
         }
       }
 
-      .about-buttons {
-        width: 100%;
-        max-width: 450px;
-        margin: 25px 0;
-        @include respond-to("b-670") {
-          max-width: 350px;
-          //margin: 0 auto;
-          display: block;
-        }
+      .about-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 20px;
 
         a {
-          display: flex;
-          justify-content: space-between;
+          display: inline-flex;
           align-items: center;
+          gap: 8px;
           width: 100%;
-          box-sizing: border-box;
-          padding: 15px 0 10px;
-          margin-bottom: 15px;
-          background-color: $purple-2;
+          padding: 6px 14px 4px;
+          color: $white;
+          background-color: $purple;
+          border: 2px solid $purple;
+          font-size: 0.9rem;
           text-transform: uppercase;
-          font-size: 1rem;
-          line-height: 1.25rem;
+          letter-spacing: 0.04em;
+          text-decoration: none;
 
           &:hover {
             background-color: $pink;
+            border-color: $pink;
           }
 
-          &:active {
-            border: 2px solid $blue;
+          &:focus {
+            outline: 2px solid $purple;
+            outline-offset: 2px;
           }
-        }
 
-        .about-icon {
-          width: 25%;
-          color: $white;
-          text-align: center;
-        }
+          .about-icon {
+            font-size: 1rem;
+          }
 
-        .about-link-title {
-          padding-left: 2%;
-          width: 73%;
-          color: $white;
-          text-align: left;
-        }
+          .about-link-title {
+            padding-top: 0;
+          }
 
-      } // .about-buttons
+        } // a
+
+      } // .about-links
 
     } // .about-left
 

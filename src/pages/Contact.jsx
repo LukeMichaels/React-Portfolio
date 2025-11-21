@@ -22,7 +22,7 @@ export default function Contact() {
   function handleChange(event) {
     const { name, value } = event.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    setErrors(prev => ({ ...prev, [name]: "" })); // clear error on change
+    setErrors(prev => ({ ...prev, [name]: "" }));
   }
 
   function validate() {
@@ -51,15 +51,12 @@ export default function Contact() {
       return;
     }
 
-    // Use mailto: so the form works without a backend
-    const subject =
-      formData.subject.trim() || "Portfolio contact from lukemichaels.com";
+    const subject = formData.subject.trim() || "Portfolio contact from lukemichaels.com";
     const body = `Hi Luke,
 
-${formData.message.trim()}
-
-— ${formData.name}
-${formData.email}`;
+    ${formData.message.trim()}
+    — ${formData.name}
+    ${formData.email}`;
 
     const mailto = `mailto:lmichaels@gmail.com?subject=${encodeURIComponent(
       subject
@@ -214,7 +211,12 @@ ${formData.email}`;
 
             <div className="contact-actions">
               <button type="submit" className="contact-submit">
-                Send message
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  aria-hidden="true"
+                  className="contact-submit-icon"
+                />
+                <span>Send message</span>
               </button>
               {status && (
                 <p className="contact-status" role="status">

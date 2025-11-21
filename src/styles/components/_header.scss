@@ -41,8 +41,32 @@ header {
       margin: auto auto auto 20px;
       text-decoration: none;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline: 2px solid $purple;
+        outline-offset: 2px;
+      }
+
+      &.active {
+        pointer: arrow;
+        pointer-events: none;
+      }
+
+      .logo-icon {
+        display: inline-block;
+        margin-right: 5px;
+        color: $white;
+      }
+
       .site-logo-mark {
         display: none;
+
+        @include respond-to('b-400') {
+          display: inline-block;
+        }
       }
 
       .site-logo-text {
@@ -51,6 +75,10 @@ header {
         text-transform: uppercase;
         font-size: 1rem;
         letter-spacing: 0.08em;
+
+        @include respond-to('b-400') {
+          display: none;
+        }
       }
 
     } // .site-logo
@@ -72,6 +100,7 @@ header {
           text-transform: uppercase;
           font-size: 1rem;
           text-decoration: none;
+
           @include respond-to(b-375) {
             font-size: 0.8rem;
           }
@@ -81,6 +110,17 @@ header {
           @include respond-to(b-305) {
             font-size: 0.6rem;
           }
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &:focus {
+            outline: 2px solid $purple;
+            outline-offset: 2px;
+          }
+
+
           &.is-active {
             text-decoration: underline;
             color: $black;

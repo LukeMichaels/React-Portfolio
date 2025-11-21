@@ -6,47 +6,104 @@
   max-width: 72rem;
   margin: 0 auto;
   padding: 40px 20px;
-}
 
-.work-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
+  .page-header {
+    margin-bottom: 1.5rem;
 
-  .chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-
-    span {
-      padding-top: 2px;
+    h1 {
+      margin-bottom: 10px;
+      color: $pink-2;
     }
 
-  } // .chip
-  
-  .chip-icon {
-    font-size: 0.9rem;
-  }
+    .lead {
+      color: $purple-2;
+      font-size: 1rem;
+      line-height: 1.2;
+    }
 
-  .chip-active {
-    background-color: $pink-2;
-    pointer-events: none;
+  } // .page-header
+
+
+  .work-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    //gap: 10px;
+    margin-bottom: 2rem;
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      color: $white;
+      background-color: $purple;
+      border: 2px solid $purple;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $pink-2;
+        border-color: $pink-2;
+      }
+
+      &:focus {
+        outline: 2px solid $purple;
+        outline-offset: 2px;
+      }
+
+      svg {
+        font-size: 1rem;
+      }
+
+      span {
+        padding-top: 2px;
+      }
+
+    } // .chip
 
     .chip-icon {
-      transform: scale(1.2);
-      transition: transform 0.2s ease;
+      font-size: 0.9rem;
     }
 
-  } // .chip-active
+    .chip-active {
+      background-color: $pink-2;
+      border-color: $pink-2;
+      pointer-events: none;
 
-} // .work-filters
+      .chip-icon {
+        transform: scale(1.2);
+        transition: transform 0.2s ease;
+      }
 
-.projects-grid {
-  column-count: 2;
-  column-gap: $space-4;
+    } // .chip-active
 
-  @include respond-to("b-850") {
-    column-count: 1;
+  } // .work-filters
+
+  .projects-grid {
+    column-count: 2;
+    column-gap: $space-4;
+
+    @include respond-to("b-850") {
+      column-count: 1;
+    }
   }
-}
+
+  // @keyframes project-card-slide-up {
+  //   from {
+  //     transform: translateY(16px);
+  //   }
+  //   to {
+  //     transform: translateY(0);
+  //   }
+  // }
+
+  // .project-card {
+  //   transform: translateY(0);
+  //   opacity: 1;
+  //   animation: project-card-slide-up 0.35s ease-out;
+  // }
+
+} // .work

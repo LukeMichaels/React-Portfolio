@@ -18,7 +18,7 @@ export default function Home() {
             src="/images/ui/2025-about-image.webp"
             alt="Portrait of Luke Michaels"
           />
-          <div className="about-buttons" aria-label="Contact and profile links">
+          <div className="about-links" aria-label="Contact and profile links">
             <a
               href="/documents/Luke_Michaels_Resume_2025.pdf"
               title="Download my resume"
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="about-group">
             <h1>Hi, I&apos;m Luke.</h1>
             <p>
-              I’m a front-end developer and UX-focused designer who builds accessible, high-impact websites for nonprofits, artists, and mission-driven organizations. I blend visual design, motion, and clean, maintainable code to create intuitive digital experiences that feel great to use.
+              I’m a front-end developer and UX-focused designer who builds accessible, high-impact websites and web apps for nonprofits, artists, and mission-driven organizations. I blend visual design, motion, and clean, maintainable code to create intuitive digital experiences that feel great to use.
             </p>
             <p style={{ marginBottom: 0 }}>
               Over the last 15+ years, I’ve designed and engineered websites, interfaces, and interactive components across a wide range of projects—from content-heavy nonprofit platforms to experimental LED-driven installations. My work focuses on accessibility, performance, and thoughtful interface design, with an emphasis on crafting reusable systems that scale.
@@ -89,26 +89,22 @@ export default function Home() {
 
             <h3 className="about-heading">Front-End Development</h3>
             <div className="about-detail">
-              HTML5, modern CSS, Sass, JavaScript (ES6+), accessibility (WCAG),
-              performance optimization, responsive UI systems.
+              HTML5, modern CSS, Sass, JavaScript (ES6+), accessibility (WCAG), performance optimization, responsive UI systems.
             </div>
 
             <h3 className="about-heading">WordPress &amp; CMS Development</h3>
             <div className="about-detail">
-              Custom themes, ACF Pro, custom blocks, Gutenberg, WooCommerce, API
-              integrations, modular component architecture.
+              Custom themes, ACF Pro, custom blocks, Gutenberg, WooCommerce, API integrations, modular component architecture.
             </div>
 
             <h3 className="about-heading">UX &amp; Visual Design</h3>
             <div className="about-detail">
-              Wireframes, prototypes, UI systems, typography, layout,
-              interaction and motion design.
+              Wireframes, prototypes, UI systems, typography, layout, interaction and motion design.
             </div>
 
             <h3 className="about-heading">Workflow &amp; Tooling</h3>
             <div className="about-detail">
-              Git/GitHub, build tools, local development (MAMP, etc.),
-              component-based design and development, performance profiling.
+              Git/GitHub, Vite and modern build tooling, npm/yarn, local development (MAMP, etc.), component-based design and development, performance profiling.
             </div>
           </div>{/* primary-skills */}
 
@@ -116,11 +112,7 @@ export default function Home() {
           <div className="about-group technical-exploration">
             <h2 className="about-title">Creative &amp; Technical Exploration</h2>
             <p>
-              Beyond the browser, I enjoy creating graphics, 3D modeling, and
-              building motion pieces and interactive LED installations using
-              FastLED and microcontrollers. These experiments often influence my
-              approach to animation, interaction patterns, and visual systems on
-              the web.
+              Beyond the browser, I enjoy creating graphics, 3D modeling, and building motion pieces and interactive LED installations using FastLED and microcontrollers. These experiments often influence my approach to animation, interaction patterns, and visual systems on the web.
             </p>
 
             <h3 className="about-heading">Graphics &amp; Motion</h3>

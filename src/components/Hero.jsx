@@ -36,7 +36,6 @@ export default function Hero() {
     const updateParallax = () => {
       ticking = false;
 
-      // Match SCSS: disable on small screens
       if (window.innerWidth < 890) {
         img.style.transform = "translate3d(-50%, 0, 0)";
         return;

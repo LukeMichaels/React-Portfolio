@@ -16,7 +16,6 @@
   max-width: 1080px;
   max-height: 100vh;
   overflow: auto;
-  //padding: 1.5rem;
   padding: 20px 0;
   background: $white;
   color: $pink;
@@ -25,7 +24,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 0 0 20px;
+    margin-bottom: 2rem;
 
     .escape-message {
       text-align: right;
@@ -35,36 +34,115 @@
     .modal-nav {
       display: flex;
       align-items: center;
+      gap: 0.5rem;
 
       .modal-nav-button {
         display: inline-flex;
         align-items: center;
-        gap: 0.35rem;
-        padding: 0.6rem 0.75rem 0.6rem;
-        margin-right: 5px;
+        gap: 8px;
+        padding: 6px 14px;
+        color: $white;
+        background-color: $purple;
+        border: 2px solid $purple;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        
+        &:hover {
+          background-color: $pink-2;
+          border-color: $pink-2;
+        }
+        
+        &:focus {
+          outline: 2px solid $purple;
+          outline-offset: 2px;
+        }
+        
+        svg {
+          font-size: 1rem;
+        }
+        
         span {
           padding-top: 2px;
         }
-      }
+
+      } // .modal-nav-button
 
       .modal-close {
         display: inline-flex;
         align-items: center;
-        justify-content: center;
-        padding: 0.7rem 0.75rem 0.65rem;
+        padding: 7.5px 14px 7.5px;
+        color: $white;
+        background-color: $purple;
+        border: 2px solid $purple;
+        text-transform: uppercase;
         font-size: 1.15rem;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        
+        &:hover {
+          background-color: $pink-2;
+          border-color: $pink-2;
+        }
+        
+        &:focus {
+          outline: 2px solid $purple;
+          outline-offset: 2px;
+        }
+        
+        svg {
+          font-size: 1rem;
+        }
+        
         span {
           padding-top: 2px;
         }
-      }
+
+      } // .modal-close
 
     } // .modal-nav
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      color: $white;
+      background-color: $purple;
+      border: 2px solid $purple;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    
+      &:hover {
+        background-color: $pink-2;
+        border-color: $pink-2;
+      }
+    
+      &:focus {
+        outline: 2px solid $purple;
+        outline-offset: 2px;
+      }
+    
+      svg {
+        font-size: 1rem;
+      }
+    
+      span {
+        padding-top: 2px;
+      }
+    
+    } // .chip
+
   } // .modal-header
 
   .project-modal-body {
     display: flex;
     justify-content: center;
     gap: 20px;
+
     @include respond-to('b-700') {
       flex-wrap: wrap;
       gap: 0;
@@ -73,6 +151,7 @@
 
   .project-modal-images {
     width: 59.36%;
+
     @include respond-to('b-700') {
       order: 2;
       width: 100%;
@@ -91,9 +170,10 @@
     } // .project-modal-image
 
   } // .project-modal-images
-  
+
   .project-modal-information {
     width: 39.04%;
+
     @include respond-to('b-700') {
       order: 1;
       width: 100%;
@@ -104,57 +184,61 @@
       margin: 0 0 10px 0;
       color: $pink;
     }
-  
+
     p {
       width: 100%;
       margin: 0 0 10px 0;
       color: $teal;
       font-size: 1rem;
       line-height: 1.5;
-      // &:last-of-type {
-      //   margin-bottom: 0;
-      // }
     }
-    
-    strong {color: $purple;}
-  
+
+    strong {
+      color: $purple;
+    }
+
     .project-modal-link {
+
       a {
         color: $pink;
         text-decoration: underline;
+        border: 2px solid $white;
+
         &:hover {
           color: $purple;
         }
+
         &:active, &:focus {
           border: 2px solid $purple;
         }
       }
+
     } // .project-modal-link
-  
+
     .project-modal-meta {
       span {}
     } // .project-modal-meta
-  
-    .project-modal-role {
-      
-    }
-  
-    .project-modal-tools {
 
-    }
-  
+    .project-modal-role {}
+
+    .project-modal-tools {}
+
     .project-modal-summary {}
 
     .project-modal-highlights {
       color: $teal;
+
       h3 {
         margin: 15px 0 5px;
         color: $purple;
       }
+
       ul {
         padding-left: 20px;
       }
+
       li {}
+
     } // .project-modal-highlights
 
   } // .project-modal-information

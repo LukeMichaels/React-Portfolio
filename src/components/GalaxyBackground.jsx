@@ -18,7 +18,6 @@ export default function GalaxyBackground() {
     let centerY = 0;
     let animationFrameId;
 
-    // Motion preferences
     let prefersReduced =
       window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -27,10 +26,9 @@ export default function GalaxyBackground() {
     const MAX_RADIUS_FACTOR = 0.75;
     const BASE_SPEED = 0.0004;
 
-    // Parallax variables
-    const PARALLAX_STRENGTH = 40; // px max offset
-    let mouseNormX = 0; // -1 to 1
-    let mouseNormY = 0; // -1 to 1
+    const PARALLAX_STRENGTH = 40;
+    let mouseNormX = 0;
+    let mouseNormY = 0;
     let cameraOffsetX = 0;
     let cameraOffsetY = 0;
 
@@ -73,7 +71,7 @@ export default function GalaxyBackground() {
 
     function drawBackground() {
       const gradient = ctx.createRadialGradient(
-        centerX + cameraOffsetX * 0.5, // slight parallax of background center
+        centerX + cameraOffsetX * 0.5,
         centerY + cameraOffsetY * 0.5,
         0,
         centerX + cameraOffsetX * 0.5,
@@ -90,7 +88,6 @@ export default function GalaxyBackground() {
     }
 
     function drawStar(star) {
-      // Apply camera/parallax offset
       const x = centerX + cameraOffsetX + Math.cos(star.angle) * star.radius;
       const y = centerY + cameraOffsetY + Math.sin(star.angle) * star.radius;
       const r = star.size;
@@ -111,7 +108,6 @@ export default function GalaxyBackground() {
     }
 
     function renderFrame() {
-      // Smoothly move camera offset toward mouse target
       const targetX = mouseNormX * PARALLAX_STRENGTH;
       const targetY = mouseNormY * PARALLAX_STRENGTH;
       const lerpFactor = 0.05;
@@ -140,7 +136,6 @@ export default function GalaxyBackground() {
     }
 
     function renderStatic() {
-      // Static but still parallax-capable — we’ll just draw once
       ctx.clearRect(0, 0, width, height);
       drawBackground();
       ctx.globalCompositeOperation = "lighter";
@@ -158,7 +153,6 @@ export default function GalaxyBackground() {
       }
     }
 
-    // Resize handler
     let resizeTimeout;
     function handleResize() {
       clearTimeout(resizeTimeout);
@@ -168,22 +162,20 @@ export default function GalaxyBackground() {
       }, 150);
     }
 
-    // Mouse move handler for parallax
     function handleMouseMove(e) {
-      if (prefersReduced) return; // respect reduced motion fully
+      if (prefersReduced) return; 
 
       const rect = canvas.getBoundingClientRect();
-      const x = (e.clientX - rect.left) / rect.width; // 0–1
-      const y = (e.clientY - rect.top) / rect.height; // 0–1
+      const x = (e.clientX - rect.left) / rect.width;
+      const y = (e.clientY - rect.top) / rect.height;
 
-      mouseNormX = (x - 0.5) * 2; // -1 to 1
-      mouseNormY = (y - 0.5) * 2; // -1 to 1
+      mouseNormX = (x - 0.5) * 2;
+      mouseNormY = (y - 0.5) * 2;
     }
 
     window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", handleMouseMove);
 
-    // Reduced motion watcher
     let motionQuery;
     let handleMotionChange;
     if (window.matchMedia) {
@@ -198,7 +190,6 @@ export default function GalaxyBackground() {
     resizeCanvas();
     start();
 
-    // Cleanup on unmount
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", handleMouseMove);

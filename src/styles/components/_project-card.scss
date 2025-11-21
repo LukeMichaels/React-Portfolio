@@ -19,7 +19,6 @@
     display: block;
     width: 100%;
     height: auto;
-    //border-radius: 0.75rem;
     margin-bottom: 0.75rem;
   }
 
@@ -34,7 +33,9 @@
       h3 {
         color: $pink;
       }
+
       .project-badge {}
+
     } // .project-card-header
 
     .project-summary {
