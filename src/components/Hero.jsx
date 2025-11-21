@@ -8,59 +8,69 @@ export default function Hero() {
     const img = imgRef.current;
     if (!img) return;
 
-    // Detect the scroll container:
-    // - If `.site-main` is scrollable, use that
-    // - Otherwise fall back to window
-    const scrollElement =
-      document.querySelector(".site-main") || window;
+    // FIND THE REAL SCROLL CONTAINER
+    let scrollContainer = document.querySelector(".site-main");
 
-    const isWindow = scrollElement === window;
+    // Check if .site-main is actually scrollable
+    const isScrollable =
+      scrollContainer &&
+      scrollContainer.scrollHeight > scrollContainer.clientHeight;
+
+    if (!isScrollable) {
+      // fall back to the real page scroll element
+      scrollContainer = window;
+    }
+
+    let ticking = false;
 
     const getScrollY = () => {
-      if (isWindow) {
-        return window.scrollY || window.pageYOffset || 0;
-      } else {
-        return scrollElement.scrollTop || 0;
+      if (scrollContainer === window) {
+        return (
+          window.scrollY ||
+          window.pageYOffset ||
+          document.documentElement.scrollTop ||
+          0
+        );
       }
+
+      return scrollContainer.scrollTop || 0;
     };
 
     const updateParallax = () => {
-      // Disable parallax under 890px (match your SCSS)
+      ticking = false;
+
+      // Match SCSS: disable on small screens
       if (window.innerWidth < 890) {
-        img.style.transform = "translate(-50%, 0px)";
+        img.style.transform = "translate3d(-50%, 0, 0)";
         return;
       }
 
       const scrolled = getScrollY();
-      const offset = scrolled * 0.3; // parallax strength
+      const offset = scrolled * 0.3;
 
-      img.style.transform = `translate(-50%, ${offset}px)`;
+      img.style.transform = `translate3d(-50%, ${offset}px, 0)`;
     };
 
-    const handleScroll = () => {
-      updateParallax();
-    };
-
-    const handleResize = () => {
-      if (window.innerWidth < 890) {
-        img.style.transform = "translate(-50%, 0px)";
-      } else {
-        updateParallax();
+    const onScroll = () => {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
       }
     };
 
-    // Initial styles
-    img.style.transform = "translate(-50%, 0px)";
-    handleResize();
+    const onResize = () => {
+      ticking = false;
+      updateParallax();
+    };
 
-    // Attach listeners
-    scrollElement.addEventListener("scroll", handleScroll);
-    window.addEventListener("resize", handleResize);
+    updateParallax();
 
-    // Cleanup
+    scrollContainer.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onResize);
+
     return () => {
-      scrollElement.removeEventListener("scroll", handleScroll);
-      window.removeEventListener("resize", handleResize);
+      scrollContainer.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", onResize);
     };
   }, []);
 

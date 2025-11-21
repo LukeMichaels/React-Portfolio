@@ -15,7 +15,7 @@ export default function ProjectCard({ project, onClick }) {
           />
         </div>
       )}
-      <div class="project-card-body">
+      <div className="project-card-body">
         <div className="project-card-header">
           <h3>{project.title}</h3>
           <span className="project-badge">{project.category}</span>

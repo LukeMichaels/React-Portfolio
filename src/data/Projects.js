@@ -196,7 +196,7 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed and built key pages emphasizing product storytelling and brand personality.",
+      "Designed and built key pages emphasizing product and brand personality.",
       "Worked within established brand assets while introducing new layouts.",
       "Prioritized clarity and usability for a broad audience of shoppers and fans.",
     ],
@@ -221,7 +221,7 @@ export const projects = [
     ],
     highlights: [
       "Designed a campaign-specific experience within existing brand constraints.",
-      "Used JavaScript and jQuery to add subtle interactivity and storytelling.",
+      "Used JavaScript and jQuery to add subtle interactivity.",
       "Balanced visual richness with performance and simplicity.",
     ],
   },
@@ -251,7 +251,6 @@ export const projects = [
     ],
     highlights: [
       "Explored layouts that place the Rogue mission front and center on the homepage.",
-      "Balanced product focus with deeper storytelling about the brand.",
       "Reflected on how to refine copy load and hierarchy in future iterations.",
     ],
   },
@@ -418,7 +417,7 @@ export const projects = [
     tools: ["Adobe Illustrator"],
     year: "",
     summary:
-      "Poster design for Fairbanks with Mr. History at Record Bar, combining illustration with bold type.",
+      "Poster design for Fairbanks with Mr. History at Record Bar.",
     thumbnail: "/images/other/fairbanks-mr-history.webp",
     thumbnailAlt: "Fairbanks with Mr. History flier design thumbnail",
     images: [
@@ -467,7 +466,7 @@ export const projects = [
     tools: ["Adobe Illustrator"],
     year: "",
     summary:
-      "A pair of fliers for Good Foot Stock, designed as a cohesive mini-series for the event.",
+      "A pair of stock fliers for Good Foot, designed so that the band could use them for multiple events.",
     thumbnail: "/images/other/good-foot-stock-one.webp",
     thumbnailAlt: "Good Foot Stock flier design thumbnail one",
     images: [
@@ -519,7 +518,7 @@ export const projects = [
     tools: ["Adobe Illustrator"],
     year: "",
     summary:
-      "Single-poster design for DJ Red Beard, with a strong illustrative focal point.",
+      "Flier design for DJ Red Beard, with a strong illustrative focal point.",
     thumbnail: "/images/other/dj-red-beard.webp",
     thumbnailAlt: "DJ Red Beard flier design thumbnail",
     images: [

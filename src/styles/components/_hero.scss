@@ -9,14 +9,17 @@
   margin: 0 auto;
   height: 218px;
   overflow: hidden;
+
   @include respond-to("b-900") {
     height: 210px;
   }
-  @include respond-to('b-890') {
-    background-image: url("/assets/images/header.webp");
+
+  @include respond-to("b-890") {
+    background-image: url("/images/header.webp");
     background-size: cover;
     background-position: center;
   }
+
   @include respond-to("b-700") {
     height: 120px;
   }
@@ -25,12 +28,13 @@
     position: absolute;
     left: 50%;
     top: 0;
-    transform: translateX(-50%);
+    transform: translate3d(-50%, 0, 0);
     height: 100%;
     width: auto;
     will-change: transform;
     pointer-events: none;
-    @include respond-to('b-890') {
+
+    @include respond-to("b-890") {
       display: none;
     }
   }
