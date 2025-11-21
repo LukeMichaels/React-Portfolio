@@ -1,0 +1,113 @@
+@use "./variables" as *;
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme: light;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: $color-bg;
+  color: $color-text;
+  font-family: $font-regular;
+  font-size: 16px;
+  line-height: 1.55;
+  min-height: 100vh;
+}
+
+a {
+  color: $accent-primary;
+  text-decoration: none;
+  font-weight: 500;
+  &:hover,
+  &:focus-visible {
+    color: $accent-secondary;
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.5em;
+  color: $color-text-strong;
+  font-family: $font-bold;
+  line-height: 1.2;
+}
+
+p {
+  max-width: 70ch;
+  margin: 0 0 1em;
+}
+
+input,
+textarea,
+select,
+button {
+  color: $color-text;
+  border: 1px solid $color-border-subtle;
+  padding: 0.6rem 0.75rem;
+  background: $color-bg-elevated;
+  font-family: inherit;
+  font-size: 1rem;
+  &:focus-visible {
+    outline: 2px solid $accent-primary;
+    outline-offset: 2px;
+  }
+}
+
+button {
+  background: $accent-primary;
+  color: $color-text-strong;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $accent-secondary;
+  }
+
+  &:disabled {
+    background: $color-border-subtle;
+    cursor: not-allowed;
+  }
+}
+
+.site-main {
+  width: 100%;
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+  background-color: $green;
+}
+
+.page-header {
+  margin-bottom: 1.5rem;
+}
+
+.page-header .lead {
+  color: #9ca3af;
+  max-width: 40rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  color: #9ca3af;
+  margin-bottom: 0.5rem;
+}
+
+.lead {
+  font-size: 1rem;
+  line-height: 1.6;
+}

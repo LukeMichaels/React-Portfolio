@@ -1,0 +1,85 @@
+// src/styles/components/_header.scss
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+header {
+  width: 100%;
+  max-width: 1080px;
+  position: relative;
+  margin: 0 auto;
+
+  .site-header-bar {
+    display: none;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    //background-color: $teal;
+    z-index: 10;
+    &:--visible {
+      display: block;
+    }
+  }
+
+  .site-header-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    
+
+    .site-logo {
+
+      .site-logo-mark {
+        
+      }
+
+      .site-logo-text {
+        
+      }
+
+    } // .site-logo
+
+    .navigation {
+
+      .site-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 5px;
+        margin: auto 20px auto auto;
+
+        li {
+          
+          
+        }
+
+        .site-nav-link {
+          display: block;
+          position: relative;
+          padding: 15px 10px 10px 10px;
+          color: $white;
+          //border: 2px solid $teal;
+          text-transform: uppercase;
+          font-size: 1rem;
+          @include respond-to(b-375) {
+            font-size: 0.8rem;
+          }
+          @include respond-to(b-325) {
+            font-size: 0.75rem;
+          }
+          @include respond-to(b-305) {
+            font-size: 0.6rem;
+          }
+        }
+
+        .site-nav-link is-active {
+          text-decoration: underline;
+          color: $black;
+          pointer-events: none;
+        }
+
+      } // .site-nav
+
+    } // .navigation
+
+  } //.site-header-inner
+  
+} // header

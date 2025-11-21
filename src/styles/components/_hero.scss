@@ -1,0 +1,33 @@
+// src/styles/components/_hero.scss
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  //height: 220px;
+  overflow: hidden;
+  @include respond-to("b-900") {
+    height: 210px;
+  }
+  @include respond-to("b-700") {
+    height: 130px;
+  }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    display: block;
+    background-image: url("/images/header.webp");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    @include respond-to("b-890") {
+      background-attachment: scroll;
+    }
+  }
+
+} // .hero

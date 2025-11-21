@@ -1,0 +1,12 @@
+// src/styles/components/_footer.scss
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+footer {
+  position: relative;
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  height: 220px;
+  overflow: hidden;
+}

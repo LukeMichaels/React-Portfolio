@@ -1,0 +1,104 @@
+// src/styles/pages/_work.scss
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.page-work {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem 4rem;
+}
+
+.work-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+
+  .chip {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   width: 100%;
+  //   max-width: 450px;
+  //   padding: 15px 0 10px;
+  //   margin: 15px auto;
+  //   background-color: $purple-2;
+  //   text-transform: uppercase;
+  //   font-size: 1rem;
+  //   line-height: 1.25rem;
+  //   &:hover {
+  //     background-color: $pink-2;
+  //   }
+  //   &:active {
+  //     border: 2px solid $blue;
+  //   }
+
+  //   .filter-icon {
+  //     width: 25%;
+  //     color: $white;
+  //     text-align: center;
+  //   }
+
+  //   .filter-title {
+  //     padding-left: 2%;
+  //     width: 73%;
+  //     color: $white;
+  //     text-align: left;
+  //   }
+
+  } // .chip
+  
+} // .work-filters
+
+.projects-grid {
+  column-count: 2;
+  column-gap: $space-4;
+  @include respond-to("b-850") {
+    column-count: 1;
+  }
+}
+
+.project-card {
+  display: inline-block;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0 0 $space-4;
+  break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+
+  //@include card-elevated;
+  //padding: 1.25rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    //border-radius: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .project-card-header {
+    color: $pink;
+  }
+
+  .project-summary {
+    color: $teal;
+  }
+
+  .project-meta {
+    
+  }
+
+  a {
+    color: $pink;
+    text-decoration: underline;
+    &:hover {
+      color: $purple;
+    }
+    &:active, &:focus {
+      border: 2px solid $purple;
+    }
+  }
+
+} // .project-card

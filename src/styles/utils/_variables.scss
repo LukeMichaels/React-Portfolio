@@ -1,0 +1,113 @@
+// src/styles/utils/_variables.scss
+@use "sass:map";
+@use "sass:meta";
+
+/* Base neutrals */
+$color-bg: #ffffff;
+$color-bg-elevated: #faf9fc;
+$color-text: #1a1b1e;
+$color-text-strong: #0f0f11;
+$color-border-subtle: #d2d2d7;
+$color-text-muted: #9ca3af; // secondary text
+$color-text-soft: #6b7280; // captions, meta
+
+$black: #121212;
+$blue: #123A7A;
+$green: #BFDA71;
+$pink: #C94768;
+$pink-2: #9C1A52;
+$purple: #571751;
+$purple-2: #5A1F74;
+$teal: #00A2A6;
+$white: #FFFFFF;
+
+$color-blue: #7dd3fc;
+$color-pink: #f9a8d4;
+$color-green: #6ee7b7;
+$color-purple: #a5b4fc;
+$pastel-blue:   #cfe8ff;
+$pastel-pink:   #ffd6e8;
+$pastel-green:  #d9f6e1;
+$pastel-purple: #e4d4ff;
+
+$accent-primary:   $color-blue;
+$accent-secondary: $color-pink;
+$accent-success:   $color-green;
+$accent-highlight: $color-purple;
+
+/* Base neutrals */
+$color-bg: #ffffff;
+$color-bg-elevated: #faf9fc;
+$color-text: #1a1b1e;
+$color-text-strong: #0f0f11;
+$color-border-subtle: #d2d2d7;
+
+/* Pastel primaries */
+$pastel-blue:   #cfe8ff;
+$pastel-pink:   #ffd6e8;
+$pastel-green:  #d9f6e1;
+$pastel-purple: #e4d4ff;
+
+/* Accents (for links, buttons, focus) */
+$accent-primary: $pastel-blue;
+$accent-secondary: $pastel-pink;
+
+$colors: (
+  "bg": $color-bg,
+  "bg-elevated": $color-bg-elevated,
+  "border-subtle": $color-border-subtle,
+  "text": $color-text,
+  "text-muted": $color-text-muted,
+  "text-soft": $color-text-soft,
+  "blue": $color-blue,
+  "pink": $color-pink,
+  "green": $color-green,
+  "purple": $color-purple,
+  "accent-primary": $accent-primary,
+  "accent-secondary": $accent-secondary,
+  "accent-success": $accent-success,
+  "accent-highlight": $accent-highlight,
+);
+
+:root {
+  --color-bg:             #{$color-bg};
+  --color-bg-elevated:    #{$color-bg-elevated};
+  --color-border-subtle:  #{$color-border-subtle};
+  --color-text:           #{$color-text};
+  --color-text-muted:     #{$color-text-muted};
+  --color-text-soft:      #{$color-text-soft};
+
+  --color-blue:           #{$color-blue};
+  --color-pink:           #{$color-pink};
+  --color-green:          #{$color-green};
+  --color-purple:         #{$color-purple};
+
+  --accent-primary: #{$accent-primary};
+  --accent-secondary: #{$accent-secondary};
+  --accent-success: #{$accent-success};
+  --accent-highlight: #{$accent-highlight};
+}
+
+// typography
+$font-regular: 'cabinregular';
+$font-bold: 'cabinsemibold';
+$font-awesome: 'FontAwesome';
+// weights
+$weight-regular: 400;
+$weight-medium: 500;
+$semi-bold: 600;
+$weight-bold: 700;
+
+$space-1: 0.25rem;
+$space-2: 0.5rem;
+$space-3: 1rem;
+$space-4: 1.5rem;
+$space-5: 2rem;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+/// @see {mixin} respond-to
+$breakpoints: (
+  'b-850': (max-width: 850px),
+);

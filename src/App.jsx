@@ -1,75 +1,31 @@
-import { useState } from "react";
-import "./App.css";
+// src/App.jsx
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0);
-  const [isOpen, setIsOpen] = useState(false);
+import Header from "./components/Header/Header.jsx";
+import GalaxyBackground from "./components/GalaxyBackground/GalaxyBackground.jsx";
+import Hero from "./components/Hero/Hero.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
+import Home from "./pages/Home/Home.jsx";
+import Work from "./pages/Work/Work.jsx";
+// import LEDArt from "./pages/LEDArt/LEDArt.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+
+export default function App() {
   return (
-    <div className="app">
-      <h1>Hello World</h1>
-
-      {/* Counter */}
-      <div className="card">
-        <button onClick={() => setCount(count + 1)}>
-          count is {count}
-        </button>
-      </div>
-
-      {/* Modal Toggle */}
-      <button className="open-modal" onClick={() => setIsOpen(true)}>
-        Open Modal
-      </button>
-
-      {isOpen && (
-        <div className="modal-overlay" onClick={() => setIsOpen(false)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            <h2>Hello!</h2>
-            <p>This is a modal component using React state.</p>
-            <button onClick={() => setIsOpen(false)}>Close</button>
-          </div>
-        </div>
-      )}
+    <div className="app has-galaxy">
+      <GalaxyBackground />
+      <Header />
+      <Hero />
+      <main className="site-main">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/work" element={<Work />} />
+          {/* <Route path="/led-art" element={<LEDArt />} /> */}
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
-
-export default App;
-
-
-// this code was included initially
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-// 
-// function App() {
-  // const [count, setCount] = useState(0)
-// 
-  // return (
-  //   <>
-  //     <div>
-  //       <a href="https://vite.dev" target="_blank">
-  //         <img src={viteLogo} className="logo" alt="Vite logo" />
-  //       </a>
-  //       <a href="https://react.dev" target="_blank">
-  //         <img src={reactLogo} className="logo react" alt="React logo" />
-  //       </a>
-  //     </div>
-  //     <h1>Vite + React</h1>
-  //     <div className="card">
-  //       <button onClick={() => setCount((count) => count + 1)}>
-  //         count is {count}
-  //       </button>
-  //       <p>
-  //         Edit <code>src/App.jsx</code> and save to test HMR
-  //       </p>
-  //     </div>
-  //     <p className="read-the-docs">
-  //       Click on the Vite and React logos to learn more
-  //     </p>
-  //   </>
-  // )
-// }
-// 
-// export default App
