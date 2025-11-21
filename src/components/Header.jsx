@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-export default function SiteHeader() {
+export default function Header() {
   const [showBar, setShowBar] = useState(false);
 
   // show nav after ~10px scroll
