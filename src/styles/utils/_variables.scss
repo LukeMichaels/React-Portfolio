@@ -109,5 +109,8 @@ $space-5: 2rem;
 /// @prop {Map} values - Values are actual breakpoints expressed in pixels
 /// @see {mixin} respond-to
 $breakpoints: (
+  'b-900': (max-width: 900px),
+  'b-890': (max-width: 890px),
   'b-850': (max-width: 850px),
+  'b-700': (max-width: 700px),
 );

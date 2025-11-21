@@ -14,14 +14,14 @@ html {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
+  // overflow-x: hidden;
+  // overflow-y: auto;
   background: $color-bg;
   color: $color-text;
   font-family: $font-regular;
   font-size: 16px;
   line-height: 1.55;
-  min-height: 100vh;
+  //min-height: 100vh;
 }
 
 a {
@@ -37,15 +37,13 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 0.5em;
-  color: $color-text-strong;
+  color: $pink-2;
   font-family: $font-bold;
   line-height: 1.2;
 }
 
-p {
-  max-width: 70ch;
-  margin: 0 0 1em;
+strong {
+  font-weight: $semi-bold;
 }
 
 input,

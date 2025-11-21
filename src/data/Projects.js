@@ -309,7 +309,7 @@ export const projects = [
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
     summary:
-      "WordPress-based site build for LaMarzocco Home, supporting product storytelling and coffee programs.",
+      "",
     thumbnail: "/images/lamarzocco/Home.webp",
     thumbnailAlt: "LaMarzocco Home website design thumbnail",
     images: [

@@ -7,26 +7,31 @@
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  //height: 220px;
+  height: 218px;
   overflow: hidden;
   @include respond-to("b-900") {
     height: 210px;
   }
+  @include respond-to('b-890') {
+    background-image: url("/assets/images/header.webp");
+    background-size: cover;
+    background-position: center;
+  }
   @include respond-to("b-700") {
-    height: 130px;
+    height: 120px;
   }
 
-  .hero-bg {
+  .parallax-img {
     position: absolute;
-    inset: 0;
-    display: block;
-    background-image: url("/images/header.webp");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-    background-attachment: fixed;
-    @include respond-to("b-890") {
-      background-attachment: scroll;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+    will-change: transform;
+    pointer-events: none;
+    @include respond-to('b-890') {
+      display: none;
     }
   }
 

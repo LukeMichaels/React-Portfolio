@@ -1,0 +1,127 @@
+// src/styles/components/_project-modal.scss
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-dialog {
+  background: $white;
+  color: $pink;
+  max-width: 1080px;
+  width: min(90vw, 1080px);
+  max-height: 90vh;
+  overflow: auto;
+  padding: 1.5rem;
+
+  .modal-header {
+    .escape-message {}
+    .modal-nav {
+      .modal-nav-button {}
+      .modal-close {}
+    } // .modal-nav
+  } // .modal-header
+
+  .project-modal-body {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    @include respond-to('b-700') {
+      flex-wrap: wrap;
+      gap: 0;
+    }
+  }
+
+  .project-modal-images {
+    @include respond-to('b-700') {
+      order: 2;
+      width: 100%;
+    }
+
+    .project-modal-image {
+      margin-bottom: 1rem;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+    } // .project-modal-image
+
+  } // .project-modal-images
+  
+  .project-modal-information {
+    max-width: 500px;
+    @include respond-to('b-700') {
+      order: 1;
+      width: 100%;
+      margin: 40px 0;
+    }
+
+    .project-modal-title {
+      margin: 0 0 10px 0;
+      color: $pink;
+    }
+  
+    p {
+      width: 100%;
+      margin: 0 0 10px 0;
+      color: $teal;
+      font-size: 1rem;
+      line-height: 1.5;
+      // &:last-of-type {
+      //   margin-bottom: 0;
+      // }
+    }
+    
+    strong {color: $purple;}
+  
+    .project-modal-link {
+      a {
+        color: $pink;
+        text-decoration: underline;
+        &:hover {
+          color: $purple;
+        }
+        &:active, &:focus {
+          border: 2px solid $purple;
+        }
+      }
+    } // .project-modal-link
+  
+    .project-modal-meta {
+      span {}
+    } // .project-modal-meta
+  
+    .project-modal-role {
+      
+    }
+  
+    .project-modal-tools {
+
+    }
+  
+    .project-modal-summary {}
+
+    .project-modal-highlights {
+      color: $teal;
+      h3 {
+        color: $purple;
+      }
+      ul {}
+      li {}
+    } // .project-modal-highlights
+
+  } // .project-modal-information
+
+} // .modal-dialog
+

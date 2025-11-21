@@ -15,23 +15,16 @@ export default function ProjectCard({ project, onClick }) {
           />
         </div>
       )}
-
-      <div className="project-card-header">
-        <h3>{project.title}</h3>
-        <span className="project-badge">{project.category}</span>
-      </div>
-
-      <p className="project-summary">{project.summary}</p>
-
-      <p className="project-meta">
-        <span>{project.role}</span>
-        {project.year && (
-          <>
-            <span>·</span>
-            <span>{project.year}</span>
-          </>
-        )}
-      </p>
+      <div class="project-card-body">
+        <div className="project-card-header">
+          <h3>{project.title}</h3>
+          <span className="project-badge">{project.category}</span>
+        </div>
+        <p className="project-summary">{project.summary}</p>
+        <p className="project-meta">
+          <span>{project.role}</span>
+        </p>
+      </div>{/* project-card-body */}
     </button>
   );
 }
