@@ -1,4 +1,4 @@
-// src/components/GalaxyBackground/GalaxyBackground.jsx
+// src/components/GalaxyBackground.jsx
 import { useEffect, useRef } from "react";
 
 export default function GalaxyBackground() {

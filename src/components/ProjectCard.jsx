@@ -1,4 +1,4 @@
-// src/components/ProjectCard/ProjectCard.jsx
+// src/components/ProjectCard.jsx
 export default function ProjectCard({ project, onClick }) {
   return (
     <button

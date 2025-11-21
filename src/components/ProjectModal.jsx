@@ -1,4 +1,4 @@
-// src/components/ProjectModal/ProjectModal.jsx
+// src/components/ProjectModal.jsx
 import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -1,4 +1,4 @@
-// src/components/SiteFooter/SiteFooter.jsx
+// src/components/SiteFooter.jsx
 export default function SiteFooter() {
   return (
     <footer className="site-footer" aria-label="Primary site footer">

@@ -1,4 +1,4 @@
-// src/pages/Contact/Contact.jsx
+// src/pages/Contact.jsx
 export default function Contact() {
   return (
     <section className="page page-led-art">

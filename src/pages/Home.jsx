@@ -1,4 +1,4 @@
-// src/pages/Home/Home.jsx
+// src/pages/Home.jsx
 export default function Home() {
   return (
     <section className="page page-home">

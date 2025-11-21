@@ -1,4 +1,4 @@
-// src/pages/Work/Work.jsx
+// src/pages/Work.jsx
 import { useState } from "react";
 import { projects, PROJECT_CATEGORIES } from "../data/Projects.js";
 import ProjectCard from "../components/ProjectCard.jsx";

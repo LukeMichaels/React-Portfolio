@@ -1,4 +1,4 @@
-// src/components/Hero/Hero.jsx
+// src/components/Hero.jsx
 import { useEffect, useRef } from "react";
 
 export default function Hero() {

@@ -1,14 +1,14 @@
-// src/components/SiteHeader/SiteHeader.jsx
+// src/components/Header.jsx
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export default function SiteHeader() {
   const [showBar, setShowBar] = useState(false);
 
+  // show nav after ~10px scroll
   useEffect(() => {
     function handleScroll() {
-      // show nav after ~20px scroll
-      setShowBar(window.scrollY > 20);
+      setShowBar(window.scrollY > 10);
     }
     handleScroll();
     window.addEventListener("scroll", handleScroll);

@@ -1,4 +1,4 @@
-// src/pages/LEDArt/LEDArt.jsx
+// src/pages/LEDArt.jsx
 export default function LEDArt() {
   return (
     <section className="page page-led-art">
