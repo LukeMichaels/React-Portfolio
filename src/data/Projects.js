@@ -1,5 +1,4 @@
 // src/data/Projects.js
-
 export const PROJECT_CATEGORIES = [
   "Web Development",
   "Brand/Client",

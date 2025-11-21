@@ -1,5 +1,12 @@
 // src/components/ProjectModal/ProjectModal.jsx
 import { useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faArrowLeft,
+  faArrowRight,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
+
 
 export default function ProjectModal({
   project,
@@ -110,8 +117,10 @@ export default function ProjectModal({
               aria-label="View previous project"
               disabled={!hasProjectList}
             >
-              ← Prev
+              <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
+              <span className="modal-nav-text">Prev</span>
             </button>
+          
             <button
               type="button"
               className="modal-nav-button"
@@ -119,15 +128,17 @@ export default function ProjectModal({
               aria-label="View next project"
               disabled={!hasProjectList}
             >
-              Next →
+              <span className="modal-nav-text">Next</span>
+              <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
             </button>
+          
             <button
               className="modal-close"
               type="button"
               onClick={onClose}
               aria-label="Close project details"
             >
-              ×
+              <FontAwesomeIcon icon={faXmark} aria-hidden="true" />
             </button>
           </div>{/* modal-nav */}
         </header>
@@ -142,7 +153,7 @@ export default function ProjectModal({
               ))}
             </div>
           )}
-          <div class="project-modal-information">
+          <div className="project-modal-information">
             <h2 className="project-modal-title">{project.title}</h2>
             {project.link && (
               <p className="project-modal-link">

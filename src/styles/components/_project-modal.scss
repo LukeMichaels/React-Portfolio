@@ -22,10 +22,37 @@
   padding: 1.5rem;
 
   .modal-header {
+    margin-bottom: 10px;
+
     .escape-message {}
+
     .modal-nav {
-      .modal-nav-button {}
-      .modal-close {}
+      display: flex;
+      align-items: center;
+
+      .modal-nav-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.6rem 0.75rem 0.6rem;
+        margin-right: 5px;
+        span {
+          padding-top: 2px;
+        }
+      }
+
+      .modal-close {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        //padding: 0.15rem 0.75rem 0.15rem;
+        font-size: 1.15rem;
+        padding: 0.7rem 0.75rem 0.65rem;
+        span {
+          padding-top: 2px;
+        }
+      }
+
     } // .modal-nav
   } // .modal-header
 

@@ -39,7 +39,8 @@ a {
 h1, h2, h3, h4, h5, h6 {
   color: $pink-2;
   font-family: $font-bold;
-  line-height: 1.2;
+  font-weight: $weight-bold;
+  line-height: 1;
 }
 
 strong {
@@ -51,9 +52,9 @@ textarea,
 select,
 button {
   color: $color-text;
-  border: 1px solid $color-border-subtle;
-  padding: 0.6rem 0.75rem;
-  background: $color-bg-elevated;
+  border: 1px solid $pink-2;
+  padding: 0.6rem 0.75rem 0.5rem;
+  background: $white;
   font-family: inherit;
   font-size: 1rem;
   &:focus-visible {
@@ -63,15 +64,15 @@ button {
 }
 
 button {
-  background: $accent-primary;
-  color: $color-text-strong;
+  color: $white;
+  background: $purple;
   border: none;
   cursor: pointer;
   transition: background-color 0.2s ease;
 
   &:hover,
   &:focus-visible {
-    background: $accent-secondary;
+    background: $pink-2;
   }
 
   &:disabled {
@@ -90,12 +91,19 @@ button {
 
 .page-header {
   margin-bottom: 1.5rem;
-}
 
-.page-header .lead {
-  color: #9ca3af;
-  max-width: 40rem;
-}
+  h1 {
+    margin-bottom: 10px;
+    color: $pink-2;
+  }
+
+  .lead {
+    color: $purple-2;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+} // .page-header
 
 .eyebrow {
   text-transform: uppercase;
@@ -103,9 +111,4 @@ button {
   font-size: 0.75rem;
   color: #9ca3af;
   margin-bottom: 0.5rem;
-}
-
-.lead {
-  font-size: 1rem;
-  line-height: 1.6;
 }

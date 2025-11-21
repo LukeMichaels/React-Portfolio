@@ -1,8 +1,26 @@
 // src/pages/Work/Work.jsx
 import { useState } from "react";
-import { projects, PROJECT_CATEGORIES } from "../../data/Projects.js";
-import ProjectCard from "../../components/ProjectCard/ProjectCard.jsx";
-import ProjectModal from "../../components/ProjectModal/ProjectModal.jsx";
+import { projects, PROJECT_CATEGORIES } from "../data/Projects.js";
+import ProjectCard from "../components/ProjectCard.jsx";
+import ProjectModal from "../components/ProjectModal.jsx";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faList,
+  faLaptopCode,
+  faBullhorn,
+  faPalette,
+  faMobileScreen,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
+
+// map your filter names → icons  
+const ICONS = {
+  All: faList,
+  "Web Development": faLaptopCode,
+  "Brand/Client": faBullhorn,
+  "Graphic Design": faPalette,
+};
+
 
 const FILTER_OPTIONS = ["All", ...PROJECT_CATEGORIES];
 
@@ -26,14 +44,17 @@ export default function Work() {
 
       <div className="work-filters" aria-label="Filter projects by category">
         {FILTER_OPTIONS.map((filter) => (
-          <button
-            key={filter}
-            type="button"
-            className={filter === activeFilter ? "chip chip-active" : "chip"}
-            onClick={() => setActiveFilter(filter)}
-          >
-            {filter}
-          </button>
+        <button
+          key={filter}
+          type="button"
+          className={filter === activeFilter ? "chip chip-active" : "chip"}
+          onClick={() => setActiveFilter(filter)}
+        >
+          {ICONS[filter] && (
+            <FontAwesomeIcon icon={ICONS[filter]} className="chip-icon" />
+          )}
+          <span>{filter}</span>
+        </button>
         ))}
       </div>
 

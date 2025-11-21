@@ -5,7 +5,7 @@
 .page-work {
   max-width: 72rem;
   margin: 0 auto;
-  padding: 3rem 1.25rem 4rem;
+  padding: 40px 20px;
 }
 
 .work-filters {
@@ -13,6 +13,31 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 2rem;
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    span {
+      padding-top: 2px;
+    }
+  }
+  
+  .chip-icon {
+    font-size: 0.9rem;
+  }
+
+  .chip-active {
+    background-color: $pink-2;
+    pointer-events: none;
+
+    .chip-icon {
+      transform: scale(1.2);
+      transition: transform 0.2s ease;
+    }
+
+  } // .chip-active
+
 
   .chip {
   //   display: flex;
