@@ -9,4 +9,31 @@ footer {
   margin: 0 auto;
   height: 220px;
   overflow: hidden;
-}
+
+  .footer-parallax-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+    pointer-events: none;
+    // disable on smaller screens
+    // @include respond-to("b-890") {
+    //   transform: none;
+    // }
+  }
+
+} // footer
+
+.copyright {
+  width: 100%;
+  max-width: 1080px;
+  padding: 10px 0;
+  margin: 0 auto;
+  text-align: center;
+  color: $white;
+  background-color: $teal;
+
+  .mark {}
+
+} // .copyright
