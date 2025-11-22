@@ -38,6 +38,8 @@ header {
     margin: 0 auto;
 
     .site-logo {
+      display: flex;
+      align-items: center;
       margin: auto auto auto 20px;
       text-decoration: none;
 
@@ -64,9 +66,26 @@ header {
       .site-logo-mark {
         display: none;
 
-        @include respond-to('b-400') {
+        @include respond-to('b-430') {
           display: inline-block;
+          color: $white;
+          text-transform: uppercase;
+          font-size: 1rem;
+          letter-spacing: 0.08em;
         }
+        
+        @include respond-to(b-400) {
+          font-size: 0.8rem;
+        }
+
+        @include respond-to(b-325) {
+          font-size: 0.75rem;
+        }
+
+        @include respond-to(b-305) {
+          font-size: 0.6rem;
+        }
+
       }
 
       .site-logo-text {
@@ -76,7 +95,7 @@ header {
         font-size: 1rem;
         letter-spacing: 0.08em;
 
-        @include respond-to('b-400') {
+        @include respond-to('b-430') {
           display: none;
         }
       }
@@ -101,12 +120,14 @@ header {
           font-size: 1rem;
           text-decoration: none;
 
-          @include respond-to(b-375) {
+          @include respond-to(b-400) {
             font-size: 0.8rem;
           }
+
           @include respond-to(b-325) {
             font-size: 0.75rem;
           }
+
           @include respond-to(b-305) {
             font-size: 0.6rem;
           }

@@ -5,23 +5,19 @@
 $black: #121212;
 $blue: #123A7A;
 $green: #BFDA71;
+$pastel-blue: #cfe8ff;
 $pink: #C94768;
 $pink-2: #9C1A52;
 $purple: #571751;
 $purple-2: #5A1F74;
 $teal: #00A2A6;
 $white: #FFFFFF;
-$pastel-blue: #cfe8ff;
 
-// typography
 $font-regular: 'cabinregular';
 $font-bold: 'cabinsemibold';
-$font-awesome: 'FontAwesome';
-// weights
+
 $weight-regular: 400;
-$weight-medium: 500;
 $semi-bold: 600;
-$weight-bold: 700;
 
 $space-1: 0.25rem;
 $space-2: 0.5rem;
@@ -40,5 +36,9 @@ $breakpoints: (
   'b-780': (max-width: 780px),
   'b-700': (max-width: 700px),
   'b-670': (max-width: 670px),
+  'b-430': (max-width: 430px),
   'b-400': (max-width: 400px),
+  'b-375': (max-width: 375px),
+  'b-325': (max-width: 325px),
+  'b-305': (max-width: 305px),
 );
