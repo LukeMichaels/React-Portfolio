@@ -52,11 +52,15 @@ export default function Contact() {
     }
 
     const subject = formData.subject.trim() || "Portfolio contact from lukemichaels.com";
-    const body = `Hi Luke,
 
-    ${formData.message.trim()}
-    — ${formData.name}
-    ${formData.email}`;
+    const body = [
+      "Hi Luke,",
+      "",
+      formData.message.trim(),
+      "",
+      `— ${formData.name}`,
+      formData.email
+    ].join("\n");
 
     const mailto = `mailto:lmichaels@gmail.com?subject=${encodeURIComponent(
       subject

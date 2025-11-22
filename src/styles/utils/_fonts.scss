@@ -4,22 +4,19 @@
 /* License Type: GPL */
 /*--------------------------------------------------------*/
 @font-face {
-  font-family: 'cabinregular';
-  src: url('../fonts/cabin-regular-webfont.eot');
-  src: url('../fonts/cabin-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cabin-regular-webfont.woff') format('woff'),
-       url('../fonts/cabin-regular-webfont.ttf') format('truetype'),
-       url('../fonts/cabin-regular-webfont.svg#cabinregular') format('svg');
+  font-family: "cabinregular";
+  src: url("/fonts/cabin-regular-webfont.woff") format("woff"),
+       url("/fonts/cabin-regular-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
-  font-family: 'cabinsemibold';
-  src: url('../fonts/cabin-semibold-webfont.eot');
-  src: url('../fonts/cabin-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/cabin-semibold-webfont.woff') format('woff'),
-       url('../fonts/cabin-semibold-webfont.ttf') format('truetype'),
-       url('../fonts/cabin-semibold-webfont.svg#cabinsemibold') format('svg');
+  font-family: "cabinsemibold";
+  src: url("/fonts/cabin-semibold-webfont.woff") format("woff"),
+       url("/fonts/cabin-semibold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
