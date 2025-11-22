@@ -55,20 +55,20 @@
           width: 100%;
           padding: 6px 14px 4px;
           color: $white;
-          background-color: $purple;
-          border: 2px solid $purple;
+          background-color: $purple-2;
+          border: 2px solid $purple-2;
           font-size: 0.9rem;
           text-transform: uppercase;
           letter-spacing: 0.04em;
           text-decoration: none;
 
           &:hover {
-            background-color: $pink;
-            border-color: $pink;
+            background-color: $pink-2;
+            border-color: $pink-2;
           }
 
           &:focus {
-            outline: 2px solid $purple;
+            outline: 2px solid $purple-2;
             outline-offset: 2px;
           }
 
@@ -120,7 +120,7 @@
         margin: 0;
         font-size: 1em;
         line-height: 1.2em;
-        color: $pink;
+        color: $pink-2;
       }
 
       .about-detail {

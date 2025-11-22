@@ -59,7 +59,7 @@
           text-decoration: none;
 
           &:hover {
-            color: $pink;
+            color: $pink-2;
             text-decoration: underline;
           }
 
@@ -91,8 +91,8 @@
         text-decoration: none;
 
         &:hover {
-          background-color: $pink;
-          border-color: $pink;
+          background-color: $pink-2;
+          border-color: $pink-2;
         }
 
         &:focus {
@@ -144,9 +144,9 @@
       textarea {
         padding: 10px 12px;
         border-radius: 0;
-        border: 2px solid $pink;
+        border: 2px solid $pink-2;
         background-color: $white;
-        color: $pink;
+        color: $pink-2;
         font-size: 1rem;
         font-family: inherit;
         box-sizing: border-box;
@@ -167,7 +167,7 @@
     .contact-error {
       margin-top: 4px;
       font-size: 0.8rem;
-      color: $pink;
+      color: $pink-2;
     }
 
     .contact-actions {
@@ -191,7 +191,7 @@
       color: $white;
 
       &:hover {
-        background-color: $pink;
+        background-color: $pink-2;
       }
 
       &:focus-visible {

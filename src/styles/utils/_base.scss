@@ -30,7 +30,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $pink;
+  color: $pink-2;
   font-family: $font-bold;
   font-weight: $weight-bold;
   line-height: 1;
@@ -48,7 +48,7 @@ select {
   font-size: 1rem;
 
   &:focus-visible {
-    outline: 2px solid $purple;
+    outline: 2px solid $purple-2;
     outline-offset: 2px;
   }
 }
@@ -59,12 +59,12 @@ button {
   transition: background-color 0.2s ease;
 
   &:focus {
-    outline: 2px solid $purple;
+    outline: 2px solid $purple-2;
     outline-offset: 2px;
   }
 
   &:active {
-    outline: 2px solid $purple;
+    outline: 2px solid $purple-2;
     outline-offset: 2px;
   }
 

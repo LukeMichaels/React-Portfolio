@@ -37,8 +37,8 @@
       gap: 8px;
       padding: 6px 14px;
       color: $white;
-      background-color: $purple;
-      border: 2px solid $purple;
+      background-color: $purple-2;
+      border: 2px solid $purple-2;
       font-size: 0.9rem;
       text-transform: uppercase;
       letter-spacing: 0.04em;
@@ -50,7 +50,7 @@
       }
 
       &:focus {
-        outline: 2px solid $purple;
+        outline: 2px solid $purple-2;
         outline-offset: 2px;
       }
 
