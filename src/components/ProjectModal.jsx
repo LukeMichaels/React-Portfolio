@@ -157,17 +157,6 @@ export default function ProjectModal({
                 </a>
               </p>
             )}
-            {/*
-            <p className="project-modal-meta">
-              <span>{project.category}</span>
-              {project.year && (
-                <>
-                  {" "}
-                  · <span>{project.year}</span>
-                </>
-              )}
-            </p>
-            */}
             <p className="project-modal-role">
               <strong>Role: </strong>
               {project.role}
