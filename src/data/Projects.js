@@ -140,7 +140,7 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used motion to give the site more celebratory feel.",
+      "Used motion to give the site a more celebratory feel.",
       "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
       "Ensured the layout adapts cleanly from mobile to large screens.",
     ],
