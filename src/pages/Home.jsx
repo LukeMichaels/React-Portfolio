@@ -89,7 +89,7 @@ export default function Home() {
 
             <h3 className="about-heading">Front-End Development</h3>
             <div className="about-detail">
-              HTML5, modern CSS, Sass, JavaScript (ES6+), accessibility (WCAG), performance optimization, responsive UI systems.
+              HTML5, CSS/Sass, JavaScript (ES6+), accessibility (WCAG), performance optimization, responsive UI systems.
             </div>
 
             <h3 className="about-heading">WordPress &amp; CMS Development</h3>
