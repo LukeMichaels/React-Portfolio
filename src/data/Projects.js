@@ -122,6 +122,31 @@ export const projects = [
   },
 
   {
+    id: "mfa-gala-2024",
+    title: "Mercy For Animals Gala",
+    category: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
+    link: "https://mfagala.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024.webp",
+    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_Gala_2024.webp",
+        alt: "Mercy For Animals Gala homepage",
+      },
+    ],
+    highlights: [
+      "Used motion to make the site more celebratory.",
+      "Ensure the site was accessible and easy to navigate, even with a very large celebrity host section (the section shown in the screenshot has been cropped).",
+      "Ensured the layout adapts cleanly from mobile to large screens.",
+    ],
+  },
+
+  {
     id: "ofri",
     title: "Oregon Forest Resources Institute",
     category: "Web Development",
