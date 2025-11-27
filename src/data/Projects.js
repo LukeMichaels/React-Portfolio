@@ -1,7 +1,7 @@
 // src/data/Projects.js
 export const PROJECT_CATEGORIES = [
   "Web Development",
-  "Brand/Client",
+  //"Brand/Client",
   "Graphic Design",
 ];
 
@@ -248,6 +248,69 @@ export const projects = [
     ],
   },
 
+  {
+    id: "lamarzocco-home",
+    title: "LaMarzocco Home Website",
+    category: "Web Development",
+    role: "Website development",
+    tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
+    year: "",
+    summary:
+      "",
+    thumbnail: "/images/lamarzocco/LaMarzocco_Home_508.webp",
+    thumbnail2x: "/images/lamarzocco/LaMarzocco_Home_1016.webp",
+    thumbnailAlt: "LaMarzocco Home website design thumbnail",
+    images: [
+      {
+        src: "/images/lamarzocco/LaMarzocco_Home_630.webp",
+        src2x: "/images/lamarzocco/LaMarzocco_Home_1260.webp",
+        alt: "LaMarzocco Home website homepage",
+      },
+      {
+        src: "/images/lamarzocco/LaMarzocco_Office-Coffee_630.webp",
+        src2x: "/images/lamarzocco/LaMarzocco_Office-Coffee_1260.webp",
+        alt: "LaMarzocco office coffee page",
+      },
+    ],
+    highlights: [
+      "Implemented the front-end for key pages including the home and office coffee sections.",
+      "Balanced premium brand aesthetics with performance and maintainability.",
+      "Collaborated with the broader team on structure and layout decisions.",
+    ],
+  },
+
+  {
+    id: "supercrown-website",
+    title: "Supercrown Website",
+    category: "Web Development",
+    role: "Website development",
+    tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
+    year: "",
+    summary:
+      "WordPress and WooCommerce build for Supercrown, blending editorial content with ecommerce functionality.",
+    thumbnail: "/images/supercrown/Supercrown_Home_508.webp",
+    thumbnail2x: "/images/supercrown/Supercrown_Home_1016.webp",
+    thumbnailAlt: "Supercrown website design thumbnail",
+    images: [
+      {
+        src: "/images/supercrown/Supercrown_Home_630.webp",
+        src2x: "/images/supercrown/Supercrown_Home_1260.webp",
+        alt: "Supercrown homepage",
+      },
+      {
+        src: "/images/supercrown/Supercrown_Journal_Coffee_Entry_630.webp",
+        src2x: "/images/supercrown/Supercrown_Journal_Coffee_Entry_1260.webp",
+        alt: "Supercrown journal coffee entry page",
+      },
+    ],
+    highlights: [
+      "Implemented storefront and journal-style content in a cohesive experience.",
+      "Integrated WooCommerce while preserving a strong editorial feel.",
+      "Built flexible templates for product stories and journal entries.",
+    ],
+  },
+
+
   // {
   //   id: "grains-of-discovery",
   //   title: "Grains of Discovery",
@@ -275,117 +338,9 @@ export const projects = [
   // },
 
   // ===================== BRAND / CLIENT =====================
-  {
-    id: "rogue-design-composition",
-    title: "Rogue Ales Design Composition",
-    category: "Brand/Client",
-    role: "Website design comps",
-    tools: ["Adobe Photoshop", "Adobe Illustrator"],
-    year: "",
-    summary:
-      "Proposed redesign concepts for Rogue Ales & Spirits, centered around their mission statement and brand story.",
-    thumbnail: "/images/other/Rogue_Landing_Page_508.webp",
-    thumbnail2x: "/images/other/Rogue_Landing_Page_800.webp",
-    thumbnailAlt: "Rogue website design composition thumbnail",
-    images: [
-      {
-        src: "/images/other/Rogue_Landing_Page_630.webp",
-        src2x: "/images/other/Rogue_Landing_Page_800.webp",
-        alt: "Rogue homepage design composition",
-      },
-      {
-        src: "/images/other/Rogue_Beer_Page_630.webp",
-        src2x: "/images/other/Rogue_Beer_Page_800.webp",
-        alt: "Rogue beer page design composition",
-      },
-    ],
-    highlights: [
-      "Explored layouts that place the Rogue mission front and center on the homepage.",
-      "Reflected on how to refine copy load and hierarchy in future iterations.",
-    ],
-  },
+  
 
-  {
-    id: "bobs-marquees",
-    title: "Bob’s Red Mill Marquees",
-    category: "Brand/Client",
-    role: "Graphic design",
-    tools: ["Adobe Photoshop", "Adobe Illustrator"],
-    year: "",
-    summary:
-      "A series of homepage marquee designs for Bob’s Red Mill, featuring multiple product campaigns.",
-    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_508.webp",
-    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
-    thumbnailAlt: "Grains of Discovery marquee design thumbnail",
-    images: [
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
-        alt: "Grains of Discovery website marquee design",
-      },
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_800.webp",
-        alt: "Gluten Free Pie Crust Mix website marquee design",
-      },
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_800.webp",
-        alt: "World's Best Oatmeal website marquee design",
-      },
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_800.webp",
-        alt: "Coconut Flour website marquee design",
-      },
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_800.webp",
-        alt: "Gluten Free Muesli website marquee design",
-      },
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_800.webp",
-        alt: "Holiday website marquee design",
-      },
-    ],
-    highlights: [
-      "Created a collection of marquees for multiple campaigns, from grains to seasonal promotions.",
-      "Worked within existing brand illustration and typography while pushing layout variety.",
-      "Delivered production-ready artwork for the site’s homepage hero areas.",
-    ],
-  },
 
-  {
-    id: "lamarzocco-home",
-    title: "LaMarzocco Home Website",
-    category: "Brand/Client",
-    role: "Website development",
-    tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
-    summary:
-      "",
-    thumbnail: "/images/lamarzocco/LaMarzocco_Home_508.webp",
-    thumbnail2x: "/images/lamarzocco/LaMarzocco_Home_1016.webp",
-    thumbnailAlt: "LaMarzocco Home website design thumbnail",
-    images: [
-      {
-        src: "/images/lamarzocco/LaMarzocco_Home_630.webp",
-        src2x: "/images/lamarzocco/LaMarzocco_Home_1260.webp",
-        alt: "LaMarzocco Home website homepage",
-      },
-      {
-        src: "/images/lamarzocco/LaMarzocco_Office-Coffee_630.webp",
-        src2x: "/images/lamarzocco/LaMarzocco_Office-Coffee_1260.webp",
-        alt: "LaMarzocco office coffee page",
-      },
-    ],
-    highlights: [
-      "Implemented the front-end for key pages including the home and office coffee sections.",
-      "Balanced premium brand aesthetics with performance and maintainability.",
-      "Collaborated with the broader team on structure and layout decisions.",
-    ],
-  },
 
   // {
   //   id: "progressive-doors-windows",
@@ -418,38 +373,37 @@ export const projects = [
   //   ],
   // },
 
+  // ===================== GRAPHIC DESIGN / POSTERS / ALBUMS =====================
   {
-    id: "supercrown-website",
-    title: "Supercrown Website",
-    category: "Brand/Client",
-    role: "Website development",
-    tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
+    id: "rogue-design-composition",
+    title: "Rogue Ales Design Composition",
+    category: "Graphic Design",
+    role: "Website design comps",
+    tools: ["Adobe Photoshop", "Adobe Illustrator"],
     year: "",
     summary:
-      "WordPress and WooCommerce build for Supercrown, blending editorial content with ecommerce functionality.",
-    thumbnail: "/images/supercrown/Supercrown_Home_508.webp",
-    thumbnail2x: "/images/supercrown/Supercrown_Home_1016.webp",
-    thumbnailAlt: "Supercrown website design thumbnail",
+      "Proposed redesign concepts for Rogue Ales & Spirits, centered around their mission statement and brand story.",
+    thumbnail: "/images/other/Rogue_Landing_Page_508.webp",
+    thumbnail2x: "/images/other/Rogue_Landing_Page_800.webp",
+    thumbnailAlt: "Rogue website design composition thumbnail",
     images: [
       {
-        src: "/images/supercrown/Supercrown_Home_630.webp",
-        src2x: "/images/supercrown/Supercrown_Home_1260.webp",
-        alt: "Supercrown homepage",
+        src: "/images/other/Rogue_Landing_Page_630.webp",
+        src2x: "/images/other/Rogue_Landing_Page_800.webp",
+        alt: "Rogue homepage design composition",
       },
       {
-        src: "/images/supercrown/Supercrown_Journal_Coffee_Entry_630.webp",
-        src2x: "/images/supercrown/Supercrown_Journal_Coffee_Entry_1260.webp",
-        alt: "Supercrown journal coffee entry page",
+        src: "/images/other/Rogue_Beer_Page_630.webp",
+        src2x: "/images/other/Rogue_Beer_Page_800.webp",
+        alt: "Rogue beer page design composition",
       },
     ],
     highlights: [
-      "Implemented storefront and journal-style content in a cohesive experience.",
-      "Integrated WooCommerce while preserving a strong editorial feel.",
-      "Built flexible templates for product stories and journal entries.",
+      "Explored layouts that place the Rogue mission front and center on the homepage.",
+      "Reflected on how to refine copy load and hierarchy in future iterations.",
     ],
   },
 
-  // ===================== GRAPHIC DESIGN / POSTERS / ALBUMS =====================
   {
     id: "explosions-in-the-sky",
     title: "Explosions In The Sky at The Granada",
@@ -768,4 +722,56 @@ export const projects = [
       "Created visuals aligned with the band’s sound and identity.",
     ],
   },
+
+  // {
+  //   id: "bobs-marquees",
+  //   title: "Bob’s Red Mill Marquees",
+  //   category: "Graphic Design",
+  //   role: "Graphic design",
+  //   tools: ["Adobe Photoshop", "Adobe Illustrator"],
+  //   year: "",
+  //   summary:
+  //     "A series of homepage marquee designs for Bob’s Red Mill, featuring multiple product campaigns.",
+  //   thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_508.webp",
+  //   thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
+  //   thumbnailAlt: "Grains of Discovery marquee design thumbnail",
+  //   images: [
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
+  //       alt: "Grains of Discovery website marquee design",
+  //     },
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_800.webp",
+  //       alt: "Gluten Free Pie Crust Mix website marquee design",
+  //     },
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_800.webp",
+  //       alt: "World's Best Oatmeal website marquee design",
+  //     },
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_800.webp",
+  //       alt: "Coconut Flour website marquee design",
+  //     },
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_800.webp",
+  //       alt: "Gluten Free Muesli website marquee design",
+  //     },
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_800.webp",
+  //       alt: "Holiday website marquee design",
+  //     },
+  //   ],
+  //   highlights: [
+  //     "Created a collection of marquees for multiple campaigns, from grains to seasonal promotions.",
+  //     "Worked within existing brand illustration and typography while pushing layout variety.",
+  //     "Delivered production-ready artwork for the site’s homepage hero areas.",
+  //   ],
+  // },
+
 ];
