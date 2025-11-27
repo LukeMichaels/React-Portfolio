@@ -15,7 +15,8 @@ export default function Home() {
         {/* LEFT COLUMN – Portrait + Links */}
         <div className="about-left">
           <img
-            src="/images/ui/2025-about-image.webp"
+            src="/images/ui/Luke_Michaels_Photograph_250.webp"
+            srcSet="/images/ui/Luke_Michaels_Photograph_250.webp 1x, /images/ui/Luke_Michaels_Photograph_700.webp 2x"
             alt="Portrait of Luke Michaels"
           />
           <div className="about-links" aria-label="Contact and profile links">

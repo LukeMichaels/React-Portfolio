@@ -17,11 +17,13 @@ export const projects = [
     summary:
       "Front-end build for the Henrietta Finds a Nest film site, with a responsive layout highlighting the film’s synopsis, trailer, festival selections, and calls-to-action.",
     link: "https://henriettafilm.com/",
-    thumbnail: "/images/mfa/Henrietta_Finds_A_Nest_Thumbnail.webp",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_1016.webp",
     thumbnailAlt: "Henrietta Finds A Nest website design thumbnail",
     images: [
       {
-        src: "/images/mfa/Henrietta_Finds_A_Nest.webp",
+        src: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_1260.webp",
         alt: "Henrietta Finds A Nest website design",
       },
     ],
@@ -42,15 +44,18 @@ export const projects = [
     summary:
       "Front-end build for Mercy For Animals’ People’s Fund site, highlighting its mission of advancing equity in the animal-protection movement.",
     link: "https://mfapeoplesfund.com/",
-    thumbnail: "/images/mfa/Peoples_Fund_Thumbnail.webp",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Peoples_Fund_Homepage_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Peoples_Fund_Homepage_1016.webp",
     thumbnailAlt: "The People's Fund website design thumbnail",
     images: [
       {
-        src: "/images/mfa/Peoples_Fund_Homepage.webp",
+        src: "/images/mfa/Mercy_For_Animals_Peoples_Fund_Homepage_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Peoples_Fund_Homepage_1260.webp",
         alt: "The People's Fund homepage",
       },
       {
-        src: "/images/mfa/Peoples_Fund_About.webp",
+        src: "/images/mfa/Mercy_For_Animals_Peoples_Fund_About_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Peoples_Fund_About_950.webp",
         alt: "The People's Fund about page",
       },
     ],
@@ -70,15 +75,18 @@ export const projects = [
     year: "",
     summary:
       "Modular WordPress build for JoyRX, allowing the team to compose pages from reusable content blocks.",
-    thumbnail: "/images/cca/Get-Involved.webp",
+    thumbnail: "/images/cca/CCA_Get_Involved_508.webp",
+    thumbnail2x: "/images/cca/CCA_Get_Involved_1016.webp",
     thumbnailAlt: "JoyRX Get Involved page design thumbnail",
     images: [
       {
-        src: "/images/cca/Get-Involved.webp",
+        src: "/images/cca/CCA_Get_Involved_630.webp",
+        src2x: "/images/cca/CCA_Get_Involved_1260.webp",
         alt: "JoyRX Get Involved page",
       },
       {
-        src: "/images/cca/Programs-MyMusicRX.webp",
+        src: "/images/cca/CCA_Programs_MyMusicRX_630.webp",
+        src2x: "/images/cca/CCA_Programs_MyMusicRX_1260.webp",
         alt: "JoyRX Programs page with MyMusicRX section",
       },
     ],
@@ -98,19 +106,23 @@ export const projects = [
     year: "",
     summary:
       "WordPress site build for Keep Oregon Green, including full development and select design contributions.",
-    thumbnail: "/images/kog/Home-kog.webp",
+    thumbnail: "/images/kog/Keep_Oregon_Green_Home_508.webp",
+    thumbnail2x: "/images/kog/Keep_Oregon_Green_Home_1016.webp",
     thumbnailAlt: "Keep Oregon Green website design thumbnail",
     images: [
       {
-        src: "/images/kog/Home-kog.webp",
+        src: "/images/kog/Keep_Oregon_Green_Home_630.webp",
+        src2x: "/images/kog/Keep_Oregon_Green_Home_1260.webp",
         alt: "Keep Oregon Green homepage",
       },
       {
-        src: "/images/kog/Contribute-kog.webp",
+        src: "/images/kog/Keep_Oregon_Green_Contribute_630.webp",
+        src2x: "/images/kog/Keep_Oregon_Green_Contribute_1260.webp",
         alt: "Keep Oregon Green contribute page",
       },
       {
-        src: "/images/kog/On-The-Job-kog.webp",
+        src: "/images/kog/Keep_Oregon_Green_On_The_Job_630.webp",
+        src2x: "/images/kog/Keep_Oregon_Green_On_The_Job_1260.webp",
         alt: "Keep Oregon Green on the job page",
       },
     ],
@@ -131,11 +143,13 @@ export const projects = [
     summary:
       "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
     link: "https://mfagala.com/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024.webp",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
     thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
     images: [
       {
-        src: "/images/mfa/Mercy_For_Animals_Gala_2024.webp",
+        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
         alt: "Mercy For Animals Gala homepage",
       },
     ],
@@ -155,19 +169,23 @@ export const projects = [
     year: "",
     summary:
       "Front-end development and project coordination on a full-scale redesign of oregonforests.org.",
-    thumbnail: "/images/ofri/OFRI_Homepage.webp",
+    thumbnail: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_508.webp",
+    thumbnail2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1016.webp",
     thumbnailAlt: "OFRI website design thumbnail",
     images: [
       {
-        src: "/images/ofri/OFRI_Homepage.webp",
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1260.webp",
         alt: "OFRI homepage design",
       },
       {
-        src: "/images/ofri/Video_Library_Expanded.webp",
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_1260.webp",
         alt: "OFRI video library page",
       },
       {
-        src: "/images/ofri/TreeGuide.webp",
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_1260.webp",
         alt: "OFRI tree guide page",
       },
     ],
@@ -187,11 +205,13 @@ export const projects = [
     year: "2011–2016",
     summary:
       "First-ever blog for Bob’s Red Mill, built on WordPress with a fully custom, brand-aligned theme.",
-    thumbnail: "/images/bobs_red_mill/bobs-blog.webp",
+    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_508.webp",
+    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
     thumbnailAlt: "Bob's Red Mill blog design thumbnail",
     images: [
       {
-        src: "/images/bobs_red_mill/bobs-blog.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
         alt: "Bob's Red Mill blog design",
       },
     ],
@@ -211,11 +231,13 @@ export const projects = [
     year: "",
     summary:
       "Website design and development work for Bob’s Red Mill, extending the core brand into a cohesive site experience.",
-    thumbnail: "/images/bobs_red_mill/bobs-red-mill.webp",
+    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_508.webp",
+    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800.webp",
     thumbnailAlt: "Bob's Red Mill website design thumbnail",
     images: [
       {
-        src: "/images/bobs_red_mill/bobs-red-mill.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800.webp",
         alt: "Bob's Red Mill website design",
       },
     ],
@@ -226,29 +248,31 @@ export const projects = [
     ],
   },
 
-  {
-    id: "grains-of-discovery",
-    title: "Grains of Discovery",
-    category: "Web Development",
-    role: "Website design & development",
-    tools: ["HTML", "CSS", "JavaScript", "jQuery"],
-    year: "",
-    summary:
-      "Microsite design and build for Bob’s Red Mill’s Grains of Discovery campaign.",
-    thumbnail: "/images/bobs_red_mill/grains-of-discovery.webp",
-    thumbnailAlt: "Grains of Discovery website design thumbnail",
-    images: [
-      {
-        src: "/images/bobs_red_mill/grains-of-discovery.webp",
-        alt: "Grains of Discovery website design",
-      },
-    ],
-    highlights: [
-      "Designed a campaign-specific experience within existing brand constraints.",
-      "Used JavaScript and jQuery to add subtle interactivity.",
-      "Balanced visual richness with performance and simplicity.",
-    ],
-  },
+  // {
+  //   id: "grains-of-discovery",
+  //   title: "Grains of Discovery",
+  //   category: "Web Development",
+  //   role: "Website design & development",
+  //   tools: ["HTML", "CSS", "JavaScript", "jQuery"],
+  //   year: "",
+  //   summary:
+  //     "Microsite design and build for Bob’s Red Mill’s Grains of Discovery campaign.",
+  //   thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Homepage_508.webp",
+  //   thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Homepage_800.webp",
+  //   thumbnailAlt: "Grains of Discovery website design thumbnail",
+  //   images: [
+  //     {
+  //       src: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Homepage_630.webp",
+  //       src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Homepage_800.webp",
+  //       alt: "Grains of Discovery website design",
+  //     },
+  //   ],
+  //   highlights: [
+  //     "Designed a campaign-specific experience within existing brand constraints.",
+  //     "Used JavaScript and jQuery to add subtle interactivity.",
+  //     "Balanced visual richness with performance and simplicity.",
+  //   ],
+  // },
 
   // ===================== BRAND / CLIENT =====================
   {
@@ -260,15 +284,18 @@ export const projects = [
     year: "",
     summary:
       "Proposed redesign concepts for Rogue Ales & Spirits, centered around their mission statement and brand story.",
-    thumbnail: "/images/other/rogue-landing-page.webp",
+    thumbnail: "/images/other/Rogue_Landing_Page_508.webp",
+    thumbnail2x: "/images/other/Rogue_Landing_Page_800.webp",
     thumbnailAlt: "Rogue website design composition thumbnail",
     images: [
       {
-        src: "/images/other/rogue-landing-page.webp",
+        src: "/images/other/Rogue_Landing_Page_630.webp",
+        src2x: "/images/other/Rogue_Landing_Page_800.webp",
         alt: "Rogue homepage design composition",
       },
       {
-        src: "/images/other/rogue-beer-page.webp",
+        src: "/images/other/Rogue_Beer_Page_630.webp",
+        src2x: "/images/other/Rogue_Beer_Page_800.webp",
         alt: "Rogue beer page design composition",
       },
     ],
@@ -287,31 +314,38 @@ export const projects = [
     year: "",
     summary:
       "A series of homepage marquee designs for Bob’s Red Mill, featuring multiple product campaigns.",
-    thumbnail: "/images/bobs_red_mill/grains-of-discovery-marquee.webp",
+    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_508.webp",
+    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
     thumbnailAlt: "Grains of Discovery marquee design thumbnail",
     images: [
       {
-        src: "/images/bobs_red_mill/grains-of-discovery-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Grains_Of_Discovery_Marquee_800.webp",
         alt: "Grains of Discovery website marquee design",
       },
       {
-        src: "/images/bobs_red_mill/pie-crust-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Pie_Crust_Marquee_800.webp",
         alt: "Gluten Free Pie Crust Mix website marquee design",
       },
       {
-        src: "/images/bobs_red_mill/oatmeal-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Oatmeal_Marquee_800.webp",
         alt: "World's Best Oatmeal website marquee design",
       },
       {
-        src: "/images/bobs_red_mill/coconut-flour-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Coconut_Flour_Marquee_800.webp",
         alt: "Coconut Flour website marquee design",
       },
       {
-        src: "/images/bobs_red_mill/gluten-free-muesli-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Gluten_Free_Muesli_Marquee_800.webp",
         alt: "Gluten Free Muesli website marquee design",
       },
       {
-        src: "/images/bobs_red_mill/holiday-marquee.webp",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Holiday_Marquee_800.webp",
         alt: "Holiday website marquee design",
       },
     ],
@@ -331,15 +365,18 @@ export const projects = [
     year: "",
     summary:
       "",
-    thumbnail: "/images/lamarzocco/Home.webp",
+    thumbnail: "/images/lamarzocco/LaMarzocco_Home_508.webp",
+    thumbnail2x: "/images/lamarzocco/LaMarzocco_Home_1016.webp",
     thumbnailAlt: "LaMarzocco Home website design thumbnail",
     images: [
       {
-        src: "/images/lamarzocco/Home.webp",
+        src: "/images/lamarzocco/LaMarzocco_Home_630.webp",
+        src2x: "/images/lamarzocco/LaMarzocco_Home_1260.webp",
         alt: "LaMarzocco Home website homepage",
       },
       {
-        src: "/images/lamarzocco/Office-Coffee.webp",
+        src: "/images/lamarzocco/LaMarzocco_Office-Coffee_630.webp",
+        src2x: "/images/lamarzocco/LaMarzocco_Office-Coffee_1260.webp",
         alt: "LaMarzocco office coffee page",
       },
     ],
@@ -350,33 +387,36 @@ export const projects = [
     ],
   },
 
-  {
-    id: "progressive-doors-windows",
-    title: "Progressive Doors & Windows Website",
-    category: "Brand/Client",
-    role: "Website development",
-    tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
-    summary:
-      "Website build for Progressive Doors & Windows, highlighting products and service offerings.",
-    thumbnail: "/images/progressive/Home.webp",
-    thumbnailAlt: "Progressive Doors & Windows homepage thumbnail",
-    images: [
-      {
-        src: "/images/progressive/Home.webp",
-        alt: "Progressive Doors & Windows homepage",
-      },
-      {
-        src: "/images/progressive/Doors.webp",
-        alt: "Progressive Doors & Windows doors page",
-      },
-    ],
-    highlights: [
-      "Developed front-end templates for key product and landing pages.",
-      "Focused on clear navigation and product exploration.",
-      "Delivered a maintainable WordPress implementation for the client.",
-    ],
-  },
+  // {
+  //   id: "progressive-doors-windows",
+  //   title: "Progressive Doors & Windows Website",
+  //   category: "Brand/Client",
+  //   role: "Website development",
+  //   tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
+  //   year: "",
+  //   summary:
+  //     "Website build for Progressive Doors & Windows, highlighting products and service offerings.",
+  //   thumbnail: "/images/progressive/Progressive_Home_508.webp",
+  //   thumbnail2x: "/images/progressive/Progressive_Home_1016.webp",
+  //   thumbnailAlt: "Progressive Doors & Windows homepage thumbnail",
+  //   images: [
+  //     {
+  //       src: "/images/progressive/Progressive_Home_630.webp",
+  //       src2x: "/images/progressive/Progressive_Home_1260.webp",
+  //       alt: "Progressive Doors & Windows homepage",
+  //     },
+  //     {
+  //       src: "/images/progressive/Progressive_Doors_630.webp",
+  //       src2x: "/images/progressive/Progressive_Doors_1260.webp",
+  //       alt: "Progressive Doors & Windows doors page",
+  //     },
+  //   ],
+  //   highlights: [
+  //     "Developed front-end templates for key product and landing pages.",
+  //     "Focused on clear navigation and product exploration.",
+  //     "Delivered a maintainable WordPress implementation for the client.",
+  //   ],
+  // },
 
   {
     id: "supercrown-website",
@@ -387,15 +427,18 @@ export const projects = [
     year: "",
     summary:
       "WordPress and WooCommerce build for Supercrown, blending editorial content with ecommerce functionality.",
-    thumbnail: "/images/supercrown/Home.webp",
+    thumbnail: "/images/supercrown/Supercrown_Home_508.webp",
+    thumbnail2x: "/images/supercrown/Supercrown_Home_1016.webp",
     thumbnailAlt: "Supercrown website design thumbnail",
     images: [
       {
-        src: "/images/supercrown/Home.webp",
+        src: "/images/supercrown/Supercrown_Home_630.webp",
+        src2x: "/images/supercrown/Supercrown_Home_1260.webp",
         alt: "Supercrown homepage",
       },
       {
-        src: "/images/supercrown/Journal-Coffee-Entry.webp",
+        src: "/images/supercrown/Supercrown_Journal_Coffee_Entry_630.webp",
+        src2x: "/images/supercrown/Supercrown_Journal_Coffee_Entry_1260.webp",
         alt: "Supercrown journal coffee entry page",
       },
     ],
@@ -416,11 +459,13 @@ export const projects = [
     year: "",
     summary:
       "Poster design for Explosions In The Sky at The Granada, focused on mood and atmosphere.",
-    thumbnail: "/images/other/explosions-in-the-sky.webp",
+    thumbnail: "/images/other/Explosions_In_The_Sky_Flier_508.webp",
+    thumbnail2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
     thumbnailAlt: "Explosions in the Sky flier design thumbnail",
     images: [
       {
-        src: "/images/other/explosions-in-the-sky.webp",
+        src: "/images/other/Explosions_In_The_Sky_Flier_630.webp",
+        src2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
         alt: "Explosions In The Sky flier",
       },
     ],
@@ -440,11 +485,13 @@ export const projects = [
     year: "",
     summary:
       "Poster design for Fairbanks with Mr. History at Record Bar.",
-    thumbnail: "/images/other/fairbanks-mr-history.webp",
+    thumbnail: "/images/other/Fairbanks_Mr_History_Flier_508.webp",
+    thumbnail2x: "/images/other/Fairbanks_Mr_History_Flier_800.webp",
     thumbnailAlt: "Fairbanks with Mr. History flier design thumbnail",
     images: [
       {
-        src: "/images/other/fairbanks-mr-history.webp",
+        src: "/images/other/Fairbanks_Mr_History_Flier_630.webp",
+        src2x: "/images/other/Fairbanks_Mr_History_Flier_800.webp",
         alt: "Fairbanks with Mr. History flier",
       },
     ],
@@ -464,12 +511,14 @@ export const projects = [
     year: "",
     summary:
       "Album artwork for Mr. History’s release “Cousin Sleep Cousin Death,” with detailed illustration.",
-    thumbnail: "/images/other/mr-history-cousin-sleep-cousin-death.webp",
+    thumbnail: "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_800.webp",
     thumbnailAlt:
       "Mr History Cousin Sleep Cousin Death album artwork thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-cousin-sleep-cousin-death.webp",
+        src: "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_630.webp",
+        src2x: "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_800.webp",
         alt: "Mr History Cousin Sleep Cousin Death album artwork",
       },
     ],
@@ -489,15 +538,18 @@ export const projects = [
     year: "",
     summary:
       "A pair of stock fliers for Good Foot, designed so that the band could use them for multiple events.",
-    thumbnail: "/images/other/good-foot-stock-one.webp",
+    thumbnail: "/images/other/Good_Foot_Stock_Flier_One_508.webp",
+    thumbnail2x: "/images/other/Good_Foot_Stock_Flier_One_800.webp",
     thumbnailAlt: "Good Foot Stock flier design thumbnail one",
     images: [
       {
-        src: "/images/other/good-foot-stock-one.webp",
+        src: "/images/other/Good_Foot_Stock_Flier_One_630.webp",
+        src2x: "/images/other/Good_Foot_Stock_Flier_One_800.webp",
         alt: "Good Foot Stock flier one",
       },
       {
-        src: "/images/other/good-foot-stock-two.webp",
+        src: "/images/other/Good_Foot_Stock_Flier_Two_630.webp",
+        src2x: "/images/other/Good_Foot_Stock_Flier_Two_800.webp",
         alt: "Good Foot Stock flier two",
       },
     ],
@@ -517,11 +569,13 @@ export const projects = [
     year: "",
     summary:
       "Poster design for Cobra Skulls with Bent Left, blending illustration and texture.",
-    thumbnail: "/images/other/cobra-skulls-bent-left.webp",
+    thumbnail: "/images/other/Cobra_Skulls_Flier_508.webp",
+    thumbnail2x: "/images/other/Cobra_Skulls_Flier_800.webp",
     thumbnailAlt: "Cobra Skulls with Bent Left flier design thumbnail",
     images: [
       {
-        src: "/images/other/cobra-skulls-bent-left.webp",
+        src: "/images/other/Cobra_Skulls_Flier_630.webp",
+        src2x: "/images/other/Cobra_Skulls_Flier_800.webp",
         alt: "Cobra Skulls with Bent Left flier",
       },
     ],
@@ -541,11 +595,13 @@ export const projects = [
     year: "",
     summary:
       "Flier design for DJ Red Beard, with a strong illustrative focal point.",
-    thumbnail: "/images/other/dj-red-beard.webp",
+    thumbnail: "/images/other/DJ_Red_Beard_Flier_508.webp",
+    thumbnail2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
     thumbnailAlt: "DJ Red Beard flier design thumbnail",
     images: [
       {
-        src: "/images/other/dj-red-beard.webp",
+        src: "/images/other/DJ_Red_Beard_Flier_630.webp",
+        src2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
         alt: "DJ Red Beard flier",
       },
     ],
@@ -556,29 +612,31 @@ export const projects = [
     ],
   },
 
-  {
-    id: "radiohead-flier",
-    title: "Radiohead Flier",
-    category: "Graphic Design",
-    role: "Poster design",
-    tools: ["Adobe Illustrator", "Adobe Photoshop"],
-    year: "",
-    summary:
-      "Illustrated flier inspired by Radiohead, emphasizing bold composition and typography.",
-    thumbnail: "/images/other/radiohead.webp",
-    thumbnailAlt: "Radiohead flier design thumbnail",
-    images: [
-      {
-        src: "/images/other/radiohead.webp",
-        alt: "Radiohead flier",
-      },
-    ],
-    highlights: [
-      "Created an 11x17 inch flier layout.",
-      "Explored color, shape, and type to capture the band’s aesthetic.",
-      "Prepared artwork for both print and digital sharing.",
-    ],
-  },
+  // {
+  //   id: "radiohead-flier",
+  //   title: "Radiohead Flier",
+  //   category: "Graphic Design",
+  //   role: "Poster design",
+  //   tools: ["Adobe Illustrator", "Adobe Photoshop"],
+  //   year: "",
+  //   summary:
+  //     "Illustrated flier inspired by Radiohead, emphasizing bold composition and typography.",
+  //   thumbnail: "/images/other/Radiohead_Flier_508.webp",
+  //   thumbnail2x: "/images/other/Radiohead_Flier_800.webp",
+  //   thumbnailAlt: "Radiohead flier design thumbnail",
+  //   images: [
+  //     {
+  //       src: "/images/other/Radiohead_Flier_630.webp",
+  //       src2x: "/images/other/Radiohead_Flier_800.webp",
+  //       alt: "Radiohead flier",
+  //     },
+  //   ],
+  //   highlights: [
+  //     "Created an 11x17 inch flier layout.",
+  //     "Explored color, shape, and type to capture the band’s aesthetic.",
+  //     "Prepared artwork for both print and digital sharing.",
+  //   ],
+  // },
 
   {
     id: "mr-history-six",
@@ -589,11 +647,13 @@ export const projects = [
     year: "",
     summary:
       "Flier for Mr. History at Riot Room, featuring bold illustration and typography.",
-    thumbnail: "/images/other/mr-history-six-recolor.webp",
+    thumbnail: "/images/other/Mr_History_Six_Flier_Recolor_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Six_Flier_Recolor_800.webp",
     thumbnailAlt: "Mr History at Riot Room flier design thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-six-recolor.webp",
+        src: "/images/other/Mr_History_Six_Flier_Recolor_630.webp",
+        src2x: "/images/other/Mr_History_Six_Flier_Recolor_800.webp",
         alt: "Mr History at Riot Room flier",
       },
     ],
@@ -613,11 +673,13 @@ export const projects = [
     year: "",
     summary:
       "Flier for Mr. History at Crosstown Station, with bold illustration and type.",
-    thumbnail: "/images/other/mr-history-one.webp",
+    thumbnail: "/images/other/Mr_History_One_Flier_508.webp",
+    thumbnail2: "/images/other/Mr_History_One_Flier_800.webp",
     thumbnailAlt: "Mr History Crosstown flier design thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-one.webp",
+        src: "/images/other/Mr_History_One_Flier_630.webp",
+        src2: "/images/other/Mr_History_One_Flier_800.webp",
         alt: "Mr History Crosstown flier",
       },
     ],
@@ -637,11 +699,13 @@ export const projects = [
     year: "",
     summary:
       "Flier for Mr. History at Davies Uptown, with a bold, illustrative style.",
-    thumbnail: "/images/other/mr-history-five.webp",
+    thumbnail: "/images/other/Mr_History_Five_Flier_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Five_Flier_800.webp",
     thumbnailAlt: "Mr History at Davies Uptown flier design thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-five.webp",
+        src: "/images/other/Mr_History_Five_Flier_630.webp",
+        src2x: "/images/other/Mr_History_Five_Flier_800.webp",
         alt: "Mr History at Davies Uptown flier",
       },
     ],
@@ -661,12 +725,14 @@ export const projects = [
     year: "",
     summary:
       "Flier for Mr. History at The Riot Room, with a high-contrast illustration.",
-    thumbnail: "/images/other/mr-history-four-recolor.webp",
+    thumbnail: "/images/other/Mr_History_Four_Flier_Recolor_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Four_Flier_Recolor_800.webp",
     thumbnailAlt:
       "Mr. History at the Riot Room flier design thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-four-recolor.webp",
+        src: "/images/other/Mr_History_Four_Flier_Recolor_630.webp",
+        src2x: "/images/other/Mr_History_Four_Flier_Recolor_800.webp",
         alt: "Mr. History at the Riot Room flier",
       },
     ],
@@ -686,11 +752,13 @@ export const projects = [
     year: "",
     summary:
       "Album cover artwork for Mr. History’s release “Gene,” focused on bold illustration.",
-    thumbnail: "/images/other/mr-history-gene-final.webp",
+    thumbnail: "/images/other/Mr_History_Gene_Album_Art_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
     thumbnailAlt: "Mr History Gene album artwork thumbnail",
     images: [
       {
-        src: "/images/other/mr-history-gene-final.webp",
+        src: "/images/other/Mr_History_Gene_Album_Art_630.webp",
+        src2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
         alt: "Mr History Gene album artwork",
       },
     ],

@@ -82,9 +82,9 @@ export default function Footer() {
       <footer aria-label="Primary site footer">
         <img
           ref={imgRef}
-          src="/images/ui/footer.webp"
           className="img-responsive footer-parallax-img"
-          alt=""
+          src="/images/ui/footer.webp"
+          srcSet="/images/ui/Footer_1080.webp 1x, /images/ui/Footer_2160.webp 2x"
           aria-hidden="true"
         />
       </footer>

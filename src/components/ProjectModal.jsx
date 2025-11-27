@@ -13,7 +13,6 @@ export default function ProjectModal({
   onClose,
   onSelectProject,
 }) {
-
   const dialogRef = useRef(null);
   const previouslyFocusedRef = useRef(null);
 
@@ -114,7 +113,7 @@ export default function ProjectModal({
               <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
               <span className="modal-nav-text">Prev</span>
             </button>
-          
+
             <button
               type="button"
               className="modal-nav-button"
@@ -125,7 +124,7 @@ export default function ProjectModal({
               <span className="modal-nav-text">Next</span>
               <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
             </button>
-          
+
             <button
               className="modal-close"
               type="button"
@@ -134,21 +133,35 @@ export default function ProjectModal({
             >
               <FontAwesomeIcon icon={faXmark} aria-hidden="true" />
             </button>
-          </div>{/* modal-nav */}
+          </div>
         </header>
-  
+
         <div className="project-modal-body">
           {project.images && project.images.length > 0 && (
             <div className="project-modal-images">
-              {project.images.map((image, index) => (
-                <div className="project-modal-image" key={index}>
-                  <img src={image.src} alt={image.alt || project.title} />
-                </div>
-              ))}
+              {project.images.map((image, index) => {
+                const src1x = image.src;
+                const src2x = image.src2x;
+                return (
+                  <div className="project-modal-image" key={index}>
+                    <img
+                      src={src1x}
+                      srcSet={
+                        src2x ? `${src1x} 1x, ${src2x} 2x` : undefined
+                      }
+                      alt={image.alt || project.title}
+                      loading="lazy"
+                    />
+                  </div>
+                );
+              })}
             </div>
           )}
+
           <div className="project-modal-information">
-            <h2 className="project-modal-title">{project.title}</h2>
+            <h2 className="project-modal-title" id="project-modal-title">
+              {project.title}
+            </h2>
             {project.link && (
               <p className="project-modal-link">
                 <strong>Link: </strong>
@@ -176,9 +189,9 @@ export default function ProjectModal({
                 </ul>
               </div>
             )}
-          </div>{/* project-modal-information */}
-        </div>{/* project-modal-body */}
-      </div>{/* modal-dialog */}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

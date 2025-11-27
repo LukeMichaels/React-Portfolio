@@ -75,9 +75,10 @@ export default function Hero() {
       <img
         ref={imgRef}
         className="parallax-img"
-        src="/images/ui/header.webp"
-        alt=""
+        src="/images/ui/Header_1080.webp"
+        srcSet="/images/ui/Header_1080.webp 1x, /images/ui/Header_2160.webp 2x"
         aria-hidden="true"
+        loading="eager"
       />
     </section>
   );
