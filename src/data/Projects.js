@@ -155,7 +155,7 @@ export const projects = [
     ],
     highlights: [
       "Used GSAP to create a bunch of ambient and scrolling animations.",
-      "Build a fully responsive and accessible slider that maintained the designers original vision.",
+      "Built a fully responsive and accessible slider that maintained the designers original vision.",
     ],
   },
 
