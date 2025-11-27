@@ -255,7 +255,8 @@ export const projects = [
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
     summary:
-      "",
+      "Front-end development for La Marzocco Home’s U.S. website, bringing their premium aesthetic into a clean, responsive WordPress build focused on usability, clarity, and long-term maintainability.",
+    link: "https://home.lamarzoccousa.com/",
     thumbnail: "/images/lamarzocco/LaMarzocco_Home_508.webp",
     thumbnail2x: "/images/lamarzocco/LaMarzocco_Home_1016.webp",
     thumbnailAlt: "LaMarzocco Home website design thumbnail",
