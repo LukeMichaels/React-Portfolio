@@ -95,7 +95,7 @@ export default function Home() {
 
             <h3 className="about-heading">WordPress &amp; CMS Development</h3>
             <div className="about-detail">
-              Custom themes, ACF Pro, custom blocks, Gutenberg, WooCommerce, API integrations, modular component architecture.
+              Custom blocks, plugins, and themes. Gutenberg, WooCommerce, API integrations, modular component architecture.
             </div>
 
             <h3 className="about-heading">UX &amp; Visual Design</h3>
