@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faList,
   faLaptopCode,
-  faBullhorn,
+  //faBullhorn,
   faPalette,
   faMobileScreen,
   faGlobe,
@@ -16,7 +16,7 @@ import {
 const ICONS = {
   All: faList,
   "Web Development": faLaptopCode,
-  "Brand/Client": faBullhorn,
+  // "Brand/Client": faBullhorn,
   "Graphic Design": faPalette,
 };
 
