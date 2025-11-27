@@ -10,7 +10,7 @@ export const projects = [
   {
     id: "henrietta-finds-a-nest",
     title: "Henrietta Finds A Nest",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Front-end development",
     tools: ["HTML", "CSS", "JavaScript", "WordPress"],
     year: "",
@@ -37,7 +37,7 @@ export const projects = [
   {
     id: "peoples-fund",
     title: "The People’s Fund",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Front-end development",
     tools: ["HTML", "CSS", "JavaScript", "WordPress"],
     year: "",
@@ -69,7 +69,7 @@ export const projects = [
   {
     id: "cca-joyrx",
     title: "Children’s Cancer Association – JoyRX",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -100,7 +100,7 @@ export const projects = [
   {
     id: "keep-oregon-green",
     title: "Keep Oregon Green",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -133,37 +133,36 @@ export const projects = [
     ],
   },
 
-  {
-    id: "mfa-gala-2024",
-    title: "Mercy For Animals Gala",
-    category: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+{
+    id: "new-year-new-choices",
+    title: "New Year New Choices",
+    categories: "Web Development",
+    role: "Website design & development",
+    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
     year: "",
     summary:
-      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
-    link: "https://mfagala.com/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
-    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
-    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
+      "New Years campaign site with a lot of fun animations.",
+    link: "https://newyearnewchoices.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1016.webp",
+    thumbnailAlt: "New Year New Choices website thumbnail",
     images: [
       {
-        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
-        alt: "Mercy For Animals Gala homepage",
+        src: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1260.webp",
+        alt: "New Year New Choices website thumbnail",
       },
     ],
     highlights: [
-      "Used motion to give the site a more celebratory feel.",
-      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
-      "Ensured the layout adapts cleanly from mobile to large screens.",
+      "Used GSAP to create a bunch of ambient and scrolling animations.",
+      "Build a fully responsive and accessible slider that maintained the designers original vision.",
     ],
   },
 
   {
     id: "ofri",
     title: "Oregon Forest Resources Institute",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Front-end development & project support",
     tools: ["Drupal 8", "Twig", "HTML", "CSS"],
     year: "",
@@ -199,10 +198,10 @@ export const projects = [
   {
     id: "bobs-blog",
     title: "Bob’s Red Mill Blog",
-    category: "Web Development",
+    categories: ["Graphic Design", "Web Development"],
     role: "Website design & development",
     tools: ["WordPress", "HTML", "CSS", "JavaScript"],
-    year: "2011–2016",
+    year: "",
     summary:
       "First-ever blog for Bob’s Red Mill, built on WordPress with a fully custom, brand-aligned theme.",
     thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_508.webp",
@@ -225,7 +224,7 @@ export const projects = [
   {
     id: "bobs-red-mill-site",
     title: "Bob’s Red Mill Website",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Website design & development",
     tools: ["HTML", "CSS", "JavaScript"],
     year: "",
@@ -251,7 +250,7 @@ export const projects = [
   {
     id: "lamarzocco-home",
     title: "LaMarzocco Home Website",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -282,7 +281,7 @@ export const projects = [
   {
     id: "supercrown-website",
     title: "Supercrown Website",
-    category: "Web Development",
+    categories: "Web Development",
     role: "Website development",
     tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -310,11 +309,37 @@ export const projects = [
     ],
   },
 
+  {
+    id: "mfa-gala-2024",
+    title: "Mercy For Animals Gala",
+    categories: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
+    link: "https://mfagala.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
+    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
+        alt: "Mercy For Animals Gala homepage",
+      },
+    ],
+    highlights: [
+      "Used motion to give the site a more celebratory feel.",
+      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
+      "Ensured the layout adapts cleanly from mobile to large screens.",
+    ],
+  },
 
   // {
   //   id: "grains-of-discovery",
   //   title: "Grains of Discovery",
-  //   category: "Web Development",
+  //   categories: "Web Development",
   //   role: "Website design & development",
   //   tools: ["HTML", "CSS", "JavaScript", "jQuery"],
   //   year: "",
@@ -345,7 +370,7 @@ export const projects = [
   // {
   //   id: "progressive-doors-windows",
   //   title: "Progressive Doors & Windows Website",
-  //   category: "Brand/Client",
+  //   categories: "Brand/Client",
   //   role: "Website development",
   //   tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
   //   year: "",
@@ -377,7 +402,7 @@ export const projects = [
   {
     id: "rogue-design-composition",
     title: "Rogue Ales Design Composition",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Website design comps",
     tools: ["Adobe Photoshop", "Adobe Illustrator"],
     year: "",
@@ -404,10 +429,36 @@ export const projects = [
     ],
   },
 
+{
+    id: "mr-history-gene",
+    title: "Mr. History “Gene” Album Artwork",
+    categories: "Graphic Design",
+    role: "Album cover illustration",
+    tools: ["Adobe Illustrator"],
+    year: "",
+    summary:
+      "Album cover artwork for Mr. History’s release “Gene,” focused on bold illustration.",
+    thumbnail: "/images/other/Mr_History_Gene_Album_Art_508.webp",
+    thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
+    thumbnailAlt: "Mr History Gene album artwork thumbnail",
+    images: [
+      {
+        src: "/images/other/Mr_History_Gene_Album_Art_630.webp",
+        src2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
+        alt: "Mr History Gene album artwork",
+      },
+    ],
+    highlights: [
+      "Designed full album cover illustration in Illustrator.",
+      "Optimized artwork for print packaging needs.",
+      "Created visuals aligned with the band’s sound and identity.",
+    ],
+  },
+
   {
     id: "explosions-in-the-sky",
     title: "Explosions In The Sky at The Granada",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     year: "",
@@ -433,7 +484,7 @@ export const projects = [
   {
     id: "fairbanks-mr-history",
     title: "Fairbanks With Mr. History at Record Bar",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -459,7 +510,7 @@ export const projects = [
   {
     id: "mr-history-cousin-sleep",
     title: "Mr. History “Cousin Sleep Cousin Death” Album Artwork",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -486,7 +537,7 @@ export const projects = [
   {
     id: "good-foot-stock",
     title: "Good Foot Stock Fliers",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -517,7 +568,7 @@ export const projects = [
   {
     id: "cobra-skulls-bent-left",
     title: "Cobra Skulls w/ Bent Left Flier",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     year: "",
@@ -543,7 +594,7 @@ export const projects = [
   {
     id: "dj-red-beard",
     title: "DJ Red Beard Flier",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -569,7 +620,7 @@ export const projects = [
   // {
   //   id: "radiohead-flier",
   //   title: "Radiohead Flier",
-  //   category: "Graphic Design",
+  //   categories: "Graphic Design",
   //   role: "Poster design",
   //   tools: ["Adobe Illustrator", "Adobe Photoshop"],
   //   year: "",
@@ -595,7 +646,7 @@ export const projects = [
   {
     id: "mr-history-six",
     title: "Mr. History at Riot Room – August 24",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -621,7 +672,7 @@ export const projects = [
   {
     id: "mr-history-one",
     title: "Mr. History at Crosstown Station",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -647,7 +698,7 @@ export const projects = [
   {
     id: "mr-history-five",
     title: "Mr. History at Davies Uptown",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -673,7 +724,7 @@ export const projects = [
   {
     id: "mr-history-four",
     title: "Mr. History at The Riot Room",
-    category: "Graphic Design",
+    categories: "Graphic Design",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -697,36 +748,10 @@ export const projects = [
     ],
   },
 
-  {
-    id: "mr-history-gene",
-    title: "Mr. History “Gene” Album Artwork",
-    category: "Graphic Design",
-    role: "Album cover illustration",
-    tools: ["Adobe Illustrator"],
-    year: "",
-    summary:
-      "Album cover artwork for Mr. History’s release “Gene,” focused on bold illustration.",
-    thumbnail: "/images/other/Mr_History_Gene_Album_Art_508.webp",
-    thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
-    thumbnailAlt: "Mr History Gene album artwork thumbnail",
-    images: [
-      {
-        src: "/images/other/Mr_History_Gene_Album_Art_630.webp",
-        src2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
-        alt: "Mr History Gene album artwork",
-      },
-    ],
-    highlights: [
-      "Designed full album cover illustration in Illustrator.",
-      "Optimized artwork for print packaging needs.",
-      "Created visuals aligned with the band’s sound and identity.",
-    ],
-  },
-
   // {
   //   id: "bobs-marquees",
   //   title: "Bob’s Red Mill Marquees",
-  //   category: "Graphic Design",
+  //   categories: "Graphic Design",
   //   role: "Graphic design",
   //   tools: ["Adobe Photoshop", "Adobe Illustrator"],
   //   year: "",
