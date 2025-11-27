@@ -28,8 +28,10 @@ export default function Work() {
 
   const filteredProjects =
     activeFilter === "All"
-      ? projects
-      : projects.filter((project) => project.category === activeFilter);
+    ? projects
+    : projects.filter((project) =>
+        project.categories?.includes(activeFilter)
+      );
 
   return (
     <section className="work">
