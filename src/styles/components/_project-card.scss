@@ -15,12 +15,16 @@
     background-color: $pastel-blue;
   }
 
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-bottom: 0.75rem;
-  }
+  .project-card-image {
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin-bottom: 0.75rem;
+    }
+
+  } // .project-card-image
 
   .project-card-body {
     padding: 20px;

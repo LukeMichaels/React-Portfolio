@@ -16,7 +16,11 @@ export default function ProjectCard({ project, onClick }) {
               thumb2x ? `${thumb1x} 1x, ${thumb2x} 2x` : undefined
             }
             alt={project.thumbnailAlt || project.title}
-            loading="lazy"
+            loading={
+              typeof window !== "undefined" && window.innerWidth < 850
+                ? "lazy"
+                : "eager"
+            }
           />
         </div>
       )}
