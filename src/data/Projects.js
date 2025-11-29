@@ -134,9 +134,9 @@ export const projects = [
         alt: "The Transfarmation Project Halley Farmer Page",
       },
       {
-        src: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Barker_Farm_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Barker_Farm_1260.webp",
-        alt: "The Transfarmation Project Barker Farmer Page",
+        src: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Faaborg_Farm_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Faaborg_Farm_1260.webp",
+        alt: "The Transfarmation Project Faaborg Farmer Page",
       },
     ],
     highlights: [
