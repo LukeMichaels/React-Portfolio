@@ -12,19 +12,19 @@ export const projects = [
     title: "Henrietta Finds A Nest",
     categories: "Web Development",
     role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     summary:
       "Front-end build for the Henrietta Finds a Nest film site, with a responsive layout highlighting the film’s synopsis, trailer, festival selections, and calls-to-action.",
     link: "https://henriettafilm.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_508.webp",
     thumbnail2x: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_1016.webp",
-    thumbnailAlt: "Henrietta Finds A Nest website design thumbnail",
+    thumbnailAlt: "Henrietta Finds A Nest Home Page Thumbnail",
     images: [
       {
         src: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_630.webp",
         src2x: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_1260.webp",
-        alt: "Henrietta Finds A Nest website design",
+        alt: "Henrietta Finds A Nest Home Page",
       },
     ],
     highlights: [
@@ -35,11 +35,123 @@ export const projects = [
   },
 
   {
+    id: "choose-veg",
+    title: "ChooseVeg",
+    categories: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "I contributed front-end development and user-experience improvements for ChooseVeg, one of Mercy For Animals’ flagship public-facing platforms. The site supports millions of visitors exploring plant-based eating, so clarity, performance, and accessibility were key priorities.",
+    link: "https://chooseveg.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_1016.webp",
+    thumbnailAlt: "ChooseVeg Home Page thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_1260.webp",
+        alt: "ChooseVeg Home Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_ChooseVeg_Switch_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Switch_1260.webp",
+        alt: "ChooseVeg Switch Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_ChooseVeg_Community_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Community_1260.webp",
+        alt: "ChooseVeg Community Page",
+      },
+    ],
+    highlights: [
+      "Implimented responsive layouts, refined navigation patterns, and optimized visual content.",
+      "Built reuable components.",
+      "Improving readability, and strengthening the overall flow toward educational resources and food-related guides.",
+    ],
+  },
+
+  {
+    id: "farmer-toolkit",
+    title: "Farmer Toolkit",
+    categories: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "I built the front-end for FarmerToolkit.org, including an interactive U.S. map that lets users click a state to view tailored farming resources — all within a clean, responsive, accessible interface.",
+    link: "https://farmertoolkit.org/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1016.webp",
+    thumbnailAlt: "Farmer Toolkit Home Page thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1260.webp",
+        alt: "Farmer Toolkit Home Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_1260.webp",
+        alt: "Farmer Toolkit Home Page With Open State Resources",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_1016.webp",
+        alt: "Farmer Toolkit Specialty Crops Page",
+      },
+    ],
+    highlights: [
+      "Interactive state-by-state resource map.",
+      "Clear, resource-focused layouts for easy browsing.",
+      "Accessible, mobile-friendly design.",
+      "Lightweight, performant front-end implementation.",
+    ],
+  },
+
+  {
+    id: "transfarmation-project",
+    title: "The Transfarmation Project",
+    categories: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "I built the farmer-focused pages for The Transfarmation Project, creating responsive, accessible layouts that highlight individual farmers’ stories, farm profiles, and available support resources.",
+    link: "https://thetransfarmationproject.org/farmers/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_508",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_1016.webp",
+    thumbnailAlt: "The Transfarmation Project Lim Farmer Page thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_1260.webp",
+        alt: "The Transfarmation Project Lim Farmer Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Halley_Farm_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Halley_Farm_1016.webp",
+        alt: "The Transfarmation Project Halley Farmer Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Barker_Farm_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Barker_Farm_1260.webp",
+        alt: "The Transfarmation Project Barker Farmer Page",
+      },
+    ],
+    highlights: [
+      "Custom farmer profile templates with clean storytelling structure.",
+      "Responsive, accessible layouts optimized for readability.",
+      "Consistent visual system across listings and individual farmer pages.",
+    ],
+  },
+
+  {
     id: "peoples-fund",
     title: "The People’s Fund",
     categories: "Web Development",
     role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     summary:
       "Front-end build for Mercy For Animals’ People’s Fund site, highlighting its mission of advancing equity in the animal-protection movement.",
