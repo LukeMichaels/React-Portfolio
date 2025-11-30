@@ -17,9 +17,7 @@ export default function ProjectCard({ project, onClick }) {
             }
             alt={project.thumbnailAlt || project.title}
             loading={
-              typeof window !== "undefined" && window.innerWidth < 850
-                ? "lazy"
-                : "eager"
+              "lazy"
             }
           />
         </div>
