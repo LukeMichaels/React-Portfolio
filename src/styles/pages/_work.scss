@@ -83,13 +83,25 @@
   } // .work-filters
 
   .projects-grid {
-    column-count: 2;
-    column-gap: $space-4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: row dense; // makes layout tighter & more masonry-like
+    gap: $space-4;
 
     @include respond-to("b-850") {
-      column-count: 1;
+      grid-template-columns: 1fr;
     }
+
   }
+
+  // .projects-grid {
+  //   column-count: 2;
+  //   column-gap: $space-4;
+// 
+  //   @include respond-to("b-850") {
+  //     column-count: 1;
+  //   }
+  // }
 
   // @keyframes project-card-slide-up {
   //   from {

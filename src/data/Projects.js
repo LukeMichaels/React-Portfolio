@@ -308,54 +308,29 @@ export const projects = [
   },
 
   {
-    id: "bobs-blog",
-    title: "Bob’s Red Mill Blog",
-    categories: ["Graphic Design", "Web Development"],
-    role: "Website design & development",
-    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
-    year: "",
-    summary:
-      "First-ever blog for Bob’s Red Mill, built on WordPress with a fully custom, brand-aligned theme.",
-    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_508.webp",
-    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
-    thumbnailAlt: "Bob's Red Mill blog design thumbnail",
-    images: [
-      {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
-        alt: "Bob's Red Mill blog design",
-      },
-    ],
-    highlights: [
-      "Created a ground-up WordPress theme matching the brand’s rustic, old-time aesthetic.",
-      "Enabled the social media team to publish and manage content independently.",
-      "Supported both desktop and mobile experiences during the early days of responsive design.",
-    ],
-  },
-
-  {
-    id: "bobs-red-mill-site",
-    title: "Bob’s Red Mill Website",
+    id: "mfa-gala-2024",
+    title: "Mercy For Animals Gala",
     categories: "Web Development",
-    role: "Website design & development",
-    tools: ["HTML", "CSS", "JavaScript"],
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
     year: "",
     summary:
-      "Website design and development work for Bob’s Red Mill, extending the core brand into a cohesive site experience.",
-    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_508.webp",
-    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800.webp",
-    thumbnailAlt: "Bob's Red Mill website design thumbnail",
+      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
+    link: "https://mfagala.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
+    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
     images: [
       {
-        src: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_630.webp",
-        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800.webp",
-        alt: "Bob's Red Mill website design",
+        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
+        alt: "Mercy For Animals Gala homepage",
       },
     ],
     highlights: [
-      "Designed and built key pages emphasizing product and brand personality.",
-      "Worked within established brand assets while introducing new layouts.",
-      "Prioritized clarity and usability for a broad audience of shoppers and fans.",
+      "Used motion to give the site a more celebratory feel.",
+      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
+      "Ensured the layout adapts cleanly from mobile to large screens.",
     ],
   },
 
@@ -423,31 +398,57 @@ export const projects = [
   },
 
   {
-    id: "mfa-gala-2024",
-    title: "Mercy For Animals Gala",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    id: "bobs-blog",
+    title: "Bob’s Red Mill Blog",
+    categories: ["Graphic Design", "Web Development"],
+    role: "Website design & development",
+    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
     year: "",
     summary:
-      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
-    link: "https://mfagala.com/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
-    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
-    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
+      "First-ever blog for Bob’s Red Mill, built on WordPress with a fully custom, brand-aligned theme.",
+    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_508.webp",
+    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
+    thumbnailAlt: "Bob's Red Mill blog design thumbnail",
     images: [
       {
-        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
-        alt: "Mercy For Animals Gala homepage",
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
+        alt: "Bob's Red Mill blog design",
       },
     ],
     highlights: [
-      "Used motion to give the site a more celebratory feel.",
-      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
-      "Ensured the layout adapts cleanly from mobile to large screens.",
+      "Created a ground-up WordPress theme matching the brand’s rustic, old-time aesthetic.",
+      "Enabled the social media team to publish and manage content independently.",
+      "Supported both desktop and mobile experiences during the early days of responsive design.",
     ],
   },
+  
+  {
+    id: "bobs-red-mill-site",
+    title: "Bob’s Red Mill Website",
+    categories: "Web Development",
+    role: "Website design & development",
+    tools: ["HTML", "CSS", "JavaScript"],
+    year: "",
+    summary:
+      "Website design and development work for Bob’s Red Mill, extending the core brand into a cohesive site experience.",
+    thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_508x508.webp",
+    thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800x800.webp",
+    thumbnailAlt: "Bob's Red Mill website design thumbnail",
+    images: [
+      {
+        src: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_630.webp",
+        src2x: "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_800.webp",
+        alt: "Bob's Red Mill website design",
+      },
+    ],
+    highlights: [
+      "Designed and built key pages emphasizing product and brand personality.",
+      "Worked within established brand assets while introducing new layouts.",
+      "Prioritized clarity and usability for a broad audience of shoppers and fans.",
+    ],
+  },
+
 
   // {
   //   id: "grains-of-discovery",
@@ -551,8 +552,8 @@ export const projects = [
     year: "",
     summary:
       "Album cover artwork for Mr. History’s release “Gene,” focused on bold illustration.",
-    thumbnail: "/images/other/Mr_History_Gene_Album_Art_508.webp",
-    thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800.webp",
+    thumbnail: "/images/other/Mr_History_Gene_Album_Art_508x508.webp",
+    thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800x800.webp",
     thumbnailAlt: "Mr History Gene album artwork thumbnail",
     images: [
       {
