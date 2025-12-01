@@ -100,6 +100,53 @@ export default function ProjectModal({
     } else if (e.key === "ArrowRight") {
       e.preventDefault();
       handleNext();
+    } else if (e.key === "Tab") {
+      const dialogEl = dialogRef.current;
+
+      if (!dialogEl) return;
+
+      const focusableElements = Array.from(
+        dialogEl.querySelectorAll(
+          [
+            "a[href]",
+            "area[href]",
+            'input:not([disabled])',
+            'select:not([disabled])',
+            'textarea:not([disabled])',
+            'button:not([disabled])',
+            "iframe",
+            'audio[controls]',
+            'video[controls]',
+            '[contenteditable]:not([contenteditable="false"])',
+            '[tabindex]:not([tabindex="-1"])',
+          ].join(",")
+        )
+      ).filter((el) => el.offsetParent !== null);
+
+      if (focusableElements.length === 0) {
+        e.preventDefault();
+        dialogEl.focus();
+        return;
+      }
+
+      const firstElement = focusableElements[0];
+      const lastElement = focusableElements[focusableElements.length - 1];
+      const isShift = e.shiftKey;
+      const activeElement = document.activeElement;
+
+      if (!dialogEl.contains(activeElement)) {
+        e.preventDefault();
+        (isShift ? lastElement : firstElement).focus();
+        return;
+      }
+
+      if (isShift && activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!isShift && activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
     }
   }
 
