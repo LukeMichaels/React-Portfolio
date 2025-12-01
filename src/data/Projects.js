@@ -72,40 +72,29 @@ export const projects = [
   },
 
   {
-    id: "farmer-toolkit",
-    title: "Farmer Toolkit",
+    id: "mfa-gala-2024",
+    title: "Mercy For Animals Gala",
     categories: "Web Development",
     role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
     year: "",
     summary:
-      "I built the front-end for FarmerToolkit.org, including an interactive U.S. map that lets users click a state to view tailored farming resources — all within a clean, responsive, accessible interface.",
-    link: "https://farmertoolkit.org/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_508.webp",
-    thumbnail2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1016.webp",
-    thumbnailAlt: "Farmer Toolkit Home Page thumbnail",
+      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
+    link: "https://mfagala.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
+    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
     images: [
       {
-        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1260.webp",
-        alt: "Farmer Toolkit Home Page",
-      },
-      {
-        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_1260.webp",
-        alt: "Farmer Toolkit Home Page With Open State Resources",
-      },
-      {
-        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_1016.webp",
-        alt: "Farmer Toolkit Specialty Crops Page",
+        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
+        alt: "Mercy For Animals Gala homepage",
       },
     ],
     highlights: [
-      "Interactive state-by-state resource map.",
-      "Clear, resource-focused layouts for easy browsing.",
-      "Accessible, mobile-friendly design.",
-      "Lightweight, performant front-end implementation.",
+      "Used motion to give the site a more celebratory feel.",
+      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
+      "Ensured the layout adapts cleanly from mobile to large screens.",
     ],
   },
 
@@ -179,6 +168,70 @@ export const projects = [
   },
 
   {
+    id: "farmer-toolkit",
+    title: "Farmer Toolkit",
+    categories: "Web Development",
+    role: "Front-end development",
+    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    year: "",
+    summary:
+      "I built the front-end for FarmerToolkit.org, including an interactive U.S. map that lets users click a state to view tailored farming resources — all within a clean, responsive, accessible interface.",
+    link: "https://farmertoolkit.org/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1016.webp",
+    thumbnailAlt: "Farmer Toolkit Home Page thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_1260.webp",
+        alt: "Farmer Toolkit Home Page",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_Open_1260.webp",
+        alt: "Farmer Toolkit Home Page With Open State Resources",
+      },
+      {
+        src: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Growing_Specialty_Crops_1016.webp",
+        alt: "Farmer Toolkit Specialty Crops Page",
+      },
+    ],
+    highlights: [
+      "Interactive state-by-state resource map.",
+      "Clear, resource-focused layouts for easy browsing.",
+      "Accessible, mobile-friendly design.",
+      "Lightweight, performant front-end implementation.",
+    ],
+  },
+
+  {
+    id: "new-year-new-choices",
+    title: "New Year New Choices",
+    categories: "Web Development",
+    role: "Website design & development",
+    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
+    year: "",
+    summary:
+      "New Years campaign site with a lot of fun animations.",
+    link: "https://newyearnewchoices.com/",
+    thumbnail: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_508.webp",
+    thumbnail2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1016.webp",
+    thumbnailAlt: "New Year New Choices website thumbnail",
+    images: [
+      {
+        src: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_630.webp",
+        src2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1260.webp",
+        alt: "New Year New Choices website thumbnail",
+      },
+    ],
+    highlights: [
+      "Used GSAP to create a bunch of ambient and scrolling animations.",
+      "Built a fully responsive and accessible slider that maintained the designers original vision.",
+    ],
+  },
+
+  {
     id: "cca-joyrx",
     title: "Children’s Cancer Association – JoyRX",
     categories: "Web Development",
@@ -245,95 +298,6 @@ export const projects = [
     ],
   },
 
-{
-    id: "new-year-new-choices",
-    title: "New Year New Choices",
-    categories: "Web Development",
-    role: "Website design & development",
-    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
-    year: "",
-    summary:
-      "New Years campaign site with a lot of fun animations.",
-    link: "https://newyearnewchoices.com/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_508.webp",
-    thumbnail2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1016.webp",
-    thumbnailAlt: "New Year New Choices website thumbnail",
-    images: [
-      {
-        src: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_1260.webp",
-        alt: "New Year New Choices website thumbnail",
-      },
-    ],
-    highlights: [
-      "Used GSAP to create a bunch of ambient and scrolling animations.",
-      "Built a fully responsive and accessible slider that maintained the designers original vision.",
-    ],
-  },
-
-  {
-    id: "ofri",
-    title: "Oregon Forest Resources Institute",
-    categories: "Web Development",
-    role: "Front-end development & project support",
-    tools: ["Drupal 8", "Twig", "HTML", "CSS"],
-    year: "",
-    summary:
-      "Front-end development and project coordination on a full-scale redesign of oregonforests.org.",
-    thumbnail: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_508.webp",
-    thumbnail2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1016.webp",
-    thumbnailAlt: "OFRI website design thumbnail",
-    images: [
-      {
-        src: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_630.webp",
-        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1260.webp",
-        alt: "OFRI homepage design",
-      },
-      {
-        src: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_630.webp",
-        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_1260.webp",
-        alt: "OFRI video library page",
-      },
-      {
-        src: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_630.webp",
-        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_1260.webp",
-        alt: "OFRI tree guide page",
-      },
-    ],
-    highlights: [
-      "Implemented Drupal 8 and Twig templates for a large, content-heavy site.",
-      "Collaborated on layout and interaction design across multiple page types.",
-      "Gained deep experience working within a modern Drupal workflow.",
-    ],
-  },
-
-  {
-    id: "mfa-gala-2024",
-    title: "Mercy For Animals Gala",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
-    year: "",
-    summary:
-      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
-    link: "https://mfagala.com/",
-    thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
-    thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
-    thumbnailAlt: "Mercy For Animals Gala website design thumbnail",
-    images: [
-      {
-        src: "/images/mfa/Mercy_For_Animals_Gala_2024_630.webp",
-        src2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1027.webp",
-        alt: "Mercy For Animals Gala homepage",
-      },
-    ],
-    highlights: [
-      "Used motion to give the site a more celebratory feel.",
-      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
-      "Ensured the layout adapts cleanly from mobile to large screens.",
-    ],
-  },
-
   {
     id: "lamarzocco-home",
     title: "LaMarzocco Home Website",
@@ -394,6 +358,42 @@ export const projects = [
       "Implemented storefront and journal-style content in a cohesive experience.",
       "Integrated WooCommerce while preserving a strong editorial feel.",
       "Built flexible templates for product stories and journal entries.",
+    ],
+  },
+
+  {
+    id: "ofri",
+    title: "Oregon Forest Resources Institute",
+    categories: "Web Development",
+    role: "Front-end development & project support",
+    tools: ["Drupal 8", "Twig", "HTML", "CSS"],
+    year: "",
+    summary:
+      "Front-end development and project coordination on a full-scale redesign of oregonforests.org.",
+    thumbnail: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_508.webp",
+    thumbnail2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1016.webp",
+    thumbnailAlt: "OFRI website design thumbnail",
+    images: [
+      {
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Homepage_1260.webp",
+        alt: "OFRI homepage design",
+      },
+      {
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Video_Library_Expanded_1260.webp",
+        alt: "OFRI video library page",
+      },
+      {
+        src: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_630.webp",
+        src2x: "/images/ofri/Oregon_Forest_Research_Institute_Tree_Guide_1260.webp",
+        alt: "OFRI tree guide page",
+      },
+    ],
+    highlights: [
+      "Implemented Drupal 8 and Twig templates for a large, content-heavy site.",
+      "Collaborated on layout and interaction design across multiple page types.",
+      "Gained deep experience working within a modern Drupal workflow.",
     ],
   },
 

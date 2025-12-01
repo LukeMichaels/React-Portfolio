@@ -38,7 +38,7 @@ export default function Work() {
       <header className="page-header">
         <h1>Selected Work</h1>
         <p className="lead">
-          A mix of web builds and graphic design.
+          A mix of web builds and graphic design. Please select a project to view more details.
         </p>
       </header>
 
