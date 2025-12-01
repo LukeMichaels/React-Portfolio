@@ -38,13 +38,15 @@ export default function Header() {
 
   return (
     <header aria-label="Primary site header">
+      <a className="skip-link visually-hidden" href="#main-content">
+        Skip to main content
+      </a>
       <div
         className={
           showBar
             ? "site-header-bar site-header-bar--visible"
             : "site-header-bar"
-        }
-      >
+        } >
         <div className="site-header-inner">
           <NavLink to="/" className="site-logo">
             <div className="logo-icon">
@@ -61,8 +63,7 @@ export default function Header() {
                   end
                   className={({ isActive }) =>
                     isActive ? "site-nav-link is-active" : "site-nav-link"
-                  }
-                >
+                  } >
                   About
                 </NavLink>
               </li>
@@ -71,8 +72,7 @@ export default function Header() {
                   to="/work"
                   className={({ isActive }) =>
                     isActive ? "site-nav-link is-active" : "site-nav-link"
-                  }
-                >
+                  } >
                   Work
                 </NavLink>
               </li>
@@ -81,8 +81,7 @@ export default function Header() {
                   to="/contact"
                   className={({ isActive }) =>
                     isActive ? "site-nav-link is-active" : "site-nav-link"
-                  }
-                >
+                  } >
                   Contact
                 </NavLink>
               </li>

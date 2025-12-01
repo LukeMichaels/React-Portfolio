@@ -12,7 +12,7 @@ export default function App() {
     <div className="app has-galaxy">
       <GalaxyBackground />
       <Header />
-      <main className="site-main">
+      <main className="site-main" id="main-content">
         <Hero />
         <Routes>
           <Route path="/" element={<Home />} />
