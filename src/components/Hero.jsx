@@ -77,6 +77,7 @@ export default function Hero() {
         className="parallax-img"
         src="/images/ui/Header_1080.webp"
         srcSet="/images/ui/Header_1080.webp 1x, /images/ui/Header_2160.webp 2x"
+        alt=""
         aria-hidden="true"
         loading="eager"
       />

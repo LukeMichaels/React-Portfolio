@@ -85,6 +85,7 @@ export default function Footer() {
           className="img-responsive footer-parallax-img"
           src="/images/ui/footer.webp"
           srcSet="/images/ui/Footer_1080.webp 1x, /images/ui/Footer_2160.webp 2x"
+          alt=""
           aria-hidden="true"
         />
       </footer>
