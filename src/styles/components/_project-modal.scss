@@ -9,16 +9,24 @@
   display: flex;
   justify-content: center;
   z-index: 1000;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  //padding: 20px 0;
 }
 
 .modal-dialog {
   width: min(90vw, 1080px);
   max-width: 1080px;
-  max-height: 100vh;
-  overflow: auto;
+  // max-height: 100vh;
+  // overflow: auto;
   //padding: 20px 0;
   background: $white;
   color: $pink;
+
+  &:focus {
+    outline: none;
+  }
 
   .modal-header {
     display: flex;
@@ -107,39 +115,6 @@
       } // .modal-close
 
     } // .modal-nav
-
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      color: $white;
-      background-color: $purple;
-      border: 2px solid $purple;
-      font-size: 0.9rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-      text-decoration: none;
-    
-      &:hover {
-        background-color: $pink-2;
-        border-color: $pink-2;
-      }
-    
-      &:focus {
-        outline: 2px solid $purple;
-        outline-offset: 2px;
-      }
-    
-      svg {
-        font-size: 1rem;
-      }
-    
-      span {
-        padding-top: 2px;
-      }
-    
-    } // .chip
 
   } // .modal-header
 

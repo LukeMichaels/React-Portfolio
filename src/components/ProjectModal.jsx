@@ -40,6 +40,20 @@ export default function ProjectModal({
       dialogEl.focus();
     }
 
+    const scrollY = window.scrollY;
+
+    const originalBodyStyle = {
+      position: document.body.style.position,
+      top: document.body.style.top,
+      overflowY: document.body.style.overflowY,
+      width: document.body.style.width,
+    };
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.overflowY = "scroll";
+    document.body.style.width = "100%";
+
     return () => {
       if (
         previouslyFocusedRef.current &&
@@ -47,8 +61,16 @@ export default function ProjectModal({
       ) {
         previouslyFocusedRef.current.focus();
       }
+
+      document.body.style.position = originalBodyStyle.position;
+      document.body.style.top = originalBodyStyle.top;
+      document.body.style.overflowY = originalBodyStyle.overflowY;
+      document.body.style.width = originalBodyStyle.width;
+  
+      window.scrollTo(0, scrollY);
     };
-  }, [hasProject, project]);
+  }, [hasProject]);
+
 
   function goToOffset(offset) {
     if (!hasProjectList) return;
