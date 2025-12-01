@@ -16,7 +16,7 @@
   max-width: 1080px;
   max-height: 100vh;
   overflow: auto;
-  padding: 20px 0;
+  //padding: 20px 0;
   background: $white;
   color: $pink;
 
@@ -24,7 +24,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 20px 20px 16px;
+    //margin-bottom: 2rem;
+    background-color: $white;
 
     .escape-message {
       text-align: right;
@@ -142,6 +147,7 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    padding: 0 20px 20px;
 
     @include respond-to('b-700') {
       flex-wrap: wrap;

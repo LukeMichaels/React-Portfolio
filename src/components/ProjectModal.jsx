@@ -15,6 +15,8 @@ export default function ProjectModal({
 }) {
   const dialogRef = useRef(null);
   const previouslyFocusedRef = useRef(null);
+  const touchStartRef = useRef(null);
+  const touchLastRef = useRef(null);
 
   const hasProject = !!project;
 
@@ -85,6 +87,48 @@ export default function ProjectModal({
     }
   }
 
+  const SWIPE_THRESHOLD = 50;
+
+  function handleTouchStart(e) {
+    if (e.touches.length !== 1) return;
+
+    const touch = e.touches[0];
+    const point = { x: touch.clientX, y: touch.clientY };
+    touchStartRef.current = point;
+    touchLastRef.current = point;
+  }
+
+  function handleTouchMove(e) {
+    if (!touchStartRef.current) return;
+    const touch = e.touches[0];
+    touchLastRef.current = { x: touch.clientX, y: touch.clientY };
+  }
+
+  function handleTouchEnd() {
+    if (!touchStartRef.current || !touchLastRef.current) {
+      touchStartRef.current = null;
+      touchLastRef.current = null;
+      return;
+    }
+
+    const dx = touchLastRef.current.x - touchStartRef.current.x;
+    const dy = touchLastRef.current.y - touchStartRef.current.y;
+  
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    if (absDx > SWIPE_THRESHOLD && absDx > absDy) {
+      if (dx < 0) {
+        handleNext();
+      } else {
+        handlePrev();
+      }
+    }
+
+    touchStartRef.current = null;
+    touchLastRef.current = null;
+  }
+
   if (!project) return null;
 
   return (
@@ -96,8 +140,7 @@ export default function ProjectModal({
         aria-modal="true"
         aria-labelledby="project-modal-title"
         tabIndex={-1}
-        onKeyDown={handleKeyDown}
-      >
+        onKeyDown={handleKeyDown} >
         <header className="modal-header">
           <span className="escape-message" aria-hidden="true">
             Press ESC to close · ← / → to navigate
@@ -108,8 +151,7 @@ export default function ProjectModal({
               className="modal-nav-button"
               onClick={handlePrev}
               aria-label="View previous project"
-              disabled={!hasProjectList}
-            >
+              disabled={!hasProjectList} >
               <FontAwesomeIcon icon={faArrowLeft} aria-hidden="true" />
               <span className="modal-nav-text">Prev</span>
             </button>
@@ -119,8 +161,7 @@ export default function ProjectModal({
               className="modal-nav-button"
               onClick={handleNext}
               aria-label="View next project"
-              disabled={!hasProjectList}
-            >
+              disabled={!hasProjectList} >
               <span className="modal-nav-text">Next</span>
               <FontAwesomeIcon icon={faArrowRight} aria-hidden="true" />
             </button>
@@ -129,14 +170,16 @@ export default function ProjectModal({
               className="modal-close"
               type="button"
               onClick={onClose}
-              aria-label="Close project details"
-            >
+              aria-label="Close project details" >
               <FontAwesomeIcon icon={faXmark} aria-hidden="true" />
             </button>
           </div>
         </header>
 
-        <div className="project-modal-body">
+        <div className="project-modal-body"
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd} >
           {project.images && project.images.length > 0 && (
             <div className="project-modal-images">
               {project.images.map((image, index) => {
