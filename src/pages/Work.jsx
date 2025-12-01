@@ -48,8 +48,8 @@ export default function Work() {
             key={filter}
             type="button"
             className={filter === activeFilter ? "chip chip-active" : "chip"}
-            onClick={() => setActiveFilter(filter)}
-          >
+            aria-pressed={filter === activeFilter}
+            onClick={() => setActiveFilter(filter)} >
             {ICONS[filter] && (
               <FontAwesomeIcon icon={ICONS[filter]} className="chip-icon" />
             )}
@@ -63,8 +63,7 @@ export default function Work() {
           <ProjectCard
             key={project.id}
             project={project}
-            onClick={setSelectedProject}
-          />
+            onClick={setSelectedProject} />
         ))}
       </div>
 
@@ -72,8 +71,7 @@ export default function Work() {
         project={selectedProject}
         projects={filteredProjects}
         onClose={() => setSelectedProject(null)}
-        onSelectProject={setSelectedProject}
-      />
+        onSelectProject={setSelectedProject} />
     </section>
   );
 }
