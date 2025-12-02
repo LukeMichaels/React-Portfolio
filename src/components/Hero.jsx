@@ -107,7 +107,7 @@ export default function Hero() {
         srcSet="/images/ui/Header_1080.webp 1x, /images/ui/Header_2160.webp 2x"
         alt=""
         aria-hidden="true"
-        loading="eager"
+        loading="lazy"
       />
     </section>
   );
