@@ -6,10 +6,14 @@ export default function ScrollToTop() {
   const location = useLocation();
 
   useEffect(() => {
+    const reduceMotionQuery = window.matchMedia?.(
+      "(prefers-reduced-motion: reduce)"
+    );
+    const shouldReduceMotion = reduceMotionQuery?.matches;
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "smooth",
+      behavior: shouldReduceMotion ? "auto" : "smooth",
     });
   }, [location.key]);
 
