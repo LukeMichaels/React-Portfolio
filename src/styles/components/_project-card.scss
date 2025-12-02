@@ -28,12 +28,23 @@
       height: 400px;
     }
 
+    &.project-card-image--top {
+      img {
+        top: 0;
+      }
+    }
+
+    &.project-card-image--bottom {
+      img {
+        bottom: 0;
+      }
+    }
+
     img {
       display: block;
       width: 100%;
       height: auto;
       position: absolute;
-      top: 0;
       left: 0;
     }
 
