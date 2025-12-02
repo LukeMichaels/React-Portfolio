@@ -155,6 +155,8 @@ export default function Contact() {
                 autoComplete="name"
                 value={formData.name}
                 onChange={handleChange}
+                required
+                aria-required="true"
                 aria-invalid={!!errors.name}
                 aria-describedby={errors.name ? "name-error" : undefined}
               />
@@ -174,6 +176,8 @@ export default function Contact() {
                 autoComplete="email"
                 value={formData.email}
                 onChange={handleChange}
+                required
+                aria-required="true"
                 aria-invalid={!!errors.email}
                 aria-describedby={errors.email ? "email-error" : undefined}
               />
@@ -203,6 +207,8 @@ export default function Contact() {
                 rows={6}
                 value={formData.message}
                 onChange={handleChange}
+                required
+                aria-required="true"
                 aria-invalid={!!errors.message}
                 aria-describedby={errors.message ? "message-error" : undefined}
               />
