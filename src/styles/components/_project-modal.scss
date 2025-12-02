@@ -13,6 +13,8 @@
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
   //padding: 20px 0;
+  cursor: pointer;
+  //scroll-behavior: smooth;
 }
 
 .modal-dialog {
@@ -24,9 +26,14 @@
   padding-top: 90px;
   background: $white;
   color: $pink;
+  cursor: auto;
 
   &:focus {
     outline: none;
+  }
+
+  button, a {
+    cursor: pointer;
   }
 
   .modal-header {

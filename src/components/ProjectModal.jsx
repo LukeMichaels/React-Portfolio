@@ -14,6 +14,8 @@ export default function ProjectModal({
   onSelectProject,
 }) {
   const dialogRef = useRef(null);
+  const modalBodyRef = useRef(null);
+  const backdropRef = useRef(null);
   const previouslyFocusedRef = useRef(null);
   const touchStartRef = useRef(null);
   const touchLastRef = useRef(null);
@@ -71,6 +73,21 @@ export default function ProjectModal({
     };
   }, [hasProject]);
 
+  function scrollModalToTop() {
+    const backdropEl = backdropRef.current;
+    if (!backdropEl) return;
+
+    backdropEl.scrollTop = 0;
+    if (typeof backdropEl.scrollTo === "function") {
+      backdropEl.scrollTo({ top: 0, left: 0 });
+    }
+  }
+
+  useEffect(() => {
+    if (hasProject) {
+      scrollModalToTop();
+    }
+  }, [project?.id, hasProject]);
 
   function goToOffset(offset) {
     if (!hasProjectList) return;
@@ -78,6 +95,7 @@ export default function ProjectModal({
       (currentIndex + offset + projects.length) % projects.length;
     const nextProject = projects[nextIndex];
     if (nextProject && onSelectProject) {
+      scrollModalToTop();
       onSelectProject(nextProject);
     }
   }
@@ -201,7 +219,10 @@ export default function ProjectModal({
   if (!project) return null;
 
   return (
-    <div className="modal-backdrop" onClick={handleBackdropClick}>
+    <div
+      className="modal-backdrop" 
+      ref={backdropRef}
+      onClick={handleBackdropClick} >
       <div
         className="modal-dialog"
         ref={dialogRef}
@@ -246,6 +267,7 @@ export default function ProjectModal({
         </header>
 
         <div className="project-modal-body"
+          ref={modalBodyRef}
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd} >
