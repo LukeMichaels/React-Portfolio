@@ -1,6 +1,7 @@
 // src/App.jsx
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 import GalaxyBackground from "./components/GalaxyBackground.jsx";
 import Hero from "./components/Hero.jsx";
 import Footer from "./components/Footer.jsx";
@@ -11,6 +12,7 @@ export default function App() {
   return (
     <div className="app has-galaxy">
       <GalaxyBackground />
+      <ScrollToTop />
       <Header />
       <Hero />
       <main className="site-main" id="main-content" tabIndex="-1">
