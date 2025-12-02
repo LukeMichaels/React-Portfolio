@@ -7,6 +7,26 @@ header {
   position: relative;
   margin: 0 auto;
 
+  .skip-link {
+    position: absolute;
+    left: 20px;
+    top: -100px;
+    padding: 8px 12px;
+    z-index: 20;
+    color: $black;
+    background: $white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: $semi-bold;
+    transition: top 0.2s ease;
+
+    &:focus {
+      top: 10px;
+      outline: 2px solid $purple;
+      outline-offset: 2px;
+    }
+  }
+
   .site-header-bar {
     width: 100%;
     position: fixed;
