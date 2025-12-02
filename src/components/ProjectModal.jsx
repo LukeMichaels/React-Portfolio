@@ -26,6 +26,8 @@ export default function ProjectModal({
     ? projects.findIndex((p) => p.id === project.id)
     : -1;
 
+  const summaryId = hasProject ? "project-modal-summary" : undefined;
+
   const hasProjectList =
     hasProject && projects.length > 0 && currentIndex !== -1;
 
@@ -229,6 +231,7 @@ export default function ProjectModal({
         role="dialog"
         aria-modal="true"
         aria-labelledby="project-modal-title"
+        aria-describedby={summaryId}
         tabIndex={-1}
         onKeyDown={handleKeyDown} >
         <header className="modal-header">
@@ -312,7 +315,9 @@ export default function ProjectModal({
               <strong>Tools: </strong>
               {project.tools.join(", ")}
             </p>
-            <p className="project-modal-summary">{project.summary}</p>
+            <p className="project-modal-summary" id={summaryId}>
+              {project.summary}
+            </p>
             {project.highlights && project.highlights.length > 0 && (
               <div className="project-modal-highlights">
                 <h3>Highlights</h3>
