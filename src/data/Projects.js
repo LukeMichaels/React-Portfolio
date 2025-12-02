@@ -123,7 +123,7 @@ export const projects = [
       "I built the farmer-focused pages for The Transfarmation Project, creating responsive, accessible layouts that highlight individual farmers’ stories, farm profiles, and available support resources. The templates balance narrative content with practical information so visitors can understand each farmer’s journey and see what support is available. The pages are structured to be easy to maintain as more farmers join the program.",
     link: "https://thetransfarmationproject.org/farmers/",
     thumbnail:
-      "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_508",
+      "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_508.webp",
     thumbnail2x:
       "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_1016.webp",
     thumbnailAlt: "The Transfarmation Project Lim Farmer Page thumbnail",
