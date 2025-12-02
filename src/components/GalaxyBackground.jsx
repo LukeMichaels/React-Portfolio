@@ -1,10 +1,28 @@
 // src/components/GalaxyBackground.jsx
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function GalaxyBackground() {
   const canvasRef = useRef(null);
+  const MIN_WIDTH = 1080;
+  const [isLargeViewport, setIsLargeViewport] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth >= MIN_WIDTH : false
+  );
 
   useEffect(() => {
+    function handleResizeWidth() {
+      setIsLargeViewport(window.innerWidth >= MIN_WIDTH);
+    }
+
+    window.addEventListener("resize", handleResizeWidth);
+
+    return () => {
+      window.removeEventListener("resize", handleResizeWidth);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!isLargeViewport) return;
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -21,6 +39,9 @@ export default function GalaxyBackground() {
     let prefersReduced =
       window.matchMedia &&
       window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let isVisible =
+      typeof document !== "undefined" &&
+      document.visibilityState !== "hidden";
 
     const STAR_COUNT = 550;
     const MAX_RADIUS_FACTOR = 0.75;
@@ -48,40 +69,55 @@ export default function GalaxyBackground() {
 
     function initStars() {
       stars = [];
-
-      const maxRadius =
-        (Math.sqrt(width * width + height * height) / 2) * MAX_RADIUS_FACTOR;
+      const maxRadius = Math.min(width, height) * MAX_RADIUS_FACTOR;
+      const minRadius = maxRadius * 0.15;
 
       for (let i = 0; i < STAR_COUNT; i++) {
         const t = Math.random();
-        const radius = Math.pow(t, 0.5) * maxRadius;
+        const r = Math.sqrt(t);
+        const radius = minRadius + r * (maxRadius - minRadius);
+
+        const speedFactor = (radius - minRadius) / (maxRadius - minRadius);
+        const speed = BASE_SPEED + speedFactor * BASE_SPEED * 1.8;
+
         const angle = Math.random() * Math.PI * 2;
 
-        const size = 0.7 + Math.random() * 1.8;
-        const speed = BASE_SPEED * (0.3 + Math.random() * 1.7);
+        const hueBase = 220;
+        const hueRange = 40;
+        const hue =
+          hueBase +
+          (Math.random() * hueRange - hueRange / 2) +
+          speedFactor * 10;
+        const saturation = 60 + Math.random() * 15;
+        const lightness = 65 + Math.random() * 20;
 
-        const hueOptions = [210, 230, 260, 290, 320];
-        const hue = hueOptions[Math.floor(Math.random() * hueOptions.length)];
-        const saturation = 60 + Math.random() * 20;
-        const lightness = 60 + Math.random() * 20;
+        const size = 0.7 + Math.random() * 1.3;
 
-        stars.push({ radius, angle, size, speed, hue, saturation, lightness });
+        stars.push({
+          angle,
+          radius,
+          speed,
+          hue,
+          saturation,
+          lightness,
+          size,
+        });
       }
     }
 
     function drawBackground() {
       const gradient = ctx.createRadialGradient(
-        centerX + cameraOffsetX * 0.5,
-        centerY + cameraOffsetY * 0.5,
+        centerX,
+        centerY,
         0,
-        centerX + cameraOffsetX * 0.5,
-        centerY + cameraOffsetY * 0.5,
+        centerX,
+        centerY,
         Math.max(width, height)
       );
 
-      gradient.addColorStop(0, "#050814");
-      gradient.addColorStop(0.6, "#040612");
-      gradient.addColorStop(1, "#03040f");
+      gradient.addColorStop(0, "rgba(15, 20, 64, 1)");
+      gradient.addColorStop(0.35, "rgba(10, 10, 35, 1)");
+      gradient.addColorStop(1, "rgba(2, 3, 14, 1)");
 
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, width, height);
@@ -108,6 +144,11 @@ export default function GalaxyBackground() {
     }
 
     function renderFrame() {
+      if (!isVisible) {
+        renderStatic();
+        return;
+      }
+
       const targetX = mouseNormX * PARALLAX_STRENGTH;
       const targetY = mouseNormY * PARALLAX_STRENGTH;
       const lerpFactor = 0.05;
@@ -130,7 +171,7 @@ export default function GalaxyBackground() {
         drawStar(star);
       }
 
-      if (!prefersReduced) {
+      if (!prefersReduced && isVisible) {
         animationFrameId = requestAnimationFrame(renderFrame);
       }
     }
@@ -146,7 +187,7 @@ export default function GalaxyBackground() {
 
     function start() {
       cancelAnimationFrame(animationFrameId);
-      if (prefersReduced) {
+      if (prefersReduced || !isVisible) {
         renderStatic();
       } else {
         renderFrame();
@@ -163,7 +204,7 @@ export default function GalaxyBackground() {
     }
 
     function handleMouseMove(e) {
-      if (prefersReduced) return; 
+      if (prefersReduced) return;
 
       const rect = canvas.getBoundingClientRect();
       const x = (e.clientX - rect.left) / rect.width;
@@ -187,6 +228,19 @@ export default function GalaxyBackground() {
       motionQuery.addEventListener("change", handleMotionChange);
     }
 
+    function handleVisibilityChange() {
+      isVisible = !document.hidden;
+
+      if (!isVisible) {
+        cancelAnimationFrame(animationFrameId);
+        renderStatic();
+        return;
+      }
+
+      start();
+    }
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     resizeCanvas();
     start();
 
@@ -196,9 +250,12 @@ export default function GalaxyBackground() {
       if (motionQuery && handleMotionChange) {
         motionQuery.removeEventListener("change", handleMotionChange);
       }
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
       cancelAnimationFrame(animationFrameId);
     };
-  }, []);
+  }, [isLargeViewport]);
+
+  if (!isLargeViewport) return null;
 
   return <canvas ref={canvasRef} className="galaxy-bg" aria-hidden="true"></canvas>;
 }
