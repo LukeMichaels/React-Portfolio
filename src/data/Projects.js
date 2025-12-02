@@ -627,7 +627,7 @@ export const projects = [
     shortSummary:
       "Album cover illustration for Mr. History’s “Gene,” focusing on bold, graphic artwork.",
     summary:
-      "Album cover artwork for Mr. History’s release “Gene,” focused on bold illustration and a strong central motif. I developed the cover entirely in Illustrator, paying attention to how the artwork would read at both full-size packaging and small digital thumbnail scales. The final design supports the band’s sound and identity while staying production-ready for print.",
+      "Album cover artwork for Mr. History’s release “Gene.” I developed the cover entirely in Illustrator, paying attention to how the artwork would read at both full-size packaging and small digital thumbnail scales.",
     thumbnail: "/images/other/Mr_History_Gene_Album_Art_508x508.webp",
     thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800x800.webp",
     thumbnailAlt: "Mr History Gene album artwork thumbnail",
@@ -640,7 +640,7 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed full album cover illustration in Illustrator.",
+      "Designed full album cover in Illustrator.",
       "Optimized artwork for print packaging needs.",
       "Created visuals aligned with the band’s sound and identity.",
     ],
@@ -656,7 +656,7 @@ export const projects = [
     shortSummary:
       "Concert poster for Explosions In The Sky at The Granada, emphasizing mood and atmosphere.",
     summary:
-      "Poster design for Explosions In The Sky at The Granada, aimed at capturing the band’s expansive, atmospheric sound. I used layered illustration and texture to build a sense of movement and depth within a simple, readable layout. The final piece was prepared as a large-format print, with type and key details tuned to remain legible at a distance.",
+      "Poster design for Explosions In The Sky at The Granada, aimed at capturing the band’s expansive, atmospheric sound. I used layered illustration and texture to build a sense of movement and depth within a simple layout. The final piece was prepared as a large-format print, with type and key details tuned to remain legible at a distance.",
     thumbnail: "/images/other/Explosions_In_The_Sky_Flier_508.webp",
     thumbnail2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
     thumbnailAlt: "Explosions in the Sky flier design thumbnail",
@@ -685,7 +685,7 @@ export const projects = [
     shortSummary:
       "Poster design for Fairbanks with Mr. History at Record Bar, using illustration to capture the lineup’s energy.",
     summary:
-      "Poster design for Fairbanks with Mr. History at Record Bar, designed to promote a specific show while reflecting the personality of the lineup. I created an 11x17 inch layout in Illustrator that uses illustration to draw attention without overwhelming the event details. The artwork was optimized for both print and digital promotion.",
+      "Poster design for Fairbanks with Mr. History at Record Bar, designed to promote a specific show. I created an 11x17 inch layout that uses illustration to draw attention without overwhelming the event details.",
     thumbnail: "/images/other/Fairbanks_Mr_History_Flier_508.webp",
     thumbnail2x: "/images/other/Fairbanks_Mr_History_Flier_800.webp",
     thumbnailAlt: "Fairbanks with Mr. History flier design thumbnail",
@@ -698,7 +698,6 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed an 11x17 inch flier for a live show.",
       "Used illustration to convey the energy of the lineup.",
       "Prepared final art suitable for print and digital promotion.",
     ],
@@ -714,7 +713,7 @@ export const projects = [
     shortSummary:
       "Album artwork for Mr. History’s “Cousin Sleep Cousin Death,” with detailed illustration work.",
     summary:
-      "Album artwork for Mr. History’s release “Cousin Sleep Cousin Death,” featuring detailed illustration built in Illustrator. I developed a visual language that supports the album’s themes while remaining flexible across formats like vinyl, CD, and digital platforms. The final files were prepared for print, with attention to color, margins, and production constraints.",
+      "Album artwork for Mr. History’s release “Cousin Sleep Cousin Death,” built in Illustrator. I developed a visual language that supports the album’s themes while remaining flexible across formats like vinyl, CD, and digital platforms. The final files were prepared for print, with attention to color, margins, and production constraints.",
     thumbnail:
       "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_508.webp",
     thumbnail2x:
@@ -733,7 +732,6 @@ export const projects = [
     highlights: [
       "Handled full-cover illustration for the album.",
       "Developed a visual language that supports the record’s themes.",
-      "Prepared final files for print-ready production.",
     ],
   },
 
