@@ -36,9 +36,19 @@ export default function Header() {
     };
   }, []);
 
+  function handleSkipToMain(event) {
+    const mainContent = document.getElementById("main-content");
+
+    if (mainContent) {
+      event.preventDefault();
+      mainContent.focus({ preventScroll: true });
+      mainContent.scrollIntoView({ block: "start" });
+    }
+  }
+
   return (
     <header aria-label="Primary site header">
-      <a className="skip-link visually-hidden" href="#main-content">
+      <a className="skip-link visually-hidden" href="#main-content" onClick={handleSkipToMain}>
         Skip to main content
       </a>
       <div
