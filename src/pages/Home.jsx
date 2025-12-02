@@ -4,6 +4,7 @@ import {
   faPaperclip,
   faEnvelope,
   faPhone,
+  faFolderOpen,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -169,6 +170,17 @@ export default function Home() {
               </span>
             </div>
           </div>{/* favorites */}
+
+          <div className="about-cta">
+            <a
+              href="#/work"
+              title="Visit my portfolio page" >
+              <div className="about-icon">
+                <FontAwesomeIcon icon={faFolderOpen} aria-hidden="true" />
+              </div>
+              <div className="about-link-title">View My Work</div>
+            </a>
+          </div>{/* about-cta */}
         </div>{/* about-right */}
 
       </div>{/* about-columns */}
