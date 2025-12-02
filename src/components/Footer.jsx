@@ -8,6 +8,7 @@ export default function Footer() {
     const img = imgRef.current;
     if (!img) return;
 
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
     let ticking = false;
 
     const getScrollY = () =>
@@ -39,15 +40,14 @@ export default function Footer() {
         return;
       }
 
-      let progress = scrollY / maxScroll;
-      progress = Math.min(Math.max(progress, 0), 1);
+      const progress = scrollY / maxScroll;
 
       const startAt = 0.55;
       const BASE_OFFSET = -40;
       let offset = BASE_OFFSET;
 
       if (progress > startAt) {
-        const seg = (progress - startAt) / (1 - startAt); // 0..1
+        const seg = (progress - startAt) / (1 - startAt);
         offset = BASE_OFFSET * (1 - seg);
       }
 
@@ -66,14 +66,31 @@ export default function Footer() {
       updateParallax();
     };
 
-    updateParallax();
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onResize);
-
-    return () => {
+    const detachListeners = () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("resize", onResize);
+      ticking = false;
+    };
+
+    const handleMotionPreference = () => {
+      detachListeners();
+
+      if (mediaQuery.matches) {
+        img.style.transform = "translate3d(-50%, 0, 0)";
+        return;
+      }
+
+      updateParallax();
+      window.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onResize);
+    };
+
+    handleMotionPreference();
+    mediaQuery.addEventListener("change", handleMotionPreference);
+
+    return () => {
+      detachListeners();
+      mediaQuery.removeEventListener("change", handleMotionPreference);
     };
   }, []);
 

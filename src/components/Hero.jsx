@@ -8,16 +8,8 @@ export default function Hero() {
     const img = imgRef.current;
     if (!img) return;
 
-    let scrollContainer = document.querySelector(".site-main");
-
-    const isScrollable =
-      scrollContainer &&
-      scrollContainer.scrollHeight > scrollContainer.clientHeight;
-
-    if (!isScrollable) {
-      scrollContainer = window;
-    }
-
+    const mediaQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    let scrollContainer;
     let ticking = false;
 
     const getScrollY = () => {
@@ -30,7 +22,7 @@ export default function Hero() {
         );
       }
 
-      return scrollContainer.scrollTop || 0;
+      return scrollContainer?.scrollTop || 0;
     };
 
     const updateParallax = () => {
@@ -59,14 +51,50 @@ export default function Hero() {
       updateParallax();
     };
 
-    updateParallax();
+    const detachListeners = () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("scroll", onScroll);
+      }
 
-    scrollContainer.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onResize);
+      window.removeEventListener("resize", onResize);
+      scrollContainer = undefined;
+      ticking = false;
+    };
+
+    const attachListeners = () => {
+      scrollContainer = document.querySelector(".site-main");
+
+      const isScrollable =
+        scrollContainer &&
+        scrollContainer.scrollHeight > scrollContainer.clientHeight;
+
+      if (!isScrollable) {
+        scrollContainer = window;
+      }
+
+      updateParallax();
+
+      scrollContainer.addEventListener("scroll", onScroll, { passive: true });
+      window.addEventListener("resize", onResize);
+    };
+
+    const handleMotionPreference = () => {
+      detachListeners();
+
+      if (mediaQuery.matches) {
+        img.style.transform = "translate3d(-50%, 0, 0)";
+        return;
+      }
+
+      attachListeners();
+    };
+
+    handleMotionPreference();
+    mediaQuery.addEventListener("change", handleMotionPreference);
 
     return () => {
-      scrollContainer.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onResize);
+      detachListeners();
+      mediaQuery.removeEventListener("change", handleMotionPreference);
     };
   }, []);
 
