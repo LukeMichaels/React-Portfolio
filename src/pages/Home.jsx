@@ -22,7 +22,7 @@ export default function Home() {
           />
           <div className="about-links" aria-label="Contact and profile links">
             <a
-              href="/documents/Luke_Michaels_Resume_2025.pdf"
+              href="/documents/Luke_Michaels_Resume_2025_v2.pdf"
               title="Download my resume"
               target="_blank"
               rel="noopener noreferrer"
