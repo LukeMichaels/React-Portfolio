@@ -194,7 +194,7 @@ export const projects = [
 
   {
     id: "aura-flora-website",
-    title: "Aura Flora Website",
+    title: "Aura Flora Web App",
     categories: ["Graphic Design", "Web Development"],
     role: "Website Design & Development",
     tools: ["React", "TypeScript", "Sass"],
