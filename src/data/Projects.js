@@ -193,6 +193,46 @@ export const projects = [
   },
 
   {
+    id: "aura-flora-website",
+    title: "Aura Flora Website",
+    categories: ["Graphic Design", "Web Development"],
+    role: "Website Design & Development",
+    tools: ["React", "TypeScript", "Sass"],
+    year: "2026",
+    shortSummary:
+      "A interactive promotional web app for 'Aura Flora'.",
+    summary:
+      "I designed and built the promotional web application for 'Aura Flora,' a bio-reactive art installation featured at the Portland Winter Light Festival. The goal was to create a web experience that was not just informative, but also an artistic extension of the sculpture itself, built with React, TypeScript, and Sass to create a modern and responsive presentation.",
+    link: "https://aura-flora.com/",
+    thumbnail: "/images/other/Aura_Flora_One_508.webp",
+    thumbnail2x: "/images/other/Aura_Flora_One_1016.webp", // Placeholder
+    thumbnailAlt: "Aura Flora interactive website thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/other/Aura_Flora_One_630.webp",
+        src2x: "/images/other/Aura_Flora_One_1260.webp",
+        alt: "Aura Flora interactive website screenshot featuring the first pattern",
+      },
+      {
+        src: "/images/other/Aura_Flora_Two_630.webp",
+        src2x: "/images/other/Aura_Flora_Two_1260.webp",
+        alt: "Aura Flora interactive website screenshot featuring the second pattern",
+      },
+      {
+        src: "/images/other/Aura_Flora_Three_630.webp",
+        src2x: "/images/other/Aura_Flora_Three_1260.webp",
+        alt: "Aura Flora interactive website featuring the third pattern",
+      },
+    ],
+    highlights: [
+      "Developed a procedurally generated, interactive background to mirror the art installation.",
+      "Built a modern, responsive front-end using React, TypeScript, and Sass.",
+      "Created a digital experience to promote a physical art piece and engage visitors.",
+    ],
+  },
+
+  {
     id: "farmer-toolkit",
     title: "Farmer Toolkit",
     categories: "Web Development",
