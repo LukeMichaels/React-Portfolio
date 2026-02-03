@@ -33,7 +33,7 @@ export default function Home() {
               <div className="about-link-title">Resume</div>
             </a>
             <a
-              href="mailto:lmichaels@gmail.com"
+              href="mailto:hello@lukemichaels.com"
               title="Send me an email"
             >
               <div className="about-icon">

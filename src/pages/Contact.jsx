@@ -62,7 +62,7 @@ export default function Contact() {
       formData.email
     ].join("\n");
 
-    const mailto = `mailto:lmichaels@gmail.com?subject=${encodeURIComponent(
+    const mailto = `mailto:hello@lukemichaels.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
@@ -79,7 +79,7 @@ export default function Contact() {
           <p>
             I collaborate with nonprofits, artists, and mission-driven teams to
             build accessible, high-impact websites and interactive experiences.
-            If you have a project in mind—or just want to talk through an idea—I&apos;d
+            If you have a project in mind, or just want to talk through an idea, I&apos;d
             love to hear from you.
           </p>
           <p>
@@ -94,7 +94,7 @@ export default function Contact() {
                 aria-hidden="true"
                 className="contact-detail-icon"
               />
-              <a href="mailto:lmichaels@gmail.com">lmichaels@gmail.com</a>
+              <a href="mailto:hello@lukemichaels.com">hello@lukemichaels.com</a>
             </div>
 
             <div className="contact-detail-row">
