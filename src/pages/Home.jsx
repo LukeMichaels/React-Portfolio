@@ -131,7 +131,7 @@ export default function Home() {
 
             <h3 className="about-heading">Media</h3>
             <div className="about-detail">
-              Photo retouching, basic video editing.
+              Photo retouching, video editing.
             </div>
           </div>{/* technical-exploration */}
 
