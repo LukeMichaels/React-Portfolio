@@ -22,10 +22,12 @@ export default function Home() {
           />
           <div className="about-links" aria-label="Contact and profile links">
             <a
-              href="/documents/Luke_Michaels_Resume_2025_v2.pdf"
+              href="/documents/Luke_Michaels_Resume_2026.pdf"
               title="Download my resume"
               target="_blank"
               rel="noopener noreferrer"
+              //download
+              aria-describedby="pdf-meta"
             >
               <div className="about-icon">
                 <FontAwesomeIcon icon={faPaperclip} aria-hidden="true" />
