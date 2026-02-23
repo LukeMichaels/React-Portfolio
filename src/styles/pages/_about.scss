@@ -146,14 +146,14 @@
         gap: 8px;
         width: 100%;
         max-width: 250px;
-        padding: 6px 14px 4px;
+        padding: 10px 14px 8px;
         color: $white;
         background-color: $purple-2;
         border: 2px solid $purple-2;
-        font-size: 0.9rem;
         text-transform: uppercase;
-        letter-spacing: 0.04em;
         text-decoration: none;
+        font-size: 0.9rem;
+        letter-spacing: 0.04em;
         @include respond-to("b-670") {
           max-width: 350px;
         }
@@ -170,10 +170,12 @@
 
         .about-icon {
           font-size: 1rem;
+          line-height: 1rem;
         }
 
         .about-link-title {
-          padding-top: 0;
+          padding-top: 1;
+          line-height: 1rem;
         }
 
       } // a
