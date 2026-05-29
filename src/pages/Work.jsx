@@ -15,9 +15,9 @@ import {
 
 const ICONS = {
   All: faList,
-  "Web Development": faLaptopCode,
+  "Web/Software": faLaptopCode,
   // "Brand/Client": faBullhorn,
-  "Graphic Design": faPalette,
+  "Graphics": faPalette,
 };
 
 const FILTER_OPTIONS = ["All", ...PROJECT_CATEGORIES];
@@ -38,7 +38,7 @@ export default function Work() {
       <header className="page-header">
         <h1>Selected Work</h1>
         <p className="lead">
-          A mix of web builds and graphic design. Please select a project to view more details.
+          A mix of things I've built, designed, and figured out along the way. Web, UX, motion, brand... sometimes all at once.
         </p>
       </header>
 

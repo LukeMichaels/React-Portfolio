@@ -49,6 +49,7 @@ export default function Home() {
               </div>
               <div className="about-link-title">Phone</div>
             </a>
+            {/*
             <a
               href="https://github.com/LukeMichaels"
               title="Visit my GitHub"
@@ -71,6 +72,7 @@ export default function Home() {
               </div>
               <div className="about-link-title">LinkedIn</div>
             </a>
+            */}
           </div>
         </div>{/* about-left */}
 

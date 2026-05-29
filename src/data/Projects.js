@@ -1,18 +1,18 @@
 // src/data/Projects.js
 export const PROJECT_CATEGORIES = [
-  "Web Development",
+  "Web/Software",
   //"Brand/Client",
-  "Graphic Design",
+  "Graphics",
 ];
 
 export const projects = [
-  // ===================== WEB DEVELOPMENT =====================
+  // ===================== Web/Software =====================
   {
     id: "henrietta-finds-a-nest",
     title: "Henrietta Finds A Nest",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "UX Design, Front-end Development",
+    tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Front-end build for the Henrietta Finds a Nest film site, highlighting the film and key calls-to-action.",
@@ -42,14 +42,14 @@ export const projects = [
   {
     id: "choose-veg",
     title: "ChooseVeg",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "Front-end development, UX Design",
+    tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Front-end development and user-experience improvements for ChooseVeg.",
     summary:
-      "I contributed front-end development and user-experience improvements for ChooseVeg, one of Mercy For Animals’ flagship public-facing platforms. My work focused on refining layouts, navigation, and reusable components to support millions of visitors exploring plant-based eating. Throughout the site I emphasized clarity, accessibility, and performance so that recipes, guides, and resources are easy to discover and pleasant to use.",
+      "ChooseVeg is one of Mercy For Animals' flagship public-facing platforms, serving millions of visitors exploring plant-based eating. I led UX improvements and front-end development focused on making recipes, guides, and resources easier to discover and navigate. That meant refining information architecture, improving navigation patterns, and building reusable components that kept the experience consistent and accessible across a large, growing content library.",
     link: "https://chooseveg.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_508.webp",
     thumbnail2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_1016.webp",
@@ -83,9 +83,9 @@ export const projects = [
   {
     id: "mfa-gala-2024",
     title: "Mercy For Animals Gala",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "Front-end development, UX Design",
+    tools: ["Figma", "HTML", "CSS", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
@@ -113,9 +113,9 @@ export const projects = [
   {
     id: "transfarmation-project",
     title: "The Transfarmation Project",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "Front-end development, UX Design",
+    tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Farmer-focused page builds for The Transfarmation Project, highlighting farmer stories and support resources.",
@@ -158,9 +158,9 @@ export const projects = [
   {
     id: "peoples-fund",
     title: "The People’s Fund",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "Front-end development, UX Design",
+    tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Front-end build for MFA’s People’s Fund site, spotlighting equity-focused grantmaking.",
@@ -195,7 +195,7 @@ export const projects = [
   {
     id: "aura-flora-website",
     title: "Aura Flora Web App",
-    categories: ["Graphic Design", "Web Development"],
+    categories: ["Graphics", "Web/Software"],
     role: "Website Design & Development",
     tools: ["React", "TypeScript", "Sass"],
     year: "2026",
@@ -235,14 +235,14 @@ export const projects = [
   {
     id: "farmer-toolkit",
     title: "Farmer Toolkit",
-    categories: "Web Development",
-    role: "Front-end development",
-    tools: ["HTML", "CSS", "PHP", "JavaScript", "WordPress"],
+    categories: "Web/Software",
+    role: "Front-end development, UX Design",
+    tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "",
     shortSummary:
       "Front-end build for FarmerToolkit.org, including an interactive state-by-state resource map.",
     summary:
-      "I built the front-end for FarmerToolkit.org, including an interactive U.S. map that lets users click a state to view tailored farming resources. The interface is designed to feel straightforward for busy farmers, with clear paths to funding, technical assistance, and educational materials. Under the hood, the layouts remain lightweight, responsive, and accessible so the site works well across a wide range of devices and connection speeds.",
+      "FarmerToolkit.org needed to serve a specific, busy audience: farmers looking for funding and resources fast. I led front-end development and UX, including an interactive U.S. map that lets users surface state-specific resources in one click. Every design decision prioritized clarity and low friction, from navigation hierarchy to page weight, so the site works well even on slow rural connections.",
     link: "https://farmertoolkit.org/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_508.webp",
     thumbnail2x:
@@ -280,9 +280,9 @@ export const projects = [
   {
     id: "new-year-new-choices",
     title: "New Year New Choices",
-    categories: "Web Development",
-    role: "Website design & development",
-    tools: ["WordPress", "HTML", "CSS", "JavaScript"],
+    categories: "Web/Software",
+    role: "Website design & development, UX Design",
+    tools: ["Figma", "WordPress", "HTML", "CSS", "JavaScript"],
     year: "",
     shortSummary:
       "New Year’s campaign site with playful motion and a fully responsive layout.",
@@ -303,7 +303,7 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used GSAP to create a bunch of ambient and scrolling animations.",
+      "Used GSAP to build ambient and scroll-driven animations that reinforce the campaign's optimistic tone without sacrificing performance or accessibility.",
       "Built a fully responsive and accessible slider that maintained the designers original vision.",
     ],
   },
@@ -311,9 +311,9 @@ export const projects = [
   {
     id: "cca-joyrx",
     title: "Children’s Cancer Association – JoyRX",
-    categories: "Web Development",
-    role: "Website development",
-    tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
+    categories: "Web/Software",
+    role: "Website development, UX Design",
+    tools: ["Illustrator", "WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
     shortSummary:
       "Modular WordPress build for JoyRX, with reusable blocks for programs, impact, and giving.",
@@ -345,7 +345,7 @@ export const projects = [
   {
     id: "keep-oregon-green",
     title: "Keep Oregon Green",
-    categories: "Web Development",
+    categories: "Web/Software",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -384,7 +384,7 @@ export const projects = [
   {
     id: "lamarzocco-home",
     title: "LaMarzocco Home Website",
-    categories: "Web Development",
+    categories: "Web/Software",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -419,7 +419,7 @@ export const projects = [
   {
     id: "supercrown-website",
     title: "Supercrown Website",
-    categories: "Web Development",
+    categories: "Web/Software",
     role: "Website development",
     tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
     year: "",
@@ -454,7 +454,7 @@ export const projects = [
   {
     id: "ofri",
     title: "Oregon Forest Resources Institute",
-    categories: "Web Development",
+    categories: "Web/Software",
     role: "Front-end development & project support",
     tools: ["Drupal 8", "Twig", "HTML", "CSS"],
     year: "",
@@ -498,7 +498,7 @@ export const projects = [
   {
     id: "bobs-blog",
     title: "Bob’s Red Mill Blog",
-    categories: ["Graphic Design", "Web Development"],
+    categories: ["Graphics", "Web/Software"],
     role: "Website design & development",
     tools: ["WordPress", "HTML", "CSS", "JavaScript"],
     year: "",
@@ -527,7 +527,7 @@ export const projects = [
   {
     id: "bobs-red-mill-site",
     title: "Bob’s Red Mill Website",
-    categories: "Web Development",
+    categories: "Web/Software",
     role: "Website design & development",
     tools: ["HTML", "CSS", "JavaScript"],
     year: "",
@@ -558,7 +558,7 @@ export const projects = [
   // {
   //   id: "grains-of-discovery",
   //   title: "Grains of Discovery",
-  //   categories: "Web Development",
+  //   categories: "Web/Software",
   //   role: "Website design & development",
   //   tools: ["HTML", "CSS", "JavaScript", "jQuery"],
   //   year: "",
@@ -623,11 +623,11 @@ export const projects = [
   //   ],
   // },
 
-  // ===================== GRAPHIC DESIGN / POSTERS / ALBUMS =====================
+  // ===================== Graphics / POSTERS / ALBUMS =====================
   {
     id: "rogue-design-composition",
     title: "Rogue Ales Design Composition",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Website design comps",
     tools: ["Adobe Photoshop", "Adobe Illustrator"],
     year: "",
@@ -660,7 +660,7 @@ export const projects = [
   {
     id: "mr-history-gene",
     title: "Mr. History “Gene” Album Artwork",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -689,7 +689,7 @@ export const projects = [
   {
     id: "explosions-in-the-sky",
     title: "Explosions In The Sky at The Granada",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     year: "",
@@ -718,7 +718,7 @@ export const projects = [
   {
     id: "fairbanks-mr-history",
     title: "Fairbanks With Mr. History at Record Bar",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -746,7 +746,7 @@ export const projects = [
   {
     id: "mr-history-cousin-sleep",
     title: "Mr. History “Cousin Sleep Cousin Death” Album Artwork",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -778,7 +778,7 @@ export const projects = [
   {
     id: "good-foot-stock",
     title: "Good Foot Stock Fliers",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -811,7 +811,7 @@ export const projects = [
   {
     id: "cobra-skulls-bent-left",
     title: "Cobra Skulls w/ Bent Left Flier",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     year: "",
@@ -840,7 +840,7 @@ export const projects = [
   {
     id: "dj-red-beard",
     title: "DJ Red Beard Flier",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -869,7 +869,7 @@ export const projects = [
   // {
   //   id: "radiohead-flier",
   //   title: "Radiohead Flier",
-  //   categories: "Graphic Design",
+  //   categories: "Graphics",
   //   role: "Poster design",
   //   tools: ["Adobe Illustrator", "Adobe Photoshop"],
   //   year: "",
@@ -898,7 +898,7 @@ export const projects = [
   {
     id: "mr-history-six",
     title: "Mr. History at Riot Room – August 24",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -927,7 +927,7 @@ export const projects = [
   {
     id: "mr-history-one",
     title: "Mr. History at Crosstown Station",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -956,7 +956,7 @@ export const projects = [
   {
     id: "mr-history-five",
     title: "Mr. History at Davies Uptown",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -984,7 +984,7 @@ export const projects = [
   {
     id: "mr-history-four",
     title: "Mr. History at The Riot Room",
-    categories: "Graphic Design",
+    categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "",
@@ -1013,7 +1013,7 @@ export const projects = [
   // {
   //   id: "bobs-marquees",
   //   title: "Bob’s Red Mill Marquees",
-  //   categories: "Graphic Design",
+  //   categories: "Graphics",
   //   role: "Graphic design",
   //   tools: ["Adobe Photoshop", "Adobe Illustrator"],
   //   year: "",

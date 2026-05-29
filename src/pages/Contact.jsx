@@ -115,7 +115,7 @@ export default function Contact() {
               <span>Portland, Oregon (Remote-friendly)</span>
             </div>
           </div>
-
+          {/*}
           <div className="contact-links" aria-label="Profile links">
             <a
               href="https://github.com/LukeMichaels"
@@ -136,6 +136,7 @@ export default function Contact() {
               <span>LinkedIn</span>
             </a>
           </div>
+          */}
         </div>
 
         {/* RIGHT: Contact form */}
