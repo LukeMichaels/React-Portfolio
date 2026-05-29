@@ -80,48 +80,82 @@ export default function Home() {
           <div className="about-group">
             <h1>Hi, I&apos;m Luke.</h1>
             <p>
-              I’m a front-end developer and UX-focused designer who builds accessible, high-impact websites and web apps for nonprofits, artists, and mission-driven organizations. I blend visual design, motion, and clean, maintainable code to create intuitive digital experiences that feel great to use.
+              I'm a UX/UI designer and front-end developer with 15+ years of experience turning complex workflows and requirements into accessible, intuitive digital products. I care about the full picture, from early research and rough wireframes to a polished, production-ready experience, and I bring both design leadership and engineering fluency to the work.
+            </p>
+            <p>
+              I'm drawn to products where the design actually matters for real people. The more complex the problem, the more I want to understand it from the inside out.
+            </p>
+            <p>
+              I think in systems. Whether I'm designing a component, mapping an end-to-end user journey, or evolving a design system, I'm always thinking about consistency, scalability, and the person who inherits the work after me. On the engineering side, that means clean, maintainable code and specs that don't leave developers guessing. On the design side, it means governance, documentation, and patterns that hold up across a product.
+            </p>
+            <p>
+              I'm also comfortable in the messy middle parts of the process: facilitating workshops, presenting rationale to stakeholders, navigating tradeoffs, and iterating based on research and feedback. I've worked closely with product and engineering teams throughout my career and understand how design decisions ripple into roadmaps and timelines.
             </p>
             <p style={{ marginBottom: 0 }}>
-              Over the last 15+ years, I’ve designed and engineered websites, interfaces, and interactive components across a wide range of projects—from content-heavy nonprofit platforms to experimental LED-driven installations. My work focuses on accessibility, performance, and thoughtful interface design, with an emphasis on crafting reusable systems that scale.
+              Beyond the browser, I build interactive LED installations, do 3D modeling, and tinker with microcontrollers. These experiments quietly influence how I think about animation, interaction, and physical space.
             </p>
           </div>
 
           {/* Primary Skills */}
           <div className="about-group primary-skills">
-            <h2 className="about-title">Primary Skills</h2>
+            <h2 className="about-title">What I do</h2>
+
+            <h3 className="about-heading">UX Research & Strategy</h3>
+            <div className="about-detail">
+              Discovery, usability testing, stakeholder interviews, and synthesis. Translating qualitative and quantitative findings into clear experience recommendations and prioritized opportunities.
+            </div>
+
+            <h3 className="about-heading">Interaction Design & Prototyping</h3>
+            <div className="about-detail">
+              End-to-end design in Figma, from low-fidelity concepts and user journey mapping to developer-ready specs and high-fidelity interactive prototypes.
+            </div>
+
+            <h3 className="about-heading">Design Systems</h3>
+            <div className="about-detail">
+              Building, governing, and evolving component libraries and design systems. Contribution standards, adoption plans, style guides, and close collaboration with engineering to keep design and code aligned.
+            </div>
 
             <h3 className="about-heading">Front-End Development</h3>
             <div className="about-detail">
-              HTML5, CSS/Sass, JavaScript (ES6+), PHP, accessibility (WCAG), performance optimization, responsive UI systems.
+              HTML5, CSS/Sass, JavaScript (ES6+), React, PHP, WCAG accessibility, performance optimization, responsive UI systems.
             </div>
 
-            <h3 className="about-heading">WordPress &amp; CMS Development</h3>
+            <h3 className="about-heading">WordPress &amp; CMS</h3>
             <div className="about-detail">
               Custom blocks, plugins, and themes. Gutenberg, WooCommerce, API integrations, modular component architecture.
             </div>
 
-            <h3 className="about-heading">UX &amp; Visual Design</h3>
+            <h3 className="about-heading">Brand Identity &amp; Visual Systems</h3>
             <div className="about-detail">
-              Wireframes, prototypes, UI systems, typography, layout, interaction and motion design.
+              Logo design, type pairing, color systems, and brand guidelines, from scratch or extended across an existing identity for digital and print.
             </div>
 
-            <h3 className="about-heading">Workflow &amp; Tooling</h3>
+            <h3 className="about-heading">Interaction &amp; Motion</h3>
             <div className="about-detail">
-              Git/GitHub, Vite and modern build tooling, npm/yarn, local development (MAMP, etc.), component-based design and development, performance profiling.
+              Micro-interactions, animated UI components, scroll-driven effects, and motion graphics. I use animation as a functional tool, guiding attention, communicating state, and adding polish without hurting performance. Tools include GSAP, CSS/JS animation, and After Effects.
+            </div>
+
+            <h3 className="about-heading">Graphics &amp; Media</h3>
+            <div className="about-detail">
+              Illustrator, Photoshop, Figma, Procreate, InDesign, Blender, After Effects.
             </div>
           </div>{/* primary-skills */}
 
-          {/* Creative & Technical Exploration */}
+          {/* Creative & Technical Exploration 
           <div className="about-group technical-exploration">
             <h2 className="about-title">Creative &amp; Technical Exploration</h2>
             <p>
-              Beyond the browser, I enjoy creating graphics, 3D modeling, and building motion pieces and interactive LED installations using FastLED and microcontrollers. These experiments often influence my approach to animation, interaction patterns, and visual systems on the web.
+              Beyond the browser, I enjoy creating graphics, 3D modeling, and building interactive LED installations using FastLED and microcontrollers. These experiments often influence my approach to animation, interaction patterns, and visual systems on the web.
             </p>
 
             <h3 className="about-heading">Graphics &amp; Motion</h3>
             <div className="about-detail">
-              Illustrator, Photoshop, Figma/Sketch, basic motion graphics.
+              Illustrator, Photoshop, Figma, Procreate. Comfortable working across vector illustration, image retouching, and layout composition.
+            </div>
+
+            <h3 className="about-heading">Print & Editorial</h3>
+            <div className="about-detail">
+              InDesign for editorial layouts, print collateral, and multi-page documents.
             </div>
 
             <h3 className="about-heading">3D &amp; Physical</h3>
@@ -131,7 +165,7 @@ export default function Home() {
 
             <h3 className="about-heading">Media</h3>
             <div className="about-detail">
-              Photo retouching, video editing.
+              Photo retouching, video editing, motion graphics (After Effects).
             </div>
           </div>{/* technical-exploration */}
 
