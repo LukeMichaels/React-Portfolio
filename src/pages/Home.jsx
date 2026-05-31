@@ -1,5 +1,6 @@
 // src/pages/Home.jsx
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 import {
   faPaperclip,
   faEnvelope,
@@ -94,7 +95,7 @@ export default function Home() {
               I'm also comfortable in the messy middle parts of the process: facilitating workshops, presenting rationale to stakeholders, navigating tradeoffs, and iterating based on research and feedback. I've worked closely with product and engineering teams throughout my career and understand how design decisions ripple into roadmaps and timelines.
             </p>
             <p style={{ marginBottom: 0 }}>
-              Beyond the browser, I build interactive LED installations, do 3D modeling, and tinker with microcontrollers. These experiments quietly influence how I think about animation, interaction, and physical space.
+              Beyond the browser, I build interactive LED installations, do 3D modeling, and tinker with microcontrollers. These experiments quietly influence how I think about animation and user interaction.
             </p>
           </div>
 
@@ -210,14 +211,14 @@ export default function Home() {
           </div>{/* favorites */}
 
           <div className="about-cta">
-            <a
-              href="#/work"
-              title="Visit my portfolio page" >
+            <Link
+              to="/work"
+              title="Visit my portfolio page">
               <div className="about-icon">
                 <FontAwesomeIcon icon={faFolderOpen} aria-hidden="true" />
               </div>
               <div className="about-link-title">View My Work</div>
-            </a>
+            </Link>
           </div>{/* about-cta */}
         </div>{/* about-right */}
 
