@@ -193,6 +193,35 @@ export const projects = [
   },
 
   {
+    id: "night-lights-logo",
+    title: "Night Lights Logo",
+    categories: ["Graphics"],
+    role: "Logo Design",
+    tools: ["Procreate", "Illustrator"],
+    year: "2026",
+    shortSummary:
+      "Logo design for Night Lights, hand-drawn in Procreate and refined in Illustrator.",
+    summary:
+      "Logo design for Night Lights, my own small business. I started with hand-drawn sketches in Procreate to find the right feeling, then brought the design into Illustrator to refine the forms, tighten the linework, and prepare final production-ready files. The result is a mark that feels crafted and personal while holding up cleanly across different sizes and applications.",
+    thumbnail: "/images/other/Night_Lights_Logo_630.webp",
+    thumbnail2x: "/images/other/Night_Lights_Logo_1260.webp", // Placeholder
+    thumbnailAlt: "Night Lights Logo thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/other/Night_Lights_Logo_630.webp",
+        src2x: "/images/other/Night_Lights_Logo_1260.webp",
+        alt: "Night Lights Logo image",
+      },
+    ],
+    highlights: [
+      "Started with hand-drawn concept work in Procreate before moving to vector.",
+      "Refined forms and linework in Illustrator for clean, scalable output.",
+      "Prepared final files suitable for both digital and print use.",
+    ],
+  },
+
+  {
     id: "aura-flora-website",
     title: "Aura Flora Web App",
     categories: ["Graphics", "Web/Software"],
