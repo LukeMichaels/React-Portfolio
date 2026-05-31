@@ -108,6 +108,8 @@ export default function Hero() {
         alt=""
         aria-hidden="true"
         loading="lazy"
+        width={1080}
+        height={218}
       />
     </section>
   );

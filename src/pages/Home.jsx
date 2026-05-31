@@ -20,6 +20,8 @@ export default function Home() {
             src="/images/ui/Luke_Michaels_Photograph_250.webp"
             srcSet="/images/ui/Luke_Michaels_Photograph_250.webp 1x, /images/ui/Luke_Michaels_Photograph_700.webp 2x"
             alt="Portrait of Luke Michaels"
+            width={250}
+            height={250}
           />
           <div className="about-links" aria-label="Contact and profile links">
             <a

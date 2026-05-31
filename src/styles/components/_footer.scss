@@ -6,8 +6,8 @@ footer {
   position: relative;
   width: 100%;
   max-width: 1080px;
-  margin: 0 auto;
   height: 218px;
+  margin: 0 auto;
   overflow: hidden;
   background-color: $teal;
 
@@ -23,6 +23,7 @@ footer {
   }
 
   .footer-parallax-img {
+    aspect-ratio: 1080 / 218;
     position: absolute;
     left: 50%;
     top: 0;

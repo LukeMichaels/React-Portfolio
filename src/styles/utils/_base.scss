@@ -77,6 +77,7 @@ button {
 .site-main {
   width: 100%;
   max-width: 1080px;
+  min-height: 100vh;
   position: relative;
   margin: 0 auto;
   background-color: $green;

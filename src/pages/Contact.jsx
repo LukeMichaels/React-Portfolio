@@ -83,7 +83,7 @@ export default function Contact() {
             love to hear from you.
           </p>
           <p>
-            I&apos;m currently based in Portland, Oregon and available for
+            I&apos;m currently based in Longview, Washington and available for
             remote work, contract collaborations, and select ongoing partnerships.
           </p>
 

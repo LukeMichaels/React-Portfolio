@@ -104,6 +104,8 @@ export default function Footer() {
           srcSet="/images/ui/Footer_1080.webp 1x, /images/ui/Footer_2160.webp 2x"
           alt=""
           aria-hidden="true"
+          width={1080}
+          height={218}
         />
       </footer>
       <div className="copyright">
