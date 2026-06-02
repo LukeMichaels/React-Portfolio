@@ -315,6 +315,10 @@ export default function ProjectModal({
               <strong>Tools: </strong>
               {project.tools.join(", ")}
             </p>
+            <p className="project-modal-year">
+              <strong>Year: </strong>
+              {project.year}
+            </p>
             <p className="project-modal-summary" id={summaryId}>
               {project.summary}
             </p>
