@@ -15,7 +15,7 @@ import {
 
 const ICONS = {
   All: faList,
-  "Web/Software": faLaptopCode,
+  "Web/App": faLaptopCode,
   // "Brand/Client": faBullhorn,
   "Graphics": faPalette,
 };

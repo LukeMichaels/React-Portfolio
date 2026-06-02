@@ -1,19 +1,19 @@
 // src/data/Projects.js
 export const PROJECT_CATEGORIES = [
-  "Web/Software",
+  "Web/App",
   //"Brand/Client",
   "Graphics",
 ];
 
 export const projects = [
-  // ===================== Web/Software =====================
+  // ===================== Web/App =====================
   {
     id: "henrietta-finds-a-nest",
     title: "Henrietta Finds A Nest",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "UX Design, Front-end Development",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
-    year: "",
+    year: "2025",
     shortSummary:
       "Front-end build for the Henrietta Finds a Nest film site, highlighting the film and key calls-to-action.",
     summary:
@@ -42,10 +42,10 @@ export const projects = [
   {
     id: "choose-veg",
     title: "ChooseVeg",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
-    year: "",
+    year: "2019",
     shortSummary:
       "Front-end development and user-experience improvements for ChooseVeg.",
     summary:
@@ -83,10 +83,10 @@ export const projects = [
   {
     id: "mfa-gala-2024",
     title: "Mercy For Animals Gala",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "JavaScript", "WordPress"],
-    year: "",
+    year: "2024",
     shortSummary:
       "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
     summary:
@@ -113,10 +113,10 @@ export const projects = [
   {
     id: "transfarmation-project",
     title: "The Transfarmation Project",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
-    year: "",
+    year: "2021",
     shortSummary:
       "Farmer-focused page builds for The Transfarmation Project, highlighting farmer stories and support resources.",
     summary:
@@ -158,10 +158,10 @@ export const projects = [
   {
     id: "peoples-fund",
     title: "The People’s Fund",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
-    year: "",
+    year: "2022",
     shortSummary:
       "Front-end build for MFA’s People’s Fund site, spotlighting equity-focused grantmaking.",
     summary:
@@ -224,7 +224,7 @@ export const projects = [
   {
     id: "aura-flora-website",
     title: "Aura Flora Web App",
-    categories: ["Graphics", "Web/Software"],
+    categories: ["Web/App"],
     role: "Website Design & Development",
     tools: ["React", "TypeScript", "Sass"],
     year: "2026",
@@ -264,10 +264,10 @@ export const projects = [
   {
     id: "farmer-toolkit",
     title: "Farmer Toolkit",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
-    year: "",
+    year: "2018",
     shortSummary:
       "Front-end build for FarmerToolkit.org, including an interactive state-by-state resource map.",
     summary:
@@ -309,10 +309,10 @@ export const projects = [
   {
     id: "new-year-new-choices",
     title: "New Year New Choices",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website design & development, UX Design",
     tools: ["Figma", "WordPress", "HTML", "CSS", "JavaScript"],
-    year: "",
+    year: "2022",
     shortSummary:
       "New Year’s campaign site with playful motion and a fully responsive layout.",
     summary:
@@ -340,10 +340,10 @@ export const projects = [
   {
     id: "cca-joyrx",
     title: "Children’s Cancer Association – JoyRX",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website development, UX Design",
     tools: ["Illustrator", "WordPress", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
+    year: "2016",
     shortSummary:
       "Modular WordPress build for JoyRX, with reusable blocks for programs, impact, and giving.",
     summary:
@@ -374,10 +374,10 @@ export const projects = [
   {
     id: "keep-oregon-green",
     title: "Keep Oregon Green",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
+    year: "2017",
     shortSummary:
       "WordPress build for Keep Oregon Green, supporting wildfire prevention outreach and education.",
     summary:
@@ -413,10 +413,10 @@ export const projects = [
   {
     id: "lamarzocco-home",
     title: "LaMarzocco Home Website",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
+    year: "2015",
     shortSummary:
       "Front-end development for La Marzocco Home’s U.S. website, built on a clean, responsive WordPress theme.",
     summary:
@@ -448,10 +448,10 @@ export const projects = [
   {
     id: "supercrown-website",
     title: "Supercrown Website",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website development",
     tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
-    year: "",
+    year: "2016",
     shortSummary:
       "WordPress + WooCommerce build for Supercrown, blending editorial storytelling with ecommerce.",
     summary:
@@ -483,10 +483,10 @@ export const projects = [
   {
     id: "ofri",
     title: "Oregon Forest Resources Institute",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Front-end development & project support",
     tools: ["Drupal 8", "Twig", "HTML", "CSS"],
-    year: "",
+    year: "2016",
     shortSummary:
       "Front-end development and coordination for a full Drupal 8 redesign of OregonForests.org.",
     summary:
@@ -527,10 +527,10 @@ export const projects = [
   {
     id: "bobs-blog",
     title: "Bob’s Red Mill Blog",
-    categories: ["Graphics", "Web/Software"],
+    categories: ["Web/App"],
     role: "Website design & development",
     tools: ["WordPress", "HTML", "CSS", "JavaScript"],
-    year: "",
+    year: "2012",
     shortSummary:
       "First-ever WordPress blog for Bob’s Red Mill, with a custom theme aligned to their signature brand.",
     summary:
@@ -556,10 +556,10 @@ export const projects = [
   {
     id: "bobs-red-mill-site",
     title: "Bob’s Red Mill Website",
-    categories: "Web/Software",
+    categories: "Web/App",
     role: "Website design & development",
     tools: ["HTML", "CSS", "JavaScript"],
-    year: "",
+    year: "2011",
     shortSummary:
       "Website design and front-end implementation for Bob’s Red Mill, extending the core brand online.",
     summary:
@@ -587,7 +587,7 @@ export const projects = [
   // {
   //   id: "grains-of-discovery",
   //   title: "Grains of Discovery",
-  //   categories: "Web/Software",
+  //   categories: "Web/App",
   //   role: "Website design & development",
   //   tools: ["HTML", "CSS", "JavaScript", "jQuery"],
   //   year: "",
@@ -659,7 +659,7 @@ export const projects = [
     categories: "Graphics",
     role: "Website design comps",
     tools: ["Adobe Photoshop", "Adobe Illustrator"],
-    year: "",
+    year: "2010",
     shortSummary:
       "Homepage and beer-page design comps for Rogue Ales & Spirits focused on mission and story.",
     summary:
@@ -692,11 +692,11 @@ export const projects = [
     categories: "Graphics",
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2007",
     shortSummary:
-      "Album cover illustration for Mr. History’s “Gene,” focusing on bold, graphic artwork.",
+      "Album cover illustration for Mr. History’s “Gene.”.",
     summary:
-      "Album cover artwork for Mr. History’s release “Gene.” I developed the cover entirely in Illustrator, paying attention to how the artwork would read at both full-size packaging and small digital thumbnail scales.",
+      "Album cover artwork for Mr. History’s release “Gene.” I developed the cover entirely in Illustrator.",
     thumbnail: "/images/other/Mr_History_Gene_Album_Art_508x508.webp",
     thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800x800.webp",
     thumbnailAlt: "Mr History Gene album artwork thumbnail",
@@ -714,35 +714,35 @@ export const projects = [
       "Created visuals aligned with the band’s sound and identity.",
     ],
   },
-
-  {
-    id: "explosions-in-the-sky",
-    title: "Explosions In The Sky at The Granada",
-    categories: "Graphics",
-    role: "Poster design",
-    tools: ["Adobe Illustrator", "Adobe Photoshop"],
-    year: "",
-    shortSummary:
-      "Concert poster for Explosions In The Sky at The Granada, emphasizing mood and atmosphere.",
-    summary:
-      "Poster design for Explosions In The Sky at The Granada, aimed at capturing the band’s expansive, atmospheric sound. I used layered illustration and texture to build a sense of movement and depth within a simple layout. The final piece was prepared as a large-format print, with type and key details tuned to remain legible at a distance.",
-    thumbnail: "/images/other/Explosions_In_The_Sky_Flier_508.webp",
-    thumbnail2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
-    thumbnailAlt: "Explosions in the Sky flier design thumbnail",
-    thumbnailAlignment: "",
-    images: [
-      {
-        src: "/images/other/Explosions_In_The_Sky_Flier_630.webp",
-        src2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
-        alt: "Explosions In The Sky flier",
-      },
-    ],
-    highlights: [
-      "Designed a large-format concert poster.",
-      "Used layered illustration and texture to reflect the band’s sound.",
-      "Prepared final artwork for print production.",
-    ],
-  },
+// 
+//   {
+//     id: "explosions-in-the-sky",
+//     title: "Explosions In The Sky at The Granada",
+//     categories: "Graphics",
+//     role: "Poster design",
+//     tools: ["Adobe Illustrator", "Adobe Photoshop"],
+//     year: "",
+//     shortSummary:
+//       "Concert poster for Explosions In The Sky at The Granada, emphasizing mood and atmosphere.",
+//     summary:
+//       "Poster design for Explosions In The Sky at The Granada, aimed at capturing the band’s expansive, atmospheric sound. I used layered illustration and texture to build a sense of movement and depth within a simple layout. The final piece was prepared as a large-format print, with type and key details tuned to remain legible at a distance.",
+//     thumbnail: "/images/other/Explosions_In_The_Sky_Flier_508.webp",
+//     thumbnail2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
+//     thumbnailAlt: "Explosions in the Sky flier design thumbnail",
+//     thumbnailAlignment: "",
+//     images: [
+//       {
+//         src: "/images/other/Explosions_In_The_Sky_Flier_630.webp",
+//         src2x: "/images/other/Explosions_In_The_Sky_Flier_800.webp",
+//         alt: "Explosions In The Sky flier",
+//       },
+//     ],
+//     highlights: [
+//       "Designed a large-format concert poster.",
+//       "Used layered illustration and texture to reflect the band’s sound.",
+//       "Prepared final artwork for print production.",
+//     ],
+//   },
 
   {
     id: "fairbanks-mr-history",
@@ -750,9 +750,9 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2007",
     shortSummary:
-      "Poster design for Fairbanks with Mr. History at Record Bar, using illustration to capture the lineup’s energy.",
+      "Poster design for Fairbanks with Mr. History at Record Bar.",
     summary:
       "Poster design for Fairbanks with Mr. History at Record Bar, designed to promote a specific show. I created an 11x17 inch layout that uses illustration to draw attention without overwhelming the event details.",
     thumbnail: "/images/other/Fairbanks_Mr_History_Flier_508.webp",
@@ -778,9 +778,9 @@ export const projects = [
     categories: "Graphics",
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2009",
     shortSummary:
-      "Album artwork for Mr. History’s “Cousin Sleep Cousin Death,” with detailed illustration work.",
+      "Album artwork for Mr. History’s “Cousin Sleep Cousin Death.”",
     summary:
       "Album artwork for Mr. History’s release “Cousin Sleep Cousin Death,” built in Illustrator. I developed a visual language that supports the album’s themes while remaining flexible across formats like vinyl, CD, and digital platforms. The final files were prepared for print, with attention to color, margins, and production constraints.",
     thumbnail:
@@ -810,7 +810,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2008",
     shortSummary:
       "A pair of reusable stock fliers for Good Foot, adaptable across multiple events.",
     summary:
@@ -843,7 +843,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
-    year: "",
+    year: "2006",
     shortSummary:
       "Concert flier for Cobra Skulls with Bent Left, blending vector art and texture.",
     summary:
@@ -865,35 +865,35 @@ export const projects = [
       "Kept event info legible within a strong punk-inspired aesthetic.",
     ],
   },
-
-  {
-    id: "dj-red-beard",
-    title: "DJ Red Beard Flier",
-    categories: "Graphics",
-    role: "Poster design",
-    tools: ["Adobe Illustrator"],
-    year: "",
-    shortSummary:
-      "Flier design for DJ Red Beard, built around a bold illustrative focal point.",
-    summary:
-      "Flier design for DJ Red Beard, built around a bold central illustration that reflects the DJ’s personality. I created the artwork in Illustrator with a focus on strong shape and silhouette, then integrated event details in a way that stays legible without competing with the art. The final file was set up for print at 11x17 inches.",
-    thumbnail: "/images/other/DJ_Red_Beard_Flier_508.webp",
-    thumbnail2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
-    thumbnailAlt: "DJ Red Beard flier design thumbnail",
-    thumbnailAlignment: "",
-    images: [
-      {
-        src: "/images/other/DJ_Red_Beard_Flier_630.webp",
-        src2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
-        alt: "DJ Red Beard flier",
-      },
-    ],
-    highlights: [
-      "Designed an 11x17 inch flier using vector illustration.",
-      "Emphasized the personality of the DJ while keeping event details clear.",
-      "Prepared artwork for print output.",
-    ],
-  },
+// 
+//   {
+//     id: "dj-red-beard",
+//     title: "DJ Red Beard Flier",
+//     categories: "Graphics",
+//     role: "Poster design",
+//     tools: ["Adobe Illustrator"],
+//     year: "",
+//     shortSummary:
+//       "Flier design for DJ Red Beard, built around a bold illustrative focal point.",
+//     summary:
+//       "Flier design for DJ Red Beard, built around a bold central illustration that reflects the DJ’s personality. I created the artwork in Illustrator with a focus on strong shape and silhouette, then integrated event details in a way that stays legible without competing with the art. The final file was set up for print at 11x17 inches.",
+//     thumbnail: "/images/other/DJ_Red_Beard_Flier_508.webp",
+//     thumbnail2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
+//     thumbnailAlt: "DJ Red Beard flier design thumbnail",
+//     thumbnailAlignment: "",
+//     images: [
+//       {
+//         src: "/images/other/DJ_Red_Beard_Flier_630.webp",
+//         src2x: "/images/other/DJ_Red_Beard_Flier_800.webp",
+//         alt: "DJ Red Beard flier",
+//       },
+//     ],
+//     highlights: [
+//       "Designed an 11x17 inch flier using vector illustration.",
+//       "Emphasized the personality of the DJ while keeping event details clear.",
+//       "Prepared artwork for print output.",
+//     ],
+//   },
 
   // {
   //   id: "radiohead-flier",
@@ -930,7 +930,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2008",
     shortSummary:
       "Poster for Mr. History at Riot Room, featuring bold illustration and typography.",
     summary:
@@ -959,7 +959,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2007",
     shortSummary:
       "Concert flier for Mr. History at Crosstown Station with a strong central illustration.",
     summary:
@@ -988,7 +988,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2008",
     shortSummary:
       "Concert flier for Mr. History at Davies Uptown with a bold, illustrative style.",
     summary:
@@ -1016,7 +1016,7 @@ export const projects = [
     categories: "Graphics",
     role: "Poster design",
     tools: ["Adobe Illustrator"],
-    year: "",
+    year: "2007",
     shortSummary:
       "High-contrast poster for Mr. History at The Riot Room with a strong illustrative focus.",
     summary:
