@@ -187,14 +187,6 @@ export default function Home() {
           <div className="about-group favorites">
             <h2 className="about-title">Some Favorites</h2>
             <div className="about-heading">
-              Design Tool:{" "}
-              <span className="about-detail">Adobe Illustrator</span>
-            </div>
-            <div className="about-heading">
-              CSS Preprocessor:{" "}
-              <span className="about-detail">Sass</span>
-            </div>
-            <div className="about-heading">
               Novel:{" "}
               <span className="about-detail">
                 <em>Cat&apos;s Cradle</em>
