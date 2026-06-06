@@ -138,7 +138,7 @@ export default function Home() {
             <div className="about-detail">
               Illustrator, Photoshop, Figma, Procreate, InDesign, Blender, After Effects.
             </div>
-            
+
             <h3 className="about-heading">Video Editing</h3>
             <div className="about-detail">
               Premier, Final Cut.
