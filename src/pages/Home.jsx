@@ -91,7 +91,7 @@ export default function Home() {
               I think in systems. Designing a component, mapping a user journey, building out a design system, it's all the same instinct: keep it consistent and think about whoever inherits the work after me. In code that shows up as clean, maintainable work and specs that don't leave developers guessing. In design it's documentation, contribution standards, and patterns that hold up as a product grows. I'm comfortable running a workshop, walking stakeholders through the reasoning, and reworking things once research comes back.
             </p>
             <p style={{ marginBottom: 0 }}>
-              Away from the browser, I build interactive LED installations, mess around with microcontrollers, and do some 3D modeling. That work feeds back into the web more than I'd expect, mostly in how I think about motion and interaction.
+              Away from the browser, I build interactive LED installations, mess around with microcontrollers, and do some 3D modeling. That work feeds back into my work more than I'd expect, mostly in how I think about motion and interaction.
             </p>
           </div>
 
