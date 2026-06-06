@@ -112,7 +112,7 @@ export default function Contact() {
                 aria-hidden="true"
                 className="contact-detail-icon"
               />
-              <span>Portland, Oregon (Remote-friendly)</span>
+              <span>Longview, WA (Remote-friendly)</span>
             </div>
           </div>
           {/*}

@@ -10,14 +10,14 @@ export const projects = [
   {
     id: "henrietta-finds-a-nest",
     title: "Henrietta Finds A Nest",
-    categories: "Web/App",
-    role: "UX Design, Front-end Development",
+    categories: ["Web/App"],
+    role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "2025",
     shortSummary:
-      "Front-end build for the Henrietta Finds a Nest film site, highlighting the film and key calls-to-action.",
+      "Front-end build for the Henrietta Finds a Nest film site, built around the trailer, synopsis, and festival run.",
     summary:
-      "Front-end build for the Henrietta Finds a Nest film site, with a responsive layout that spotlights the film’s synopsis, trailer, and festival selections. I focused on clear hierarchy and pacing so visitors can quickly understand the story and take the next step, whether that’s watching the trailer, exploring screenings, or visiting the merch store.",
+      "Front-end build for the Henrietta Finds a Nest film site. The layout leads with the trailer and synopsis, then moves into festival selections and the merch store. The hierarchy was kept tight so the page reads in a single scroll, and built on WordPress so the campaign team can swap in new screenings and press as they come.",
     link: "https://henriettafilm.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Henrietta_Finds_A_Nest_508.webp",
     thumbnail2x:
@@ -33,23 +33,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Structured content so visitors can quickly access synopsis, trailer, festival selections, and merch.",
-      "Focused on accessible layout and typography across devices.",
-      "Integrated with WordPress so the campaign can update content easily.",
+      "Led with the trailer and synopsis, with festival selections and merch a scroll away.",
+      "Accessible layout and typography that hold up across screen sizes.",
+      "Built on WordPress so the team can update screenings without a developer.",
     ],
   },
 
   {
     id: "choose-veg",
     title: "ChooseVeg",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "2019",
     shortSummary:
-      "Front-end development and user-experience improvements for ChooseVeg.",
+      "Front-end development and UX work on ChooseVeg, one of Mercy For Animals' largest public sites.",
     summary:
-      "ChooseVeg is one of Mercy For Animals' flagship public-facing platforms, serving millions of visitors exploring plant-based eating. I led UX improvements and front-end development focused on making recipes, guides, and resources easier to discover and navigate. That meant refining information architecture, improving navigation patterns, and building reusable components that kept the experience consistent and accessible across a large, growing content library.",
+      "ChooseVeg is one of Mercy For Animals' biggest public sites, with millions of visitors looking for recipes, guides, and plant-based eating resources. My work centered on making that large, growing library easier to get through. The information architecture and navigation were reworked, then reusable components were built so that new content stayed consistent and accessible as the site kept expanding.",
     link: "https://chooseveg.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_508.webp",
     thumbnail2x: "/images/mfa/Mercy_For_Animals_ChooseVeg_Home_1016.webp",
@@ -74,23 +74,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Implemented responsive layouts, refined navigation patterns, and optimized visual content.",
-      "Built reusable components.",
-      "Improved readability and strengthened the overall flow toward educational resources and food-related guides.",
+      "Reworked navigation and information architecture for a large content library.",
+      "Built reusable components that kept new pages consistent.",
+      "Improved readability and the path toward recipes and guides.",
     ],
   },
 
   {
     id: "mfa-gala-2024",
     title: "Mercy For Animals Gala",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "JavaScript", "WordPress"],
     year: "2024",
     shortSummary:
-      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website.",
+      "Front-end build for Mercy For Animals' 25th Anniversary Gala site.",
     summary:
-      "Front-end build for Mercy For Animals’ 25th Anniversary Gala website, designed to feel celebratory while staying clear and usable. I implemented motion and subtle animation to highlight honorees, sponsors, and the event schedule without overwhelming visitors. The site is fully responsive and built so the team can update content as the event evolves.",
+      "Front-end build for Mercy For Animals' 25th Anniversary Gala. The site needed to feel like an event without turning into a slideshow, so I used animation to give the honorees, sponsors, and schedule some life and left it at that. It's fully responsive and set up for the team to keep editing as the guest list and program changed.",
     link: "https://mfagala.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Gala_2024_508.webp",
     thumbnail2x: "/images/mfa/Mercy_For_Animals_Gala_2024_1016.webp",
@@ -104,23 +104,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used motion to give the site a more celebratory feel.",
-      "Ensured the site was accessible and easy to navigate, even with very large celebrity host and sponsor sections.",
-      "Ensured the layout adapts cleanly from mobile to large screens.",
+      "Used motion to give the site some occasion without slowing it down.",
+      "Kept large host and sponsor sections easy to scan and navigate.",
+      "Responsive from phone to wide desktop.",
     ],
   },
 
   {
     id: "transfarmation-project",
     title: "The Transfarmation Project",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "2021",
     shortSummary:
-      "Farmer-focused page builds for The Transfarmation Project, highlighting farmer stories and support resources.",
+      "Farmer-focused page builds for The Transfarmation Project, centered on farmer stories and support resources.",
     summary:
-      "I built the farmer-focused pages for The Transfarmation Project, creating responsive, accessible layouts that highlight individual farmers’ stories, farm profiles, and available support resources. The templates balance narrative content with practical information so visitors can understand each farmer’s journey and see what support is available. The pages are structured to be easy to maintain as more farmers join the program.",
+      "I built the farmer-focused pages for The Transfarmation Project. Each one pairs a farmer's story with the practical details: their farm, their transition, and the support available to them. The templates are responsive and accessible, and structured so new farmer profiles slot in easily as the program grows.",
     link: "https://thetransfarmationproject.org/farmers/",
     thumbnail:
       "/images/mfa/Mercy_For_Animals_Transfarmation_Project_Lim_Farm_508.webp",
@@ -149,23 +149,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Custom farmer profile templates with clean storytelling structure.",
-      "Responsive, accessible layouts optimized for readability.",
-      "Consistent visual system across listings and individual farmer pages.",
+      "Custom farmer-profile templates with a clear storytelling structure.",
+      "Responsive, accessible layouts tuned for reading.",
+      "One visual system across the listing and individual farmer pages.",
     ],
   },
 
   {
     id: "peoples-fund",
-    title: "The People’s Fund",
-    categories: "Web/App",
+    title: "The People's Fund",
+    categories: ["Web/App"],
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "2022",
     shortSummary:
-      "Front-end build for MFA’s People’s Fund site, spotlighting equity-focused grantmaking.",
+      "Front-end build for MFA's People's Fund site, focused on equity-driven grantmaking.",
     summary:
-      "Front-end build for Mercy For Animals’ People’s Fund site, supporting a grant program focused on advancing equity in the animal-protection movement. I implemented a clean, content-forward layout that clearly explains the fund’s purpose, eligibility, and impact. Motion and visual accents are used sparingly to draw attention to key metrics and calls-to-action while keeping the experience accessible and fast.",
+      "Front-end build for Mercy For Animals' People's Fund, a grant program working toward equity in the animal-protection movement. The layout puts the fund's purpose, eligibility, and impact up front in plain language. Motion shows up in small doses, mostly on the key numbers and the apply button.",
     link: "https://mfapeoplesfund.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Peoples_Fund_Homepage_508.webp",
     thumbnail2x:
@@ -186,9 +186,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used motion to bring key impact metrics into view in an engaging way.",
-      "Worked within the brand’s visual language while prioritizing performance and accessibility.",
-      "Ensured the layout adapts cleanly from mobile to large screens.",
+      "Used motion to bring the impact numbers into view as you scroll.",
+      "Stayed inside the brand's visual language without giving up performance.",
+      "Responsive across phone, tablet, and desktop.",
     ],
   },
 
@@ -202,7 +202,7 @@ export const projects = [
     shortSummary:
       "Logo design for Night Lights, hand-drawn in Procreate and refined in Illustrator.",
     summary:
-      "Logo design for Night Lights, my own small business. I started with hand-drawn sketches in Procreate to find the right feeling, then brought the design into Illustrator to refine the forms, tighten the linework, and prepare final production-ready files. The result is a mark that feels crafted and personal while holding up cleanly across different sizes and applications.",
+      "Logo for Night Lights, my own small business. I sketched it by hand in Procreate first to find the right feel, then rebuilt it in Illustrator to clean up the forms and tighten the linework into production files. It reads as hand-made up close and still holds together at small sizes.",
     thumbnail: "/images/other/Night_Lights_Logo_630.webp",
     thumbnail2x: "/images/other/Night_Lights_Logo_1260.webp", // Placeholder
     thumbnailAlt: "Night Lights Logo thumbnail",
@@ -215,9 +215,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Started with hand-drawn concept work in Procreate before moving to vector.",
-      "Refined forms and linework in Illustrator for clean, scalable output.",
-      "Prepared final files suitable for both digital and print use.",
+      "Hand-drawn concept work in Procreate before any vector work.",
+      "Refined the forms and linework in Illustrator for clean output at any size.",
+      "Final files ready for both screen and print.",
     ],
   },
 
@@ -229,9 +229,9 @@ export const projects = [
     tools: ["React", "TypeScript", "Sass"],
     year: "2026",
     shortSummary:
-      "A interactive promotional web app for 'Aura Flora'.",
+      "Interactive promotional web app for Aura Flora, a bio-reactive art installation.",
     summary:
-      "I designed and built the promotional web application for 'Aura Flora,' a bio-reactive art installation featured at the Portland Winter Light Festival. The goal was to create a web experience that was not just informative, but also an artistic extension of the sculpture itself, built with React, TypeScript, and Sass to create a modern and responsive presentation.",
+      "I designed and built the promotional web app for Aura Flora, a bio-reactive art installation shown at the Portland Winter Light Festival. I wanted the site to act like a piece of the sculpture rather than a page about it, so the background is procedurally generated and reacts as you move through it. It's built in React, TypeScript, and Sass.",
     link: "https://aura-flora.com/",
     thumbnail: "/images/other/Aura_Flora_One_508.webp",
     thumbnail2x: "/images/other/Aura_Flora_One_1016.webp", // Placeholder
@@ -255,23 +255,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Developed a procedurally generated, interactive background to mirror the art installation.",
-      "Built a modern, responsive front-end using React, TypeScript, and Sass.",
-      "Created a digital experience to promote a physical art piece and engage visitors.",
+      "Built a procedurally generated, interactive background that echoes the installation.",
+      "Front end in React, TypeScript, and Sass.",
+      "Gave a physical art piece a home online.",
     ],
   },
 
   {
     id: "farmer-toolkit",
     title: "Farmer Toolkit",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Front-end development, UX Design",
     tools: ["Figma", "HTML", "CSS", "PHP", "JavaScript", "WordPress"],
     year: "2018",
     shortSummary:
       "Front-end build for FarmerToolkit.org, including an interactive state-by-state resource map.",
     summary:
-      "FarmerToolkit.org needed to serve a specific, busy audience: farmers looking for funding and resources fast. I led front-end development and UX, including an interactive U.S. map that lets users surface state-specific resources in one click. Every design decision prioritized clarity and low friction, from navigation hierarchy to page weight, so the site works well even on slow rural connections.",
+      "FarmerToolkit.org serves a specific, busy audience: farmers looking for funding and resources fast. I led the front end and UX, including an interactive U.S. map that surfaces state-specific resources in one click. I kept the pages light and the navigation shallow, partly because a lot of the audience is on slow rural connections.",
     link: "https://farmertoolkit.org/",
     thumbnail: "/images/mfa/Mercy_For_Animals_Farmer_Toolkit_Home_508.webp",
     thumbnail2x:
@@ -300,23 +300,23 @@ export const projects = [
     ],
     highlights: [
       "Interactive state-by-state resource map.",
-      "Clear, resource-focused layouts for easy browsing.",
-      "Accessible, mobile-friendly design.",
-      "Lightweight, performant front-end implementation.",
+      "Resource-first layouts that are quick to scan.",
+      "Accessible and mobile-friendly.",
+      "Light pages that load on slow connections.",
     ],
   },
 
   {
     id: "new-year-new-choices",
     title: "New Year New Choices",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Website design & development, UX Design",
     tools: ["Figma", "WordPress", "HTML", "CSS", "JavaScript"],
     year: "2022",
     shortSummary:
-      "New Year’s campaign site with playful motion and a fully responsive layout.",
+      "New Year's campaign site with playful motion and a fully responsive layout.",
     summary:
-      "New Year’s campaign site for Mercy For Animals, built around playful motion and a bright, optimistic aesthetic. I used GSAP and custom front-end work to create ambient and scroll-based animations that stay performant and accessible. The layout adapts cleanly across devices so visitors can explore pledges, recipes, and resources without friction.",
+      "New Year's campaign site for Mercy For Animals, bright and a little playful. I used GSAP for ambient and scroll-based animation, keeping an eye on performance and making sure it stayed accessible. It's fully responsive, with pledges, recipes, and resources easy to get to on any device.",
     link: "https://newyearnewchoices.com/",
     thumbnail: "/images/mfa/Mercy_For_Animals_New_Year_New_Choices_508.webp",
     thumbnail2x:
@@ -332,22 +332,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used GSAP to build ambient and scroll-driven animations that reinforce the campaign's optimistic tone without sacrificing performance or accessibility.",
-      "Built a fully responsive and accessible slider that maintained the designers original vision.",
+      "Built ambient and scroll-driven animation in GSAP, keeping it fast and accessible.",
+      "Built a responsive, accessible slider that held to the designer's original vision.",
     ],
   },
 
   {
     id: "cca-joyrx",
-    title: "Children’s Cancer Association – JoyRX",
-    categories: "Web/App",
+    title: "Children's Cancer Association – JoyRX",
+    categories: ["Web/App"],
     role: "Website development, UX Design",
     tools: ["Illustrator", "WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "2016",
     shortSummary:
       "Modular WordPress build for JoyRX, with reusable blocks for programs, impact, and giving.",
     summary:
-      "Modular WordPress build for JoyRX (Children’s Cancer Association), where I implemented a flexible system of reusable blocks for programs, impact stories, and giving opportunities. The goal was to give the internal team a toolkit they could use to assemble new pages without custom development each time. I focused on clean markup, maintainable CSS, and components that feel consistent even when arranged in different combinations.",
+      "Modular WordPress build for JoyRX (Children's Cancer Association). I built a system of reusable blocks for programs, impact stories, and ways to give, so the internal team could put new pages together without calling a developer every time. The markup is clean and the CSS is maintainable, and the components stay consistent however they're combined.",
     thumbnail: "/images/cca/CCA_Get_Involved_508.webp",
     thumbnail2x: "/images/cca/CCA_Get_Involved_1016.webp",
     thumbnailAlt: "JoyRX Get Involved page design thumbnail",
@@ -365,23 +365,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Built a modular component system so staff can customize both layout and content per page.",
-      "Collaborated closely with the JoyRX team to capture tone and mission in the front-end.",
-      "Focused on maintainability so the site can evolve with the organization.",
+      "Built a modular block system so staff control layout and content per page.",
+      "Worked closely with the JoyRX team to get the tone and mission right.",
+      "Built for maintainability so the site can grow with the organization.",
     ],
   },
 
   {
     id: "keep-oregon-green",
     title: "Keep Oregon Green",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "2017",
     shortSummary:
-      "WordPress build for Keep Oregon Green, supporting wildfire prevention outreach and education.",
+      "WordPress build for Keep Oregon Green, supporting wildfire prevention and education.",
     summary:
-      "WordPress site build for Keep Oregon Green, supporting wildfire prevention outreach and education across Oregon. I handled full front-end development and contributed design refinements to key templates, including the donation and information pages. The site emphasizes clarity, legibility, and ease of navigation so educators, landowners, and the public can quickly find the resources they need.",
+      "WordPress build for Keep Oregon Green, a wildfire prevention and education effort across the state. I handled the full front end and refined the design on key templates, including the donation and information pages. The priority throughout was legibility and simple navigation for a mixed audience of educators, landowners, and the general public.",
     thumbnail: "/images/kog/Keep_Oregon_Green_Home_508.webp",
     thumbnail2x: "/images/kog/Keep_Oregon_Green_Home_1016.webp",
     thumbnailAlt: "Keep Oregon Green website design thumbnail",
@@ -404,23 +404,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Handled all front-end development for the site.",
-      "Contributed design work on key templates, including the donation page.",
-      "Delivered a CMS-driven site the organization can manage internally.",
+      "Handled all front-end development.",
+      "Refined the design on key templates, including the donation page.",
+      "Delivered a CMS-driven site the organization runs in-house.",
     ],
   },
 
   {
     id: "lamarzocco-home",
     title: "LaMarzocco Home Website",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Website development",
     tools: ["WordPress", "HTML", "CSS", "PHP", "JavaScript"],
     year: "2015",
     shortSummary:
-      "Front-end development for La Marzocco Home’s U.S. website, built on a clean, responsive WordPress theme.",
+      "Front-end development for La Marzocco Home's U.S. website, built on a clean, responsive WordPress theme.",
     summary:
-      "Front-end development for La Marzocco Home’s U.S. website, bringing a premium coffee brand into a clean, responsive WordPress experience. I implemented key pages such as the home and office coffee sections, translating design comps into accessible, maintainable templates. Throughout the build I focused on preserving the brand’s high-end feel while keeping performance, readability, and content flexibility in mind.",
+      "Front-end development for La Marzocco Home's U.S. website, a premium coffee brand moving onto a clean, responsive WordPress theme. I built key pages including the home and office-coffee sections, turning the design comps into accessible, maintainable templates. The brand needed to keep its high-end feel, so I held the type and spacing close to the comps while keeping the pages fast.",
     link: "",
     thumbnail: "/images/lamarzocco/LaMarzocco_Home_508.webp",
     thumbnail2x: "/images/lamarzocco/LaMarzocco_Home_1016.webp",
@@ -439,23 +439,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Implemented the front-end for key pages including the home and office coffee sections.",
-      "Balanced premium brand aesthetics with performance and maintainability.",
-      "Collaborated with the broader team on structure and layout decisions.",
+      "Built the front end for key pages, including home and office coffee.",
+      "Kept the premium feel while pages stayed fast and maintainable.",
+      "Worked with the wider team on structure and layout.",
     ],
   },
 
   {
     id: "supercrown-website",
     title: "Supercrown Website",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Website development",
     tools: ["WordPress", "WooCommerce", "HTML", "CSS", "PHP", "JavaScript"],
     year: "2016",
     shortSummary:
-      "WordPress + WooCommerce build for Supercrown, blending editorial storytelling with ecommerce.",
+      "WordPress and WooCommerce build for Supercrown, where editorial and shop live side by side.",
     summary:
-      "WordPress and WooCommerce build for Supercrown, blending editorial storytelling with ecommerce functionality. I implemented templates that let the brand feature long-form coffee stories alongside product detail pages, keeping the experience cohesive across both content types. The result is a shop that feels like a publication, with flexible blocks for highlighting products, brewing notes, and journal entries.",
+      "WordPress and WooCommerce build for Supercrown. The brand wanted to run long-form coffee writing next to its product pages, so I built templates that handle both without the shop feeling bolted on. It ends up reading like a publication that happens to sell coffee, with flexible blocks for products, brewing notes, and journal entries.",
     thumbnail: "/images/supercrown/Supercrown_Home_508.webp",
     thumbnail2x: "/images/supercrown/Supercrown_Home_1016.webp",
     thumbnailAlt: "Supercrown website design thumbnail",
@@ -474,23 +474,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Implemented storefront and journal-style content in a cohesive experience.",
-      "Integrated WooCommerce while preserving a strong editorial feel.",
-      "Built flexible templates for product stories and journal entries.",
+      "Built storefront and journal-style content into one experience.",
+      "Integrated WooCommerce without losing the editorial feel.",
+      "Flexible templates for product stories and journal entries.",
     ],
   },
 
   {
     id: "ofri",
     title: "Oregon Forest Resources Institute",
-    categories: "Web/App",
+    categories: ["Web/App"],
     role: "Front-end development & project support",
     tools: ["Drupal 8", "Twig", "HTML", "CSS"],
     year: "2016",
     shortSummary:
       "Front-end development and coordination for a full Drupal 8 redesign of OregonForests.org.",
     summary:
-      "Front-end development and project support for a full-scale Drupal 8 redesign of OregonForests.org. I implemented Twig templates and responsive layouts for a large, content-heavy site that serves educators, policymakers, and the public. My work also included collaborating on interaction patterns and page structures so the site remains navigable even as content grows over time.",
+      "Front-end development and project support on a full Drupal 8 redesign of OregonForests.org. I built Twig templates and responsive layouts for a large, content-heavy site used by educators, policymakers, and the public. I also worked on the interaction patterns and page structures that keep a site like that navigable as it fills up.",
     thumbnail:
       "/images/ofri/Oregon_Forest_Research_Institute_Homepage_508.webp",
     thumbnail2x:
@@ -518,23 +518,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Implemented Drupal 8 and Twig templates for a large, content-heavy site.",
-      "Collaborated on layout and interaction design across multiple page types.",
-      "Gained deep experience working within a modern Drupal workflow.",
+      "Built Drupal 8 Twig templates for a large, content-heavy site.",
+      "Worked on layout and interaction across many page types.",
+      "Got hands-on with a modern Drupal workflow.",
     ],
   },
 
   {
     id: "bobs-blog",
-    title: "Bob’s Red Mill Blog",
+    title: "Bob's Red Mill Blog",
     categories: ["Web/App"],
     role: "Website design & development",
     tools: ["WordPress", "HTML", "CSS", "JavaScript"],
     year: "2012",
     shortSummary:
-      "First-ever WordPress blog for Bob’s Red Mill, with a custom theme aligned to their signature brand.",
+      "First WordPress blog for Bob's Red Mill, with a custom theme matched to their brand.",
     summary:
-      "First-ever WordPress blog for Bob’s Red Mill, built with a fully custom theme that extends the brand’s rustic, hand-crafted aesthetic to the web. I designed and developed templates for posts, archives, and feature areas so the social media team could easily publish new content. The build balanced the charm of the print brand with the performance and structure needed for ongoing, content-heavy blogging.",
+      "Bob's Red Mill's first WordPress blog, on a fully custom theme that carried the brand's rustic, hand-made look onto the web. I designed and built the templates for posts, archives, and feature areas so the social team could publish on their own. The brand has a lot of charm, and the job was getting that onto a page that could handle steady, content-heavy posting.",
     thumbnail: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_508.webp",
     thumbnail2x: "/images/bobs_red_mill/Bobs_Red_Mill_Bobs_Blog_800.webp",
     thumbnailAlt: "Bob's Red Mill blog design thumbnail",
@@ -547,23 +547,23 @@ export const projects = [
       },
     ],
     highlights: [
-      "Created a ground-up WordPress theme matching the brand’s rustic, old-time aesthetic.",
-      "Enabled the social media team to publish and manage content independently.",
-      "Supported both desktop and mobile experiences during the early days of responsive design.",
+      "Built a ground-up WordPress theme in the brand's rustic, old-time style.",
+      "Set up the social team to publish and manage content on their own.",
+      "Worked on desktop and mobile back when responsive design was new.",
     ],
   },
 
   {
     id: "bobs-red-mill-site",
-    title: "Bob’s Red Mill Website",
-    categories: "Web/App",
+    title: "Bob's Red Mill Website",
+    categories: ["Web/App"],
     role: "Website design & development",
     tools: ["HTML", "CSS", "JavaScript"],
     year: "2011",
     shortSummary:
-      "Website design and front-end implementation for Bob’s Red Mill, extending the core brand online.",
+      "Website design and front-end implementation for Bob's Red Mill, extending the core brand online.",
     summary:
-      "Website design and development work for Bob’s Red Mill, extending the core brand into a cohesive, web-friendly experience. I created layouts that foreground products and recipes while keeping navigation simple for a broad audience. The project included translating existing brand assets into a responsive system that feels familiar to fans while working well across modern devices.",
+      "Design and development for Bob's Red Mill's main site, carrying the core brand online. I built layouts that put products and recipes up front and kept navigation simple for a wide, general audience. A lot of the work was taking existing brand assets into a responsive system that still felt like Bob's to longtime fans.",
     thumbnail:
       "/images/bobs_red_mill/Bobs_Red_Mill_Website_Homepage_508x508.webp",
     thumbnail2x:
@@ -578,9 +578,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed and built key pages emphasizing product and brand personality.",
+      "Designed and built key pages around product and brand personality.",
       "Worked within established brand assets while introducing new layouts.",
-      "Prioritized clarity and usability for a broad audience of shoppers and fans.",
+      "Kept it clear and usable for a broad audience of shoppers and fans.",
     ],
   },
 
@@ -656,14 +656,14 @@ export const projects = [
   {
     id: "rogue-design-composition",
     title: "Rogue Ales Design Composition",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Website design comps",
     tools: ["Adobe Photoshop", "Adobe Illustrator"],
     year: "2010",
     shortSummary:
-      "Homepage and beer-page design comps for Rogue Ales & Spirits focused on mission and story.",
+      "Homepage and beer-page design comps for Rogue Ales & Spirits, built around mission and story.",
     summary:
-      "Proposed redesign concepts for Rogue Ales & Spirits, centered around their mission statement and brand story. I explored how the homepage could put mission and personality front and center while still supporting product discovery. Additional comps for the beer pages experimented with hierarchy, typography, and imagery to better showcase individual brews.",
+      "Proposed redesign concepts for Rogue Ales & Spirits, built around their mission statement and brand story. I looked at how the homepage could lead with mission and personality and still move people toward the beer. The beer-page comps pushed on hierarchy, type, and imagery to give each brew more room.",
     thumbnail: "/images/other/Rogue_Landing_Page_508.webp",
     thumbnail2x: "/images/other/Rogue_Landing_Page_800.webp",
     thumbnailAlt: "Rogue website design composition thumbnail",
@@ -681,22 +681,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Explored layouts that place the Rogue mission front and center on the homepage.",
-      "Reflected on how to refine copy load and hierarchy in future iterations.",
+      "Explored homepage layouts that lead with the Rogue mission.",
+      "Tested hierarchy and type to give each beer more room.",
     ],
   },
 
   {
     id: "mr-history-gene",
     title: "Mr. History “Gene” Album Artwork",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
     year: "2007",
     shortSummary:
-      "Album cover illustration for Mr. History’s “Gene.”.",
+      "Album cover illustration for Mr. History's “Gene.”",
     summary:
-      "Album cover artwork for Mr. History’s release “Gene.” I developed the cover entirely in Illustrator.",
+      "Album cover for Mr. History's “Gene,” illustrated start to finish in Illustrator.",
     thumbnail: "/images/other/Mr_History_Gene_Album_Art_508x508.webp",
     thumbnail2x: "/images/other/Mr_History_Gene_Album_Art_800x800.webp",
     thumbnailAlt: "Mr History Gene album artwork thumbnail",
@@ -709,9 +709,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed full album cover in Illustrator.",
-      "Optimized artwork for print packaging needs.",
-      "Created visuals aligned with the band’s sound and identity.",
+      "Full album cover illustrated in Illustrator.",
+      "Set up the artwork for print packaging.",
+      "Built visuals to match the band's sound.",
     ],
   },
 // 
@@ -747,14 +747,14 @@ export const projects = [
   {
     id: "fairbanks-mr-history",
     title: "Fairbanks With Mr. History at Record Bar",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2007",
     shortSummary:
-      "Poster design for Fairbanks with Mr. History at Record Bar.",
+      "Poster for Fairbanks with Mr. History at Record Bar.",
     summary:
-      "Poster design for Fairbanks with Mr. History at Record Bar, designed to promote a specific show. I created an 11x17 inch layout that uses illustration to draw attention without overwhelming the event details.",
+      "Show poster for Fairbanks with Mr. History at Record Bar. I worked at 11x17 and let the illustration carry the poster while keeping the date, venue, and lineup easy to read.",
     thumbnail: "/images/other/Fairbanks_Mr_History_Flier_508.webp",
     thumbnail2x: "/images/other/Fairbanks_Mr_History_Flier_800.webp",
     thumbnailAlt: "Fairbanks with Mr. History flier design thumbnail",
@@ -767,22 +767,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Used illustration to convey the energy of the lineup.",
-      "Prepared final art suitable for print and digital promotion.",
+      "Let the illustration carry the energy of the lineup.",
+      "Print and digital-ready final art.",
     ],
   },
 
   {
     id: "mr-history-cousin-sleep",
     title: "Mr. History “Cousin Sleep Cousin Death” Album Artwork",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Album cover illustration",
     tools: ["Adobe Illustrator"],
     year: "2009",
     shortSummary:
-      "Album artwork for Mr. History’s “Cousin Sleep Cousin Death.”",
+      "Album artwork for Mr. History's “Cousin Sleep Cousin Death.”",
     summary:
-      "Album artwork for Mr. History’s release “Cousin Sleep Cousin Death,” built in Illustrator. I developed a visual language that supports the album’s themes while remaining flexible across formats like vinyl, CD, and digital platforms. The final files were prepared for print, with attention to color, margins, and production constraints.",
+      "Album artwork for Mr. History's “Cousin Sleep Cousin Death,” built in Illustrator. I worked out a visual language for the record that held up across vinyl, CD, and digital. Final files went out print-ready, with the color, margins, and production limits sorted.",
     thumbnail:
       "/images/other/Mr_History_Cousin_Sleep_Cousin_Death_Album_Art_508.webp",
     thumbnail2x:
@@ -799,22 +799,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Handled full-cover illustration for the album.",
-      "Developed a visual language that supports the record’s themes.",
+      "Illustrated the full cover.",
+      "Built a visual language that fit the record's themes.",
     ],
   },
 
   {
     id: "good-foot-stock",
     title: "Good Foot Stock Fliers",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2008",
     shortSummary:
       "A pair of reusable stock fliers for Good Foot, adaptable across multiple events.",
     summary:
-      "A pair of stock fliers for The Good Foot, a Kansas City soul band. The was booking a lot of those and these were designed to be reused and customized across multiple events. I created an 11x17 inch base layout and two visual variations that stay consistent with the band’s identity.",
+      "A pair of stock fliers for The Good Foot, a Kansas City soul band. They were booking shows constantly, so these were made to be reused and tweaked per event instead of starting from scratch each time. I built an 11x17 base and two variations that stay on-brand.",
     thumbnail: "/images/other/Good_Foot_Stock_Flier_One_508.webp",
     thumbnail2x: "/images/other/Good_Foot_Stock_Flier_One_800.webp",
     thumbnailAlt: "Good Foot Stock flier design thumbnail one",
@@ -832,22 +832,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed multiple flier variations within a unified visual system.",
-      "Worked at an 11x17 inch scale for print.",
+      "Built flier variations on one visual system.",
+      "Print scale at 11x17.",
     ],
   },
 
   {
     id: "cobra-skulls-bent-left",
     title: "Cobra Skulls w/ Bent Left Flier",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     year: "2006",
     shortSummary:
-      "Concert flier for Cobra Skulls with Bent Left, blending vector art and texture.",
+      "Concert flier for Cobra Skulls with Bent Left, mixing vector art and texture.",
     summary:
-      "Poster design for Cobra Skulls with Bent Left, blending vector illustration and textured finishing work. The layout keeps event information readable while letting the artwork carry the energy of the show.",
+      "Concert poster for Cobra Skulls with Bent Left. I built it from vector illustration and added texture in finishing. The artwork does the heavy lifting, with the event info kept clear underneath it.",
     thumbnail: "/images/other/Cobra_Skulls_Flier_508.webp",
     thumbnail2x: "/images/other/Cobra_Skulls_Flier_800.webp",
     thumbnailAlt: "Cobra Skulls with Bent Left flier design thumbnail",
@@ -860,9 +860,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Created an 11x17 inch concert flier.",
-      "Combined Illustrator vector art with Photoshop finishing.",
-      "Kept event info legible within a strong punk-inspired aesthetic.",
+      "11x17 concert flier.",
+      "Illustrator vector art with Photoshop finishing.",
+      "Kept the details legible inside a punk-leaning look.",
     ],
   },
 // 
@@ -927,14 +927,14 @@ export const projects = [
   {
     id: "mr-history-six",
     title: "Mr. History at Riot Room – August 24",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2008",
     shortSummary:
-      "Poster for Mr. History at Riot Room, featuring bold illustration and typography.",
+      "Poster for Mr. History at Riot Room, with bold illustration and type.",
     summary:
-      "Flier for Mr. History at Riot Room (August 24), featuring bold illustration and typography tuned for venue and street posting. I designed the poster at 11x17 inches with a clear hierarchy so the band name, date, and location stand out immediately. The illustration adds character without sacrificing readability at a distance.",
+      "Flier for Mr. History at Riot Room on August 24, with bold illustration and type meant for street and venue walls. I set it at 11x17 with a clear hierarchy, so the band, date, and venue read first. The illustration gives it character and still holds up from across the room.",
     thumbnail: "/images/other/Mr_History_Six_Flier_Recolor_508.webp",
     thumbnail2x: "/images/other/Mr_History_Six_Flier_Recolor_800.webp",
     thumbnailAlt: "Mr History at Riot Room flier design thumbnail",
@@ -947,52 +947,52 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed an 11x17 inch flier for a specific date and venue.",
-      "Used illustration to create a distinct visual identity for the show.",
-      "Prepared print-ready artwork.",
+      "11x17 flier for a specific date and venue.",
+      "Gave the show its own visual identity through illustration.",
+      "Print-ready artwork.",
     ],
   },
 
   {
     id: "mr-history-one",
     title: "Mr. History at Crosstown Station",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2007",
     shortSummary:
       "Concert flier for Mr. History at Crosstown Station with a strong central illustration.",
     summary:
-      "Flier for Mr. History at Crosstown Station, built around a strong central illustration to grab attention in crowded poster walls. I composed the 11x17 inch layout in Illustrator, balancing the artwork with clear type for the lineup and venue details. The design was prepared for both print and digital sharing.",
+      "Flier for Mr. History at Crosstown Station, built around a single strong illustration to stand out on a crowded poster wall. I laid it out at 11x17 in Illustrator and kept the type clean for the lineup and venue. Set up for print and digital.",
     thumbnail: "/images/other/Mr_History_One_Flier_508.webp",
-    thumbnail2: "/images/other/Mr_History_One_Flier_800.webp",
+    thumbnail2x: "/images/other/Mr_History_One_Flier_800.webp",
     thumbnailAlt: "Mr History Crosstown flier design thumbnail",
     thumbnailAlignment: "",
     images: [
       {
         src: "/images/other/Mr_History_One_Flier_630.webp",
-        src2: "/images/other/Mr_History_One_Flier_800.webp",
+        src2x: "/images/other/Mr_History_One_Flier_800.webp",
         alt: "Mr History Crosstown flier",
       },
     ],
     highlights: [
-      "Created an 11x17 inch poster for the show.",
-      "Focused on a strong central illustration to draw attention.",
-      "Prepared artwork suitable for street and venue posting.",
+      "11x17 poster for the show.",
+      "Built around one strong central illustration.",
+      "Ready for street and venue posting.",
     ],
   },
 
   {
     id: "mr-history-five",
     title: "Mr. History at Davies Uptown",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2008",
     shortSummary:
-      "Concert flier for Mr. History at Davies Uptown with a bold, illustrative style.",
+      "Concert flier for Mr. History at Davies Uptown, bold and illustration-led.",
     summary:
-      "Flier for Mr. History at Davies Uptown, using a bold, illustrative style to anchor the composition. The final piece supports both street-level promotion and digital use.",
+      "Flier for Mr. History at Davies Uptown, anchored by a bold illustrative style. It works on the street and online.",
     thumbnail: "/images/other/Mr_History_Five_Flier_508.webp",
     thumbnail2x: "/images/other/Mr_History_Five_Flier_800.webp",
     thumbnailAlt: "Mr History at Davies Uptown flier design thumbnail",
@@ -1005,22 +1005,22 @@ export const projects = [
       },
     ],
     highlights: [
-      "Designed an 11x17 inch flier using vector art.",
-      "Delivered print-ready files for promotion.",
+      "11x17 flier in vector art.",
+      "Print-ready files for promotion.",
     ],
   },
 
   {
     id: "mr-history-four",
     title: "Mr. History at The Riot Room",
-    categories: "Graphics",
+    categories: ["Graphics"],
     role: "Poster design",
     tools: ["Adobe Illustrator"],
     year: "2007",
     shortSummary:
-      "High-contrast poster for Mr. History at The Riot Room with a strong illustrative focus.",
+      "High-contrast poster for Mr. History at The Riot Room, illustration-led.",
     summary:
-      "Flier for Mr. History at The Riot Room, featuring a high-contrast illustration and minimal color palette. I focused on simplified forms and strong shapes so the poster remains striking from across a room. Type is integrated into the illustration while still preserving a clear path to the event details.",
+      "Flier for Mr. History at The Riot Room, built on a high-contrast illustration and a tight color palette. I went with simplified forms and strong shapes so it reads from across a room. The type sits inside the illustration but still leads you to the event details.",
     thumbnail: "/images/other/Mr_History_Four_Flier_Recolor_508.webp",
     thumbnail2x: "/images/other/Mr_History_Four_Flier_Recolor_800.webp",
     thumbnailAlt: "Mr. History at the Riot Room flier design thumbnail",
@@ -1033,9 +1033,9 @@ export const projects = [
       },
     ],
     highlights: [
-      "Created a visually striking poster using simplified forms and bold color.",
-      "Kept typography legible while integrating with the illustration.",
-      "Prepared artwork for print.",
+      "Striking poster built on simplified forms and bold color.",
+      "Worked the type into the illustration while keeping it legible.",
+      "Print-ready artwork.",
     ],
   },
 

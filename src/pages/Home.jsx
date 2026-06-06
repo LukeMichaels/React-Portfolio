@@ -25,7 +25,7 @@ export default function Home() {
           />
           <div className="about-links" aria-label="Contact and profile links">
             <a
-              href="/documents/Luke_Michaels_Resume_2026.pdf"
+              href="/documents/Luke_Michaels_Resume.pdf"
               title="Download my resume"
               target="_blank"
               rel="noopener noreferrer"
@@ -85,19 +85,13 @@ export default function Home() {
           <div className="about-group">
             <h1>Hi, I&apos;m Luke.</h1>
             <p>
-              I'm a UX/UI designer and front-end developer with 15+ years of experience turning complex workflows and requirements into accessible, intuitive digital products. I care about the full picture, from early research and rough wireframes to a polished, production-ready experience, and I bring both design leadership and engineering fluency to the work.
+              I'm a front-end developer and designer with 15+ years of experience building accessible web products out of complicated requirements. I like staying involved across the whole thing, from early research and rough wireframes through to production code. {/* I'm drawn to products where the design actually matters for real people. The more complex the problem, the more I want to understand it from the inside out. */}
             </p>
             <p>
-              I'm drawn to products where the design actually matters for real people. The more complex the problem, the more I want to understand it from the inside out.
-            </p>
-            <p>
-              I think in systems. Whether I'm designing a component, mapping an end-to-end user journey, or evolving a design system, I'm always thinking about consistency, scalability, and the person who inherits the work after me. On the engineering side, that means clean, maintainable code and specs that don't leave developers guessing. On the design side, it means governance, documentation, and patterns that hold up across a product.
-            </p>
-            <p>
-              I'm also comfortable in the messy middle parts of the process: facilitating workshops, presenting rationale to stakeholders, navigating tradeoffs, and iterating based on research and feedback. I've worked closely with product and engineering teams throughout my career and understand how design decisions ripple into roadmaps and timelines.
+              I think in systems. Designing a component, mapping a user journey, building out a design system, it's all the same instinct: keep it consistent and think about whoever inherits the work after me. In code that shows up as clean, maintainable work and specs that don't leave developers guessing. In design it's documentation, contribution standards, and patterns that hold up as a product grows. I'm comfortable running a workshop, walking stakeholders through the reasoning, and reworking things once research comes back.
             </p>
             <p style={{ marginBottom: 0 }}>
-              Beyond the browser, I build interactive LED installations, do 3D modeling, and tinker with microcontrollers. These experiments quietly influence how I think about animation and user interaction.
+              Away from the browser, I build interactive LED installations, mess around with microcontrollers, and do some 3D modeling. That work feeds back into the web more than I'd expect, mostly in how I think about motion and interaction.
             </p>
           </div>
 
@@ -105,24 +99,24 @@ export default function Home() {
           <div className="about-group primary-skills">
             <h2 className="about-title">What I do</h2>
 
+            <h3 className="about-heading">Front-End Development</h3>
+            <div className="about-detail">
+              HTML5, CSS/Sass, JavaScript (ES6+), React, PHP, WCAG accessibility, performance optimization, responsive UI systems.
+            </div>
+
             <h3 className="about-heading">UX Research & Strategy</h3>
             <div className="about-detail">
-              Discovery, usability testing, stakeholder interviews, and synthesis. Translating qualitative and quantitative findings into clear experience recommendations and prioritized opportunities.
+              Discovery, usability testing, stakeholder interviews, and synthesis. Turning what I learn, both the numbers and the interviews, into clear recommendations and a sense of what to tackle first.
             </div>
 
             <h3 className="about-heading">Interaction Design & Prototyping</h3>
             <div className="about-detail">
-              End-to-end design in Figma, from low-fidelity concepts and user journey mapping to developer-ready specs and high-fidelity interactive prototypes.
+              Design work in Figma, from low-fidelity concepts and journey maps through to developer-ready specs and high-fidelity interactive prototypes.
             </div>
 
             <h3 className="about-heading">Design Systems</h3>
             <div className="about-detail">
-              Building, governing, and evolving component libraries and design systems. Contribution standards, adoption plans, style guides, and close collaboration with engineering to keep design and code aligned.
-            </div>
-
-            <h3 className="about-heading">Front-End Development</h3>
-            <div className="about-detail">
-              HTML5, CSS/Sass, JavaScript (ES6+), React, PHP, WCAG accessibility, performance optimization, responsive UI systems.
+              Building and maintaining component libraries and design systems: contribution standards, adoption plans, style guides, and enough back-and-forth with engineering that the design and the code don't drift apart.
             </div>
 
             <h3 className="about-heading">WordPress &amp; CMS</h3>
@@ -137,12 +131,17 @@ export default function Home() {
 
             <h3 className="about-heading">Interaction &amp; Motion</h3>
             <div className="about-detail">
-              Micro-interactions, animated UI components, scroll-driven effects, and motion graphics. I use animation as a functional tool, guiding attention, communicating state, and adding polish without hurting performance. Tools include GSAP, CSS/JS animation, and After Effects.
+              Micro-interactions, animated UI components, scroll-driven effects, and motion graphics. For me animation earns its place when it does a job, pointing attention somewhere or showing that something changed, and I watch performance the whole time. Tools include GSAP, CSS and JS animation, and After Effects.
             </div>
 
             <h3 className="about-heading">Graphics &amp; Media</h3>
             <div className="about-detail">
               Illustrator, Photoshop, Figma, Procreate, InDesign, Blender, After Effects.
+            </div>
+            
+            <h3 className="about-heading">Video Editing</h3>
+            <div className="about-detail">
+              Premier, Final Cut.
             </div>
           </div>{/* primary-skills */}
 
@@ -178,7 +177,7 @@ export default function Home() {
           <div className="about-group education">
             <h2 className="about-title">Education</h2>
             <h3 className="about-heading">
-              Computer Science – Digital Media
+              Computer Science &amp; Digital Media
             </h3>
             <div className="about-detail">Full Sail University (2005)</div>
           </div>{/* education */}
