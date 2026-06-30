@@ -223,6 +223,20 @@ export default function ProjectModal({
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd} >
+            {project.video && (
+              <div className="project-modal-images">
+                <div className="project-modal-video">
+                  <iframe
+                    src={project.video}
+                    title={project.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            )}
+
             {project.images && project.images.length > 0 && (
               <div className="project-modal-images">
                 {project.images.map((image, index) => {
@@ -264,10 +278,12 @@ export default function ProjectModal({
                 <strong>Tools: </strong>
                 {project.tools.join(", ")}
               </p>
-              <p className="project-modal-year">
-                <strong>Year: </strong>
-                {project.year}
-              </p>
+              {project.year && (
+                <p className="project-modal-year">
+                  <strong>Year: </strong>
+                  {project.year}
+                </p>
+              )}
               <p className="project-modal-summary" id={summaryId}>
                 {project.summary}
               </p>
