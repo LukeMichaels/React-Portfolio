@@ -11,6 +11,7 @@ import {
   faPalette,
   faMobileScreen,
   faGlobe,
+  faClapperboard,
 } from "@fortawesome/free-solid-svg-icons";
 
 const ICONS = {
@@ -18,6 +19,7 @@ const ICONS = {
   "Web/App": faLaptopCode,
   // "Brand/Client": faBullhorn,
   "Graphics": faPalette,
+  "Videos": faClapperboard,
 };
 
 const FILTER_OPTIONS = ["All", ...PROJECT_CATEGORIES];
