@@ -25,7 +25,7 @@ export default function Home() {
           />
           <div className="about-links" aria-label="Contact and profile links">
             <a
-              href="/documents/Luke_Michaels_Resume.pdf"
+              href="/documents/Luke_Michaels_Generalist_Resume_For_Website.pdf"
               title="Download my resume"
               target="_blank"
               rel="noopener noreferrer"
@@ -64,6 +64,7 @@ export default function Home() {
               </div>
               <div className="about-link-title">GitHub</div>
             </a>
+            */}
             <a
               href="https://www.linkedin.com/in/lmichaels"
               title="Visit my LinkedIn"
@@ -75,7 +76,6 @@ export default function Home() {
               </div>
               <div className="about-link-title">LinkedIn</div>
             </a>
-            */}
           </div>
         </div>{/* about-left */}
 
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="about-group">
             <h1>Hi, I&apos;m Luke.</h1>
             <p>
-              I'm a front-end developer and designer with 15+ years of experience building accessible web products out of complicated requirements. I like staying involved across the whole thing, from early research and rough wireframes through to production code. {/* I'm drawn to products where the design actually matters for real people. The more complex the problem, the more I want to understand it from the inside out. */}
+              I'm a designer, front-end developer, and video editor with 15+ years of experience building accessible web products and visual work out of complicated requirements. I like staying involved across the whole thing, from early research and rough wireframes through to production code, finished graphics, and the final cut. {/* I'm drawn to products where the design actually matters for real people. The more complex the problem, the more I want to understand it from the inside out. */}
             </p>
             <p>
               I think in systems. Designing a component, mapping a user journey, building out a design system, it's all the same instinct: keep it consistent and think about whoever inherits the work after me. In code that shows up as clean, maintainable work and specs that don't leave developers guessing. In design it's documentation, contribution standards, and patterns that hold up as a product grows. I'm comfortable running a workshop, walking stakeholders through the reasoning, and reworking things once research comes back.
@@ -139,9 +139,14 @@ export default function Home() {
               Illustrator, Photoshop, Figma, Procreate, InDesign, Blender, After Effects.
             </div>
 
+            <h3 className="about-heading">Print &amp; Editorial</h3>
+            <div className="about-detail">
+              Print advertisements, collateral, editorial layouts, and multi-page documents in InDesign, with attention to print production and color management.
+            </div>
+
             <h3 className="about-heading">Video Editing</h3>
             <div className="about-detail">
-              Premier, Final Cut.
+              Editing short-form and social video in Premiere Pro and Final Cut Pro, from raw footage to final cut: documentary-style sequences, sound and music, and motion text and titles built in After Effects.
             </div>
           </div>{/* primary-skills */}
 
@@ -177,9 +182,9 @@ export default function Home() {
           <div className="about-group education">
             <h2 className="about-title">Education</h2>
             <h3 className="about-heading">
-              Computer Science &amp; Digital Media
+              A.S., Computer Science &amp; Digital Media
             </h3>
-            <div className="about-detail">Full Sail University (2005)</div>
+            <div className="about-detail">Full Sail University</div>
           </div>{/* education */}
 
           {/* Favorites */}
