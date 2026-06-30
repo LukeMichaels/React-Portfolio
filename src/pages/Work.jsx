@@ -19,7 +19,7 @@ const ICONS = {
   "Web/App": faLaptopCode,
   // "Brand/Client": faBullhorn,
   "Graphics": faPalette,
-  "Videos": faClapperboard,
+  "Video": faClapperboard,
 };
 
 const FILTER_OPTIONS = ["All", ...PROJECT_CATEGORIES];
