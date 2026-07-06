@@ -1,5 +1,5 @@
 // src/components/ProjectModal.jsx
-import { useEffect, useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowLeft,
@@ -18,6 +18,8 @@ export default function ProjectModal({
   const touchStartRef = useRef(null);
   const touchLastRef = useRef(null);
 
+  const [announcement, setAnnouncement] = useState("");
+
   const hasProject = !!project;
 
   const currentIndex = hasProject
@@ -25,14 +27,11 @@ export default function ProjectModal({
     : -1;
 
   const summaryId = hasProject ? "project-modal-summary" : undefined;
+  const titleId = hasProject ? "project-modal-title" : undefined;
 
   const hasProjectList =
-    hasProject && projects.length > 0 && currentIndex !== -1;
+    hasProject && projects.length > 1 && currentIndex !== -1;
 
-  // Sync the dialog's open state to the presence of a project, and lock
-  // background scroll while it is open. Using a layout effect means the close
-  // runs before paint, so there is no flash of an empty dialog on the way out.
-  // Native <dialog> returns focus to the trigger when it closes.
   useLayoutEffect(() => {
     if (!hasProject) return;
 
@@ -66,6 +65,8 @@ export default function ProjectModal({
       document.body.style.width = originalBodyStyle.width;
 
       window.scrollTo(0, scrollY);
+
+      setAnnouncement("");
     };
   }, [hasProject]);
 
@@ -85,6 +86,29 @@ export default function ProjectModal({
     }
   }, [project?.id, hasProject]);
 
+  useEffect(() => {
+    const el = modalBodyRef.current;
+    if (!el) return;
+
+    function onTouchMove(e) {
+      if (!touchStartRef.current) return;
+
+      const touch = e.touches[0];
+      const point = { x: touch.clientX, y: touch.clientY };
+      touchLastRef.current = point;
+
+      const dx = point.x - touchStartRef.current.x;
+      const dy = point.y - touchStartRef.current.y;
+
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+        e.preventDefault();
+      }
+    }
+
+    el.addEventListener("touchmove", onTouchMove, { passive: false });
+    return () => el.removeEventListener("touchmove", onTouchMove);
+  }, []);
+
   function goToOffset(offset) {
     if (!hasProjectList) return;
     const nextIndex =
@@ -93,6 +117,9 @@ export default function ProjectModal({
     if (nextProject && onSelectProject) {
       scrollModalToTop();
       onSelectProject(nextProject);
+      setAnnouncement(
+        `${nextProject.title}, project ${nextIndex + 1} of ${projects.length}`
+      );
     }
   }
 
@@ -104,9 +131,6 @@ export default function ProjectModal({
     goToOffset(1);
   }
 
-  // Escape fires the dialog's "cancel" event. Prevent the default close so the
-  // parent's state stays the single source of truth; the layout effect above
-  // closes the dialog once the project is cleared.
   function handleCancel(e) {
     e.preventDefault();
     onClose();
@@ -122,8 +146,6 @@ export default function ProjectModal({
     }
   }
 
-  // A click whose target is the dialog itself, rather than its content, landed
-  // on the surrounding surface or the ::backdrop, so close.
   function handleBackdropClick(e) {
     if (e.target === e.currentTarget) {
       onClose();
@@ -139,12 +161,6 @@ export default function ProjectModal({
     const point = { x: touch.clientX, y: touch.clientY };
     touchStartRef.current = point;
     touchLastRef.current = point;
-  }
-
-  function handleTouchMove(e) {
-    if (!touchStartRef.current) return;
-    const touch = e.touches[0];
-    touchLastRef.current = { x: touch.clientX, y: touch.clientY };
   }
 
   function handleTouchEnd() {
@@ -176,11 +192,16 @@ export default function ProjectModal({
     <dialog
       className="modal-backdrop"
       ref={dialogRef}
-      aria-labelledby="project-modal-title"
+      aria-labelledby={titleId}
       aria-describedby={summaryId}
       onClick={handleBackdropClick}
       onCancel={handleCancel}
       onKeyDown={handleKeyDown} >
+
+      <div className="sr-only" role="status" aria-live="polite">
+        {announcement}
+      </div>
+
       {hasProject && (
         <div className="modal-dialog">
           <header className="modal-header">
@@ -221,7 +242,6 @@ export default function ProjectModal({
           <div className="project-modal-body"
             ref={modalBodyRef}
             onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd} >
             {project.video && (
               <div className="project-modal-images">
