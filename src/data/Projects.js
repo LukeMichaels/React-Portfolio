@@ -194,35 +194,6 @@ export const projects = [
   },
 
   {
-    id: "night-lights-logo",
-    title: "Night Lights Logo",
-    categories: ["Graphics"],
-    role: "Logo Design",
-    tools: ["Procreate", "Illustrator"],
-    year: "2026",
-    shortSummary:
-      "Logo design for Night Lights, hand-drawn in Procreate and refined in Illustrator.",
-    summary:
-      "Logo for Night Lights, my own small business. I sketched it by hand in Procreate first to find the right feel, then rebuilt it in Illustrator to clean up the forms and tighten the linework into production files. It reads as hand-made up close and still holds together at small sizes.",
-    thumbnail: "/images/other/Night_Lights_Logo_630.webp",
-    thumbnail2x: "/images/other/Night_Lights_Logo_1260.webp", // Placeholder
-    thumbnailAlt: "Night Lights Logo thumbnail",
-    thumbnailAlignment: "",
-    images: [
-      {
-        src: "/images/other/Night_Lights_Logo_630.webp",
-        src2x: "/images/other/Night_Lights_Logo_1260.webp",
-        alt: "Night Lights Logo image",
-      },
-    ],
-    highlights: [
-      "Hand-drawn concept work in Procreate before any vector work.",
-      "Refined the forms and linework in Illustrator for clean output at any size.",
-      "Final files ready for both screen and print.",
-    ],
-  },
-
-  {
     id: "aura-flora-website",
     title: "Aura Flora Web App",
     categories: ["Web/App"],
@@ -232,7 +203,7 @@ export const projects = [
     shortSummary:
       "Interactive promotional web app for Aura Flora, a bio-reactive art installation.",
     summary:
-      "I designed and built the promotional web app for Aura Flora, a bio-reactive art installation shown at the Portland Winter Light Festival. I wanted the site to act like a piece of the sculpture rather than a page about it, so the background is procedurally generated and reacts as you move through it. It's built in React, TypeScript, and Sass.",
+      "I designed and built the promotional web app for Aura Flora, a bio-reactive art installation shown at the Portland Winter Light Festival. I wanted the site to act like a piece of the sculpture rather than just a page about it. It's built in React, TypeScript, and Sass.",
     link: "https://aura-flora.com/",
     thumbnail: "/images/other/Aura_Flora_One_508.webp",
     thumbnail2x: "/images/other/Aura_Flora_One_1016.webp", // Placeholder
@@ -258,7 +229,6 @@ export const projects = [
     highlights: [
       "Built a procedurally generated, interactive background that echoes the installation.",
       "Front end in React, TypeScript, and Sass.",
-      "Gave a physical art piece a home online.",
     ],
   },
 
@@ -654,6 +624,125 @@ export const projects = [
   // },
 
   // ===================== Graphics / POSTERS / ALBUMS =====================
+  {
+    id: "night-lights-logo",
+    title: "Night Lights Logo",
+    categories: ["Graphics"],
+    role: "Logo Design",
+    tools: ["Procreate", "Illustrator"],
+    year: "2026",
+    shortSummary:
+      "Logo design for Night Lights, hand-drawn in Procreate and refined in Illustrator.",
+    summary:
+      "Logo for Night Lights, my own small business. I sketched it by hand in Procreate first to find the right feel, then rebuilt it in Illustrator to clean up the forms and tighten the linework into production files. It reads as hand-made up close and still holds together at small sizes.",
+    thumbnail: "/images/other/Night_Lights_Logo_630.webp",
+    thumbnail2x: "/images/other/Night_Lights_Logo_1260.webp", // Placeholder
+    thumbnailAlt: "Night Lights Logo thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/other/Night_Lights_Logo_630.webp",
+        src2x: "/images/other/Night_Lights_Logo_1260.webp",
+        alt: "Night Lights Logo image",
+      },
+    ],
+    highlights: [
+      "Hand-drawn concept work in Procreate before any vector work.",
+      "Refined the forms and linework in Illustrator for clean output at any size.",
+      "Final files ready for both screen and print.",
+    ],
+  },
+
+  {
+    id: "sticker-art-project",
+    title: "Sticker Art Project",
+    categories: ["Graphics"],
+    role: "Graphic Design, Illustration",
+    tools: ["Procreate", "Illustrator"],
+    year: "2017 - Present",
+    shortSummary:
+      "An ongoing sticker campaign spreading kindness with animal rights undertones.",
+    summary:
+      "A sticker art campaign I've built out over several years, each design carrying a message of kindness with an animal rights thread running underneath. I start most pieces by hand in Procreate to get the character and expression right, then move into Illustrator to clean up the linework and prep production-ready vector files. Every sticker gets screenprinted onto sticky vinyl sheets, so the files have to hold up at print resolution and survive the reduction to a few spot colors. The campaign has grown one animal at a time rather than as a single planned series, and that shows in the variety of styles across the set.",
+    thumbnail: "/images/antica/Cow_630.webp",
+    thumbnail2x: "/images/antica/Cow_1260.webp",
+    thumbnailAlt: "Sticker Art Project thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/antica/Alpaca_630.webp",
+        src2x: "/images/antica/Alpaca_1260.webp",
+        alt: "Alpaca sticker",
+      },
+      {
+        src: "/images/antica/Banksy_630.webp",
+        src2x: "/images/antica/Banksy_1260.webp",
+        alt: "Banksy sticker",
+      },
+      {
+        src: "/images/antica/Bat_630.webp",
+        src2x: "/images/antica/Bat_1260.webp",
+        alt: "Bat sticker",
+      },
+      {
+        src: "/images/antica/Bee_630.webp",
+        src2x: "/images/antica/Bee_1260.webp",
+        alt: "Bee sticker",
+      },
+      {
+        src: "/images/antica/Biggie_630.webp",
+        src2x: "/images/antica/Biggie_1260.webp",
+        alt: "Biggie sticker",
+      },
+      {
+        src: "/images/antica/Bunny_630.webp",
+        src2x: "/images/antica/Bunny_1260.webp",
+        alt: "Bunny sticker",
+      },
+      {
+        src: "/images/antica/Cow_630.webp",
+        src2x: "/images/antica/Cow_1260.webp",
+        alt: "Cow sticker",
+      },
+      {
+        src: "/images/antica/Owl_630.webp",
+        src2x: "/images/antica/Owl_1260.webp",
+        alt: "Owl sticker",
+      },
+      {
+        src: "/images/antica/Raccoon_630.webp",
+        src2x: "/images/antica/Raccoon_1260.webp",
+        alt: "Raccoon sticker",
+      },
+      {
+        src: "/images/antica/Sloth_630.webp",
+        src2x: "/images/antica/Sloth_1260.webp",
+        alt: "Sloth sticker",
+      },
+      {
+        src: "/images/antica/Squirrel_630.webp",
+        src2x: "/images/antica/Squirrel_1260.webp",
+        alt: "Squirrel sticker",
+      },
+      {
+        src: "/images/antica/Tiger_630.webp",
+        src2x: "/images/antica/Tiger_1260.webp",
+        alt: "Tiger sticker",
+      },
+      {
+        src: "/images/antica/Whale_630.webp",
+        src2x: "/images/antica/Whale_1260.webp",
+        alt: "Whale sticker",
+      },
+    ],
+    highlights: [
+      "Hand-drawn concept work in Procreate to nail down character and expression before any vector work starts.",
+      "Rebuilt in Illustrator to tighten linework and prep clean, print-ready vector files.",
+      "Screenprinted onto sticky vinyl sheets, with each design built to hold up under a limited spot-color print process.",
+      "Built out over several years as an ongoing set rather than a single fixed release.",
+    ],
+  },
+
   {
     id: "rogue-design-composition",
     title: "Rogue Ales Design Composition",
