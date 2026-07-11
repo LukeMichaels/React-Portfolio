@@ -194,45 +194,6 @@ export const projects = [
   },
 
   {
-    id: "aura-flora-website",
-    title: "Aura Flora Web App",
-    categories: ["Web/App"],
-    role: "Website Design & Development",
-    tools: ["React", "TypeScript", "Sass"],
-    year: "2026",
-    shortSummary:
-      "Interactive promotional web app for Aura Flora, a bio-reactive art installation.",
-    summary:
-      "I designed and built the promotional web app for Aura Flora, a bio-reactive art installation shown at the Portland Winter Light Festival. I wanted the site to act like a piece of the sculpture rather than just a page about it. It's built in React, TypeScript, and Sass.",
-    link: "https://aura-flora.com/",
-    thumbnail: "/images/other/Aura_Flora_One_508.webp",
-    thumbnail2x: "/images/other/Aura_Flora_One_1016.webp", // Placeholder
-    thumbnailAlt: "Aura Flora interactive website thumbnail",
-    thumbnailAlignment: "",
-    images: [
-      {
-        src: "/images/other/Aura_Flora_One_630.webp",
-        src2x: "/images/other/Aura_Flora_One_1260.webp",
-        alt: "Aura Flora interactive website screenshot featuring the first pattern",
-      },
-      {
-        src: "/images/other/Aura_Flora_Two_630.webp",
-        src2x: "/images/other/Aura_Flora_Two_1260.webp",
-        alt: "Aura Flora interactive website screenshot featuring the second pattern",
-      },
-      {
-        src: "/images/other/Aura_Flora_Three_630.webp",
-        src2x: "/images/other/Aura_Flora_Three_1260.webp",
-        alt: "Aura Flora interactive website featuring the third pattern",
-      },
-    ],
-    highlights: [
-      "Built a procedurally generated, interactive background that echoes the installation.",
-      "Front end in React, TypeScript, and Sass.",
-    ],
-  },
-
-  {
     id: "farmer-toolkit",
     title: "Farmer Toolkit",
     categories: ["Web/App"],
@@ -305,6 +266,75 @@ export const projects = [
     highlights: [
       "Built ambient and scroll-driven animation in GSAP, keeping it fast and accessible.",
       "Built a responsive, accessible slider that held to the designer's original vision.",
+    ],
+  },
+
+  {
+    id: "nutty-narrows-website",
+    title: "Nutty Narrows Thrift Shop Web App",
+    categories: ["Web/App"],
+    role: "Website Design & Development, UX/UI Design",
+    tools: ["React", "TypeScript", "Redux", "REST API"],
+    year: "2026",
+    shortSummary:
+      "A thrift shop web app I designed and built to look and act like a vending machine.",
+    summary:
+      "*Currently a work in progress.* I built this thrift shop site around a single idea: what if browsing felt like using a vending machine? Visitors can pick an item straight off the machine face, punch in its code on the keypad the way you would at a real machine, or use a standard menu if they'd rather navigate that way. Whichever path they take, the selected item vends and drops down the screen, then a pair of squirrel arms reach in and lift the page up into full view, like someone just picked it up out of the tray. Redux manages the vending logic, cart, and navigation so all three input methods stay in sync, and the front end pulls product data through REST API integration. I built the front end in React and TypeScript.",
+    thumbnail: "/images/other/Nutty_Narrows_Square_630.webp",
+    thumbnail2x: "/images/other/Nutty_Narrows_Square_1260.webp",
+    thumbnailAlt: "Nutty Narrows Thrift Shop vending machine interface thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/other/Nutty_Narrows_630.webp",
+        src2x: "/images/other/Nutty_Narrows_1260.webp",
+        alt: "Nutty Narrows Thrift Shop website styled as a vending machine",
+      },
+    ],
+    highlights: [
+      "Three ways to navigate: clicking an item on the machine face, typing its code into a working keypad, or using a standard menu.",
+      "Custom vend animation where the selected item drops down the screen, then squirrel arms lift the page into full view.",
+      "Redux keeps vending, cart, and navigation logic consistent across all three input methods.",
+      "Pulls in product data through REST API integration.",
+    ],
+  },
+  
+  {
+    id: "aura-flora-website",
+    title: "Aura Flora Web App",
+    categories: ["Web/App"],
+    role: "Website Design & Development",
+    tools: ["React", "TypeScript", "Sass"],
+    year: "2026",
+    shortSummary:
+      "Interactive promotional web app for Aura Flora, a bio-reactive art installation.",
+    summary:
+      "I designed and built the promotional web app for Aura Flora, a bio-reactive art installation shown at the Portland Winter Light Festival. I wanted the site to act like a piece of the sculpture rather than just a page about it. It's built in React, TypeScript, and Sass.",
+    link: "https://aura-flora.com/",
+    thumbnail: "/images/other/Aura_Flora_One_508.webp",
+    thumbnail2x: "/images/other/Aura_Flora_One_1016.webp", // Placeholder
+    thumbnailAlt: "Aura Flora interactive website thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/other/Aura_Flora_One_630.webp",
+        src2x: "/images/other/Aura_Flora_One_1260.webp",
+        alt: "Aura Flora interactive website screenshot featuring the first pattern",
+      },
+      {
+        src: "/images/other/Aura_Flora_Two_630.webp",
+        src2x: "/images/other/Aura_Flora_Two_1260.webp",
+        alt: "Aura Flora interactive website screenshot featuring the second pattern",
+      },
+      {
+        src: "/images/other/Aura_Flora_Three_630.webp",
+        src2x: "/images/other/Aura_Flora_Three_1260.webp",
+        alt: "Aura Flora interactive website featuring the third pattern",
+      },
+    ],
+    highlights: [
+      "Built a procedurally generated, interactive background that echoes the installation.",
+      "Front end in React, TypeScript, and Sass.",
     ],
   },
 
@@ -657,89 +687,37 @@ export const projects = [
     id: "sticker-art-project",
     title: "Sticker Art Project",
     categories: ["Graphics"],
-    role: "Graphic Design, Illustration",
+    role: "Illustration",
     tools: ["Procreate", "Illustrator"],
-    year: "2017 - Present",
+    year: "2017 - 2026",
     shortSummary:
       "An ongoing sticker campaign spreading kindness with animal rights undertones.",
     summary:
-      "A sticker art campaign I've built out over several years, each design carrying a message of kindness with an animal rights thread running underneath. I start most pieces by hand in Procreate to get the character and expression right, then move into Illustrator to clean up the linework and prep production-ready vector files. Every sticker gets screenprinted onto sticky vinyl sheets, so the files have to hold up at print resolution and survive the reduction to a few spot colors. The campaign has grown one animal at a time rather than as a single planned series, and that shows in the variety of styles across the set.",
-    thumbnail: "/images/antica/Cow_630.webp",
-    thumbnail2x: "/images/antica/Cow_1260.webp",
+      "A sticker art campaign I've built out over several years, each design carrying a message of kindness with an animal rights thread running underneath. I start most pieces by hand in Procreate to get the character and expression right, then move into Illustrator to clean up the linework and prep production-ready vector files. I screenprint every sticker onto sticky vinyl sheets, so the files have to hold up at print resolution and survive the reduction to a few spot colors. The campaign grew one animal at a time, and that shows in the variety of styles across the set.",
+    thumbnail: "/images/antica/Alpaca_630.webp",
+    thumbnail2x: "/images/antica/Alpaca_1260.webp",
     thumbnailAlt: "Sticker Art Project thumbnail",
     thumbnailAlignment: "",
     images: [
-      {
-        src: "/images/antica/Alpaca_630.webp",
-        src2x: "/images/antica/Alpaca_1260.webp",
-        alt: "Alpaca sticker",
-      },
-      {
-        src: "/images/antica/Banksy_630.webp",
-        src2x: "/images/antica/Banksy_1260.webp",
-        alt: "Banksy sticker",
-      },
-      {
-        src: "/images/antica/Bat_630.webp",
-        src2x: "/images/antica/Bat_1260.webp",
-        alt: "Bat sticker",
-      },
-      {
-        src: "/images/antica/Bee_630.webp",
-        src2x: "/images/antica/Bee_1260.webp",
-        alt: "Bee sticker",
-      },
-      {
-        src: "/images/antica/Biggie_630.webp",
-        src2x: "/images/antica/Biggie_1260.webp",
-        alt: "Biggie sticker",
-      },
-      {
-        src: "/images/antica/Bunny_630.webp",
-        src2x: "/images/antica/Bunny_1260.webp",
-        alt: "Bunny sticker",
-      },
-      {
-        src: "/images/antica/Cow_630.webp",
-        src2x: "/images/antica/Cow_1260.webp",
-        alt: "Cow sticker",
-      },
-      {
-        src: "/images/antica/Owl_630.webp",
-        src2x: "/images/antica/Owl_1260.webp",
-        alt: "Owl sticker",
-      },
-      {
-        src: "/images/antica/Raccoon_630.webp",
-        src2x: "/images/antica/Raccoon_1260.webp",
-        alt: "Raccoon sticker",
-      },
-      {
-        src: "/images/antica/Sloth_630.webp",
-        src2x: "/images/antica/Sloth_1260.webp",
-        alt: "Sloth sticker",
-      },
-      {
-        src: "/images/antica/Squirrel_630.webp",
-        src2x: "/images/antica/Squirrel_1260.webp",
-        alt: "Squirrel sticker",
-      },
-      {
-        src: "/images/antica/Tiger_630.webp",
-        src2x: "/images/antica/Tiger_1260.webp",
-        alt: "Tiger sticker",
-      },
-      {
-        src: "/images/antica/Whale_630.webp",
-        src2x: "/images/antica/Whale_1260.webp",
-        alt: "Whale sticker",
-      },
+      { src: "/images/antica/Alpaca_630.webp", src2x: "/images/antica/Alpaca_1260.webp", alt: "Alpaca sticker" },
+      { src: "/images/antica/Banksy_630.webp", src2x: "/images/antica/Banksy_1260.webp", alt: "Banksy sticker" },
+      { src: "/images/antica/Bat_630.webp", src2x: "/images/antica/Bat_1260.webp", alt: "Bat sticker" },
+      { src: "/images/antica/Bee_630.webp", src2x: "/images/antica/Bee_1260.webp", alt: "Bee sticker" },
+      { src: "/images/antica/Biggie_630.webp", src2x: "/images/antica/Biggie_1260.webp", alt: "Biggie sticker" },
+      { src: "/images/antica/Bunny_630.webp", src2x: "/images/antica/Bunny_1260.webp", alt: "Bunny sticker" },
+      { src: "/images/antica/Cow_630.webp", src2x: "/images/antica/Cow_1260.webp", alt: "Cow sticker" },
+      { src: "/images/antica/Owl_630.webp", src2x: "/images/antica/Owl_1260.webp", alt: "Owl sticker" },
+      { src: "/images/antica/Raccoon_630.webp", src2x: "/images/antica/Raccoon_1260.webp", alt: "Raccoon sticker" },
+      { src: "/images/antica/Sloth_630.webp", src2x: "/images/antica/Sloth_1260.webp", alt: "Sloth sticker" },
+      { src: "/images/antica/Squirrel_630.webp", src2x: "/images/antica/Squirrel_1260.webp", alt: "Squirrel sticker" },
+      { src: "/images/antica/Tiger_630.webp", src2x: "/images/antica/Tiger_1260.webp", alt: "Tiger sticker" },
+      { src: "/images/antica/Whale_630.webp", src2x: "/images/antica/Whale_1260.webp", alt: "Whale sticker" },
     ],
     highlights: [
       "Hand-drawn concept work in Procreate to nail down character and expression before any vector work starts.",
       "Rebuilt in Illustrator to tighten linework and prep clean, print-ready vector files.",
-      "Screenprinted onto sticky vinyl sheets, with each design built to hold up under a limited spot-color print process.",
-      "Built out over several years as an ongoing set rather than a single fixed release.",
+      "Screenprinted onto sticky vinyl sheets, built to hold up under a limited spot-color print process.",
+      "Grew sticker by sticker over several years into an ongoing set.",
     ],
   },
 
