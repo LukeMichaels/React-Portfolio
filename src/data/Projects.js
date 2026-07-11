@@ -279,7 +279,7 @@ export const projects = [
     shortSummary:
       "A thrift shop web app I designed and built to look and act like a vending machine.",
     summary:
-      "*Currently a work in progress.* I built this thrift shop site around a single idea: what if browsing felt like using a vending machine? Visitors can pick an item straight off the machine face, punch in its code on the keypad the way you would at a real machine, or use a standard menu if they'd rather navigate that way. Whichever path they take, the selected item vends and drops down the screen, then a pair of squirrel arms reach in and lift the page up into full view, like someone just picked it up out of the tray. Redux manages the vending logic, cart, and navigation so all three input methods stay in sync, and the front end pulls product data through REST API integration. I built the front end in React and TypeScript.",
+      "*Currently a work in progress.* I built this thrift shop site around a single idea: what if browsing felt like using a vending machine? Visitors can pick an item straight off the machine face, punch in its code on the keypad the way you would at a real machine, or use a standard menu if they'd rather navigate that way. Whichever path they take, the selected item vends and drops down the screen, then a pair of squirrel arms reach in and lift the page up into full view. Redux manages the vending logic and navigation so all three input methods stay in sync. I built the front end in React and TypeScript.",
     thumbnail: "/images/other/Nutty_Narrows_Square_630.webp",
     thumbnail2x: "/images/other/Nutty_Narrows_Square_1260.webp",
     thumbnailAlt: "Nutty Narrows Thrift Shop vending machine interface thumbnail",
@@ -294,8 +294,7 @@ export const projects = [
     highlights: [
       "Three ways to navigate: clicking an item on the machine face, typing its code into a working keypad, or using a standard menu.",
       "Custom vend animation where the selected item drops down the screen, then squirrel arms lift the page into full view.",
-      "Redux keeps vending, cart, and navigation logic consistent across all three input methods.",
-      "Pulls in product data through REST API integration.",
+      "Redux keeps vending and navigation logic consistent across all three input methods.",
     ],
   },
   
