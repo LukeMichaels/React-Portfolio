@@ -223,7 +223,7 @@ export default function ProjectModal({
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd} >
-            {project.video && (
+            {/* {project.video && (
               <div className="project-modal-images">
                 <div className="project-modal-video">
                   <iframe
@@ -235,7 +235,7 @@ export default function ProjectModal({
                   />
                 </div>
               </div>
-            )}
+            )} */}
 
             {project.images && project.images.length > 0 && (
               <div className="project-modal-images">
