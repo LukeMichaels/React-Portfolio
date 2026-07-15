@@ -3,7 +3,7 @@ export const PROJECT_CATEGORIES = [
   "Web/App",
   //"Brand/Client",
   "Graphics",
-  "Video",
+  //"Videos",
 ];
 
 export const projects = [
@@ -1167,79 +1167,79 @@ export const projects = [
   //   ],
   // },
 
-  // ===================== Video =====================
-  {
-    id: "vegan-lunch-ideas-animation",
-    title: "Easy Vegan Lunch Ideas for School and Work",
-    categories: ["Video"],
-    role: "Motion graphics, animation",
-    tools: ["After Effects", "Premiere Pro"],
-    year: "2025",
-    shortSummary:
-      "Vertical, graphic-heavy animation built in After Effects for phone screens.",
-    summary:
-      "I built this animation in After Effects for vertical phone screens, where every second has to earn the scroll. Bold graphic transitions carry the video instead of live footage, so the pacing and shape language do most of the work. I kept the color and form consistent frame to frame so the motion reads clearly even at a glance.",
-    link: "https://www.youtube.com/watch?v=CtjVDjDPtGs",
-    video: "https://www.youtube.com/embed/CtjVDjDPtGs",
-    thumbnail: "/images/mfa/Easy_Lunches_Video_630.webp",
-    thumbnail2x: "/images/mfa/Easy_Lunches_Video_1260.webp",
-    thumbnailAlt: "Easy Vegan Lunch Ideas animated video thumbnail",
-    thumbnailAlignment: "",
-    images: [],
-    highlights: [
-      "Designed for vertical viewing on a phone screen.",
-      "Built around graphic transitions and shape animation instead of live footage.",
-      "Animated entirely in After Effects, from layout through final export.",
-    ],
-  },
+  // ===================== Videos =====================
+  // {
+  //   id: "vegan-lunch-ideas-animation",
+  //   title: "Easy Vegan Lunch Ideas for School and Work",
+  //   categories: ["Videos"],
+  //   role: "Motion graphics, animation",
+  //   tools: ["After Effects", "Premiere Pro"],
+  //   year: "",
+  //   shortSummary:
+  //     "Vertical, graphic-heavy animation built in After Effects for phone screens.",
+  //   summary:
+  //     "I built this animation in After Effects for vertical phone screens, where every second has to earn the scroll. Bold graphic transitions carry the video instead of live footage, so the pacing and shape language do most of the work. I kept the color and form consistent frame to frame so the motion reads clearly even at a glance.",
+  //   link: "https://www.youtube.com/watch?v=CtjVDjDPtGs",
+  //   video: "https://www.youtube.com/embed/CtjVDjDPtGs",
+  //   thumbnail: "https://img.youtube.com/vi/CtjVDjDPtGs/hqdefault.jpg",
+  //   thumbnail2x: "https://img.youtube.com/vi/CtjVDjDPtGs/sddefault.jpg",
+  //   thumbnailAlt: "Easy Vegan Lunch Ideas animated video thumbnail",
+  //   thumbnailAlignment: "",
+  //   images: [],
+  //   highlights: [
+  //     "Designed for vertical viewing on a phone screen.",
+  //     "Built around graphic transitions and shape animation instead of live footage.",
+  //     "Animated entirely in After Effects, from layout through final export.",
+  //   ],
+  // },
 
-  {
-    id: "chef-babette-documentary",
-    title: "Chef Babette",
-    categories: ["Video"],
-    role: "Video editing (contributor)",
-    tools: ["Premiere Pro"],
-    year: "2023",
-    shortSummary:
-      "Documentary-style profile of Chef Babette; I edited select sequences within the larger piece.",
-    summary:
-      "This documentary-style profile follows Chef Babette and her work bringing vegan food to her community. I edited portions of the piece, working within the pacing and tone the rest of the video had already set. The footage leans on interviews and b-roll, so the cuts needed to stay invisible and let her story carry the scene.",
-    link: "https://youtu.be/7b33d5asQzs",
-    video: "https://www.youtube.com/embed/7b33d5asQzs",
-    thumbnail: "/images/mfa/Chef_Babette_Video_630.webp",
-    thumbnail2x: "/images/mfa/Chef_Babette_Video_1260.webp",
-    thumbnailAlt: "Chef Babette documentary video thumbnail",
-    thumbnailAlignment: "",
-    images: [],
-    highlights: [
-      "Documentary-style editing built around interview footage and b-roll.",
-      "Edited select sequences within a larger collaborative cut.",
-      "Matched pacing and tone across the full piece.",
-    ],
-  },
+  // {
+  //   id: "chef-babette-documentary",
+  //   title: "Chef Babette",
+  //   categories: ["Videos"],
+  //   role: "Video editing (contributor)",
+  //   tools: ["Premiere Pro"],
+  //   year: "",
+  //   shortSummary:
+  //     "Documentary-style profile of Chef Babette; I edited select sequences within the larger piece.",
+  //   summary:
+  //     "This documentary-style profile follows Chef Babette and her work bringing vegan food to her community. I edited portions of the piece, working within the pacing and tone the rest of the video had already set. The footage leans on interviews and b-roll, so the cuts needed to stay invisible and let her story carry the scene.",
+  //   link: "https://youtu.be/7b33d5asQzs",
+  //   video: "https://www.youtube.com/embed/7b33d5asQzs",
+  //   thumbnail: "https://img.youtube.com/vi/7b33d5asQzs/hqdefault.jpg",
+  //   thumbnail2x: "https://img.youtube.com/vi/7b33d5asQzs/sddefault.jpg",
+  //   thumbnailAlt: "Chef Babette documentary video thumbnail",
+  //   thumbnailAlignment: "",
+  //   images: [],
+  //   highlights: [
+  //     "Documentary-style editing built around interview footage and b-roll.",
+  //     "Edited select sequences within a larger collaborative cut.",
+  //     "Matched pacing and tone across the full piece.",
+  //   ],
+  // },
 
-  {
-    id: "give-hope-fundraising-video",
-    title: "Give Hope",
-    categories: ["Video"],
-    role: "Motion graphics, title design",
-    tools: ["After Effects", "Premiere Pro"],
-    year: "2022",
-    shortSummary:
-      "Fundraising video for which I built the animated type and title effects.",
-    summary:
-      "This fundraising video needed on-screen text that matched the urgency of the message, so I built the type animation and title effects in After Effects. The motion ties each caption to the cut underneath it, timed so the words land with the footage instead of sitting on top of it. The rest of the edit carries the story; my job was making the type pull its weight.",
-    link: "https://youtu.be/XzAjMmqOPew",
-    video: "https://www.youtube.com/embed/XzAjMmqOPew",
-    thumbnail: "/images/mfa/Give_Hope_Video_630.webp",
-    thumbnail2x: "/images/mfa/Give_Hope_Video_1260.webp",
-    thumbnailAlt: "Give Hope fundraising video thumbnail",
-    thumbnailAlignment: "",
-    images: [],
-    highlights: [
-      "Built animated type and title effects for the full video.",
-      "Timed text motion to match the cut and pacing underneath it.",
-      "Created in After Effects, integrated into the final Premiere edit.",
-    ],
-  },
+  // {
+  //   id: "give-hope-fundraising-video",
+  //   title: "Give Hope",
+  //   categories: ["Videos"],
+  //   role: "Motion graphics, title design",
+  //   tools: ["After Effects", "Premiere Pro"],
+  //   year: "",
+  //   shortSummary:
+  //     "Fundraising video for which I built the animated type and title effects.",
+  //   summary:
+  //     "This fundraising video needed on-screen text that matched the urgency of the message, so I built the type animation and title effects in After Effects. The motion ties each caption to the cut underneath it, timed so the words land with the footage instead of sitting on top of it. The rest of the edit carries the story; my job was making the type pull its weight.",
+  //   link: "https://youtu.be/XzAjMmqOPew",
+  //   video: "https://www.youtube.com/embed/XzAjMmqOPew",
+  //   thumbnail: "https://img.youtube.com/vi/XzAjMmqOPew/hqdefault.jpg",
+  //   thumbnail2x: "https://img.youtube.com/vi/XzAjMmqOPew/sddefault.jpg",
+  //   thumbnailAlt: "Give Hope fundraising video thumbnail",
+  //   thumbnailAlignment: "",
+  //   images: [],
+  //   highlights: [
+  //     "Built animated type and title effects for the full video.",
+  //     "Timed text motion to match the cut and pacing underneath it.",
+  //     "Created in After Effects, integrated into the final Premiere edit.",
+  //   ],
+  // },
 ];
