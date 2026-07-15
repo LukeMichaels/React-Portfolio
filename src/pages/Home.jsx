@@ -101,7 +101,7 @@ export default function Home() {
 
             <h3 className="about-heading">Front-End Development</h3>
             <div className="about-detail">
-              HTML5, CSS/Sass, JavaScript (ES6+), React, PHP, WCAG accessibility, performance optimization, responsive UI systems.
+              HTML5, CSS/Sass/Tailwind, JavaScript (ES6+), React, Next.js, PHP, WCAG accessibility, performance optimization, responsive UI systems.
             </div>
 
             <h3 className="about-heading">UX Research & Strategy</h3>
