@@ -2,16 +2,21 @@
 @use "sass:map";
 @use "sass:meta";
 
-$black: #121212;
+//new color scheme
+$dark-soft-purple: #2d1a65;
+$very-dark-muted-blue: #17191c;
+$pink-2: #9C1A52;
+$white: #FFFFFF;
+
+// old color scheme
+//$black: #121212;
 $blue: #123A7A;
 $green: #BFDA71;
 $pastel-blue: #cfe8ff;
 $pink: #C94768;
-$pink-2: #9C1A52;
 $purple: #571751;
 $purple-2: #5A1F74;
 $teal: #00A2A6;
-$white: #FFFFFF;
 
 $font-regular: 'cabinregular';
 $font-bold: 'cabinsemibold';
