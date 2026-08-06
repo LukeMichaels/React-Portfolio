@@ -680,6 +680,34 @@ export const projects = [
 
   // ===================== Graphics / POSTERS / ALBUMS =====================
   {
+    id: "night-lights-temple-illustration",
+    title: "Night Lights Temple Illustration",
+    categories: ["Graphics"],
+    role: "Illustration",
+    tools: ["Procreate", "Illustrator"],
+    year: "2026",
+    shortSummary:
+      "Illustragion for Night Lights first art piece, 01 - Temple.",
+    summary:
+      "Illustration created to accompany the first art project at Night Lights \"01-Temple.\" I did a rough sketch in Procreate and refined it in Illustrator. It was exported as a SVG and animated with code on the site.",
+    thumbnail: "/images/night_lights/01-Temple_Illustration-508.webp",
+    thumbnail2x: "/images/night_lights/01-Temple_Illustration-1016.webp", // Placeholder
+    thumbnailAlt: "Night Lights Temple Illustration thumbnail",
+    thumbnailAlignment: "",
+    images: [
+      {
+        src: "/images/night_lights/01-Temple_Illustration-630.webp",
+        src2x: "/images/night_lights/01-Temple_Illustration-1260.webp",
+        alt: "Night Lights Temple Illustration image",
+      },
+    ],
+    highlights: [
+      "Hand-drawn concept work in Procreate before any vector work.",
+      "Refined the forms and linework in Illustrator for clean output at any size.",
+      "Exported to svg and animated with code.",
+    ],
+  },
+  {
     id: "night-lights-logo",
     title: "Night Lights Logo",
     categories: ["Graphics"],
